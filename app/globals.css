@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: 5 7 13;
+  --color-fg: 240 246 252;
+  --theme-r: 34;
+  --theme-g: 211;
+  --theme-b: 238;
+  --theme-r-2: 163;
+  --theme-g-2: 230;
+  --theme-b-2: 53;
+}
+
+html,
+body {
+  background-color: rgb(var(--color-bg));
+  color: rgb(var(--color-fg));
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  /* IMPORTANT: use `clip` rather than `hidden` so we hide horizontal overflow
+     without turning <html>/<body> into scroll containers — which would break
+     every `position: sticky` element below (incl. the hero canvas pin). */
+  overflow-x: clip;
+  background-image:
+    radial-gradient(circle at 20% 10%, rgba(var(--theme-r), var(--theme-g), var(--theme-b), 0.10), transparent 55%),
+    radial-gradient(circle at 80% 90%, rgba(var(--theme-r-2), var(--theme-g-2), var(--theme-b-2), 0.08), transparent 60%);
+  transition: background-color 1.2s cubic-bezier(0.22, 1, 0.36, 1),
+    background-image 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body {
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+
+/* --- Hide scrollbars but preserve scrolling ----------------------------- */
+html {
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE/Edge legacy */
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+/* --- Text selection ----------------------------------------------------- */
+::selection {
+  background: #06b6d4;
+  color: #ffffff;
+}
+::-moz-selection {
+  background: #06b6d4;
+  color: #ffffff;
+}
+
+/* --- Utilities ---------------------------------------------------------- */
+.theme-glow {
+  background: radial-gradient(
+    closest-side,
+    rgba(var(--theme-r), var(--theme-g), var(--theme-b), 0.45),
+    transparent 70%
+  );
+}
+
+.text-gradient {
+  background: linear-gradient(
+    135deg,
+    rgb(var(--theme-r), var(--theme-g), var(--theme-b)) 0%,
+    rgb(var(--theme-r-2), var(--theme-g-2), var(--theme-b-2)) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.theme-border {
+  border-color: rgba(var(--theme-r), var(--theme-g), var(--theme-b), 0.28);
+}
+
+.theme-bg-soft {
+  background: rgba(var(--theme-r), var(--theme-g), var(--theme-b), 0.08);
+}
+
+.theme-ring {
+  box-shadow: 0 0 0 1px rgba(var(--theme-r), var(--theme-g), var(--theme-b), 0.4),
+    0 30px 90px -30px rgba(var(--theme-r), var(--theme-g), var(--theme-b), 0.5);
+}
+
+.glass-panel {
+  background: rgba(8, 12, 20, 0.55);
+  backdrop-filter: blur(28px) saturate(140%);
+  -webkit-backdrop-filter: blur(28px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-soft {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0.6) 0%,
+    rgba(255,255,255,1)   50%,
+    rgba(255,255,255,0.6) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 3.6s linear infinite;
+}
+
+/* Smooth reveal helper for non-FM elements */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reduced motion respect */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
