@@ -107,8 +107,8 @@ export const SAUNAS: SaunaItem[] = [
     durationMins: 120,
     maxParty: 12,
     accent: 'amber',
-    fi: { title: 'Saunaravintola Viilu — privaatti', desc: 'Yksityinen löyly + à la carte illallinen', cta: 'Varaa privaatti' },
-    en: { title: 'Sauna restaurant Viilu — private', desc: 'Private löyly + à la carte dinner', cta: 'Book private' },
+    fi: { title: 'Saunaravintola Sataman Viilu — privaatti', desc: 'Yksityinen löyly + à la carte illallinen · satamanviilu.fi', cta: 'Varaa privaatti' },
+    en: { title: 'Sauna restaurant Sataman Viilu — private', desc: 'Private löyly + à la carte dinner · satamanviilu.fi', cta: 'Book private' },
   },
   {
     id: 'sauna-viilu-public',
@@ -116,8 +116,8 @@ export const SAUNAS: SaunaItem[] = [
     durationMins: 90,
     maxParty: 4,
     accent: 'cyan',
-    fi: { title: 'Viilu — julkinen vuoro', desc: 'Avoin saunavuoro veden äärellä', cta: 'Varaa vuoro' },
-    en: { title: 'Viilu — public slot', desc: 'Open sauna slot by the lake', cta: 'Book a slot' },
+    fi: { title: 'Sataman Viilu — julkinen vuoro', desc: 'Avoin saunavuoro veden äärellä · satamanviilu.fi', cta: 'Varaa vuoro' },
+    en: { title: 'Sataman Viilu — public slot', desc: 'Open sauna slot by the lake · satamanviilu.fi', cta: 'Book a slot' },
   },
   {
     id: 'sauna-lakefront',

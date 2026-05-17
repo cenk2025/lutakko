@@ -73,12 +73,12 @@ export default function HeroScrolly({ onAllLoaded }: HeroScrollyProps = {}) {
             {/* Center stage — all four text beats stack here */}
             <div className="relative flex flex-1 items-center">
 
-              {/* Beat 1 */}
+              {/* Beat 1 — left */}
               <motion.div
                 style={{ opacity: op1, y: y1 }}
-                className="absolute inset-x-0 max-w-3xl"
+                className="absolute inset-x-0 max-w-4xl"
               >
-                <h1 className="font-display text-[clamp(2.6rem,8.5vw,7rem)] font-extrabold leading-[0.92] tracking-tightest text-white">
+                <h1 className="font-display text-[clamp(3.5rem,11vw,9.5rem)] font-extrabold leading-[0.9] tracking-tightest text-white">
                   <span className="block">{t.beat1.title.split(' ')[0]}</span>
                   <span className="block text-gradient">
                     {t.beat1.title.split(' ').slice(1).join(' ')}
@@ -87,10 +87,10 @@ export default function HeroScrolly({ onAllLoaded }: HeroScrollyProps = {}) {
                 <p className="mt-6 max-w-xl text-base text-white/80 sm:text-lg">{t.beat1.sub}</p>
               </motion.div>
 
-              {/* Beat 2 — right aligned */}
+              {/* Beat 2 — left */}
               <motion.div
                 style={{ opacity: op2, y: y2 }}
-                className="absolute inset-x-0 ml-auto max-w-2xl text-left sm:text-right"
+                className="absolute inset-x-0 max-w-2xl text-left"
               >
                 <span className="inline-block text-[0.65rem] font-semibold uppercase tracking-[0.5em] text-cyan-300">
                   02 · Lutakko
@@ -98,23 +98,23 @@ export default function HeroScrolly({ onAllLoaded }: HeroScrollyProps = {}) {
                 <h2 className="mt-4 font-display text-[clamp(2rem,5.4vw,4.4rem)] font-extrabold leading-[0.98] tracking-tightest text-white">
                   {t.beat2.title}
                 </h2>
-                <p className="ml-auto mt-5 max-w-xl text-base text-white/80 sm:text-lg">
+                <p className="mt-5 max-w-xl text-base text-white/80 sm:text-lg">
                   {t.beat2.sub}
                 </p>
               </motion.div>
 
-              {/* Beat 3 — centred */}
+              {/* Beat 3 — left */}
               <motion.div
                 style={{ opacity: op3, y: y3 }}
-                className="absolute inset-x-0 mx-auto max-w-3xl text-center"
+                className="absolute inset-x-0 max-w-3xl text-left"
               >
                 <span className="inline-block text-[0.65rem] font-semibold uppercase tracking-[0.5em] text-amber-300">
                   03 · Live
                 </span>
-                <h2 className="mx-auto mt-4 font-display text-[clamp(2rem,5.4vw,4.4rem)] font-extrabold leading-[0.98] tracking-tightest text-white">
+                <h2 className="mt-4 font-display text-[clamp(2rem,5.4vw,4.4rem)] font-extrabold leading-[0.98] tracking-tightest text-white">
                   {t.beat3.title}
                 </h2>
-                <p className="mx-auto mt-5 max-w-2xl text-base text-white/80 sm:text-lg">
+                <p className="mt-5 max-w-2xl text-base text-white/80 sm:text-lg">
                   {t.beat3.sub}
                 </p>
               </motion.div>

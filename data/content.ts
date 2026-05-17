@@ -84,7 +84,7 @@ export const HERO_TEXT = {
     beat3: {
       title: 'Lavat, löylyt, lyhdyt',
       sub:
-        'SuomiPop heinäkuussa, Neste WRC elokuussa, viikoittaisia konsertteja Lutakko Liven lavalla — ja Saunaravintola Viilu vastapäätä järveä.',
+        'OlutSatama 11.–13.6.2026, SuomiPop 9.–11.7.2026, Secto Rally Finland 30.7.–2.8.2026, viikoittaisia konsertteja Tanssisali Lutakon lavalla — ja Saunaravintola Sataman Viilu vastapäätä järveä.',
     },
     beat4: {
       title: 'Yksi kortteli, kaikki vuodenajat',
@@ -107,7 +107,7 @@ export const HERO_TEXT = {
     beat3: {
       title: 'Stages, steam, lanterns',
       sub:
-        'SuomiPop in July, Neste WRC in August, weekly gigs at Lutakko Live — and Sauna restaurant Viilu just across the water.',
+        'OlutSatama 11–13 Jun 2026, SuomiPop 9–11 Jul 2026, Secto Rally Finland 30 Jul – 2 Aug 2026, weekly gigs at Tanssisali Lutakko — and Sauna restaurant Sataman Viilu just across the water.',
     },
     beat4: {
       title: 'One block, every season',
@@ -125,15 +125,15 @@ export const HERO_TEXT = {
 export const SITE_META = {
   fi: {
     name: 'Lutakon Satama',
-    tagline: 'Jyväskylän sydän järven rannalla',
+    tagline: 'Suomen elämyksellisin satama',
     description:
-      'Festivaaleja, ravintoloita, saunaa, satamaa ja perheaktiviteetteja — kaikki yhdessä paikassa Lutakon rantaraitilla.',
+      'Päijänteen pohjoisin matkustajasatama Jyväskylän sydämessä — festivaaleja, ravintolalaivoja, saunaa, vesiurheilua ja perheaktiviteetteja Lutakonaukion ja rantaraitin tuntumassa.',
   },
   en: {
     name: 'Lutakon Satama',
-    tagline: 'The beating heart of Jyväskylä on the lakeshore',
+    tagline: 'Finland’s most experiential harbour',
     description:
-      'Festivals, restaurants, sauna, marina and family activities — all gathered along the Lutakko waterfront promenade.',
+      'Päijänne’s northernmost passenger harbour at the heart of Jyväskylä — festivals, restaurant ships, sauna, water sports and family activities along Lutakonaukio square and the lakeside promenade.',
   },
 } as const;
 
@@ -185,7 +185,7 @@ export const CATEGORIES: Category[] = [
       title: 'Lavat syttyvät',
       subtitle: 'Festivaalit, rallit ja Lutakonaukion sykintä',
       description:
-        'SuomiPopin bassot kantautuvat veden yli, Neste Ralli täyttää korttelin moottoreiden hurinalla ja Lutakonaukio elää koko kesän — konsertit, kesäteatteri ja katukulttuuri kutsuvat pysähtymään.',
+        'SuomiPopin bassot kantautuvat veden yli, Secto Rally Finland täyttää korttelin moottoreiden hurinalla ja Lutakonaukio elää koko kesän — konsertit, kesäteatteri ja katukulttuuri kutsuvat pysähtymään.',
       tagline: 'Kesä, joka kuuluu kauas',
       section1: {
         title: 'SuomiPop kokoaa Suomen',
@@ -195,7 +195,7 @@ export const CATEGORIES: Category[] = [
       section2: {
         title: 'Rallien sydämessä',
         subtitle:
-          'Neste World Rally Finland tuo maailmanluokan moottoriurheilun ydinkeskustaan. Servicepark on kävelymatkan päässä satamasta.',
+          'Secto Rally Finland (30.7.–2.8.2026) tuo maailmanluokan moottoriurheilun ydinkeskustaan. Servicepark on kävelymatkan päässä satamasta.',
       },
       section3: {
         title: 'Lutakonaukio läpi vuoden',
@@ -204,11 +204,12 @@ export const CATEGORIES: Category[] = [
       },
       details: {
         title: 'Kulttuurikevät ja -kesä Lutakossa',
-        desc: 'Lutakko Live, Paviljonki ja avoimet aukiot — tapahtumakortteli rakennettiin musiikille ja yhteisille hetkille.',
+        desc: 'Tanssisali Lutakko, Paviljonki ja avoimet aukiot — tapahtumakortteli rakennettiin musiikille ja yhteisille hetkille.',
         bulletPoints: [
-          'SuomiPop Festival – heinäkuun toinen viikonloppu',
-          'Neste World Rally Finland – elokuu, Servicepark Paviljongilla',
-          'Lutakko Live -klubin keikkakalenteri ympäri vuoden',
+          'OlutSatama 11.–13.6.2026 Lutakonaukiolla · "Suomen paras olut-tapahtuma", 200+ panimoa · olutsatama.fi',
+          'SuomiPop Festival 9.–11.7.2026 Jyväskylässä · liput suomipopfestivaali.fi/jyvaskyla/liput',
+          'Secto Rally Finland 30.7.–2.8.2026 Jyväskylässä · Servicepark Paviljongilla · sectorallyfinland.fi',
+          'Tanssisali Lutakko · Jelmu ry:n legendaarinen rock-klubi vanhassa Lutakon teollisuusrakennuksessa · jelmu.net',
           'Kesäteatteri ja street food -tapahtumat Lutakonaukiolla',
           'Talvitapahtumat: jääbaari ja valoinstallaatiot rantapromenadilla',
         ],
@@ -221,13 +222,18 @@ export const CATEGORIES: Category[] = [
         },
         {
           icon: 'rally',
-          title: 'Rally Servicepark',
-          description: 'WRC-tallit Paviljongin pihalla – pääset lähelle koneita, joiden ääni täyttää koko kaupungin.',
+          title: 'Secto Rally Finland Servicepark',
+          description: 'WRC-tallit Paviljongin pihalla 30.7.–2.8.2026 – pääset lähelle koneita, joiden ääni täyttää koko kaupungin.',
         },
         {
           icon: 'stage',
-          title: 'Klubi-illat',
-          description: 'Tanssilattialla Lutakko Live ja Ilokivi vaihtelevat soundeja indiestä elektroniseen.',
+          title: 'Tanssisali Lutakko',
+          description: 'Suomen rakastetuin underground-konserttipaikka 1900-luvun alun teollisuusrakennuksessa Lutakonaukion laidalla. Jelmu ry:n ohjelmistossa rockia, punkia, metallia ja indietä ympäri vuoden — jelmu.net.',
+        },
+        {
+          icon: 'food',
+          title: 'OlutSatama',
+          description: 'Suomen paras olut-tapahtuma 11.–13.6.2026 Lutakonaukiolla — yli 200 panimoa, ruokapisteitä ja keikkoja. 49 000+ kävijää vuodesta 2016. olutsatama.fi',
         },
         {
           icon: 'food',
@@ -241,7 +247,7 @@ export const CATEGORIES: Category[] = [
       title: 'The stages light up',
       subtitle: 'Festivals, rallies and the rhythm of Lutakonaukio square',
       description:
-        'SuomiPop’s bass rolls across the lake, Neste Rally Finland fills the block with engine roar, and Lutakonaukio square breathes culture all summer long — concerts, theatre and street life invite you to stop.',
+        'SuomiPop’s bass rolls across the lake, Secto Rally Finland fills the block with engine roar, and Lutakonaukio square breathes culture all summer long — concerts, theatre and street life invite you to stop.',
       tagline: 'A summer that travels far',
       section1: {
         title: 'SuomiPop gathers Finland',
@@ -251,7 +257,7 @@ export const CATEGORIES: Category[] = [
       section2: {
         title: 'At the heart of the rally',
         subtitle:
-          'Neste World Rally Finland brings world-class motorsport into the city centre. The service park is a short walk from the marina.',
+          'Secto Rally Finland (30 Jul – 2 Aug 2026) brings world-class motorsport into the city centre. The service park is a short walk from the marina.',
       },
       section3: {
         title: 'Lutakonaukio year round',
@@ -260,11 +266,12 @@ export const CATEGORIES: Category[] = [
       },
       details: {
         title: 'Spring & summer culture in Lutakko',
-        desc: 'Lutakko Live, Paviljonki and open squares — this district was built for music and gatherings.',
+        desc: 'Tanssisali Lutakko, Paviljonki and open squares — this district was built for music and gatherings.',
         bulletPoints: [
-          'SuomiPop Festival — second weekend of July',
-          'Neste World Rally Finland — August, Service Park at Paviljonki',
-          'Lutakko Live club nights year-round',
+          'OlutSatama — 11–13 Jun 2026 on Lutakonaukio · "Finland’s best beer event", 200+ breweries · olutsatama.fi',
+          'SuomiPop Festival — 9–11 Jul 2026 in Jyväskylä · tickets at suomipopfestivaali.fi/jyvaskyla/liput',
+          'Secto Rally Finland — 30 Jul – 2 Aug 2026 in Jyväskylä · Service Park at Paviljonki · sectorallyfinland.fi',
+          'Tanssisali Lutakko · Jelmu’s legendary rock club in a heritage industrial building beside Lutakonaukio · jelmu.net',
           'Summer theatre & street food on Lutakonaukio square',
           'Winter events: ice bar and light installations along the promenade',
         ],
@@ -277,13 +284,18 @@ export const CATEGORIES: Category[] = [
         },
         {
           icon: 'rally',
-          title: 'Rally Service Park',
-          description: 'WRC teams set up at Paviljonki — you can walk right up to the machines roaring through the city.',
+          title: 'Secto Rally Finland Service Park',
+          description: 'WRC teams set up at Paviljonki 30 Jul – 2 Aug 2026 — walk right up to the machines roaring through the city.',
         },
         {
           icon: 'stage',
-          title: 'Club nights',
-          description: 'Lutakko Live and Ilokivi flip between indie, punk and electronic, every weekend of the year.',
+          title: 'Tanssisali Lutakko',
+          description: 'Finland’s most beloved underground gig venue, set in an early-1900s heritage industrial building right by Lutakonaukio square. Jelmu programmes rock, punk, metal and indie all year — jelmu.net.',
+        },
+        {
+          icon: 'food',
+          title: 'OlutSatama',
+          description: 'Finland’s best beer event, 11–13 Jun 2026 on Lutakonaukio — 200+ breweries, food stalls and live gigs. 49,000+ visitors since 2016. olutsatama.fi',
         },
         {
           icon: 'food',
@@ -309,8 +321,8 @@ export const CATEGORIES: Category[] = [
       hero: {
         src: '/images/featured/food-sauna/hero.jpg',
         alt: {
-          fi: 'Saunaravintola Viilu järven rannalla',
-          en: 'Sauna restaurant Viilu by the lake',
+          fi: 'Saunaravintola Sataman Viilu järven rannalla',
+          en: 'Sauna restaurant Sataman Viilu by the lake',
         },
       },
       gallery: [
@@ -330,12 +342,12 @@ export const CATEGORIES: Category[] = [
     },
     fi: {
       title: 'Maku ja löyly',
-      subtitle: 'Saunaravintola Viilu, satamacafét ja iltaelämä',
+      subtitle: 'Saunaravintola Sataman Viilu, satamacafét ja iltaelämä',
       description:
         'Päivä alkaa kahvikupin ja höyryävän rantanäkymän äärellä, ja päättyy löylyihin sekä lähiruokaan Viilussa — Lutakon makumaailma on yhtä paljon arkkitehtuuria kuin gastronomiaa.',
       tagline: 'Pohjoismainen makumatka veden äärellä',
       section1: {
-        title: 'Saunaravintola Viilu',
+        title: 'Saunaravintola Sataman Viilu',
         subtitle:
           'Veden ylle kelluva puuarkkitehtuuri, järvinäköala 270°, savulohta ja siideriä — sauna on osa illallista.',
       },
@@ -347,29 +359,42 @@ export const CATEGORIES: Category[] = [
       section3: {
         title: 'Lutakon yöt',
         subtitle:
-          'Ilokivi, Lutakko Live, terassit ja kelluvat baarit — sataman illat kantavat aamuun pyöräilijöiden ohitse.',
+          'Ilokivi, Tanssisali Lutakko, terassit ja kelluvat baarit — sataman illat kantavat aamuun pyöräilijöiden ohitse.',
       },
       details: {
         title: 'Lutakon gastronominen reitti',
         desc: 'Yhdellä kävelyllä reitti vie pop-up-bistroista savusaunaan ja iltabaariin – tämä on kortteli, jota tehdään hitaasti.',
         bulletPoints: [
-          'Saunaravintola Viilu – Alvar Aalto -museon naapurissa',
-          'Ravintolalaiva Gaia – kelluva à la carte järven ulapalla',
-          'Erikoiskahvilat ja konditoria rantapromenadilla',
-          'Pienpanimoiden taproomit ja luonnonviinibaarit',
+          'Saunaravintola Sataman Viilu · Alvar Aalto -museon naapurissa · satamanviilu.fi',
+          'Konttiravintola Morton — "Se alkuperäinen Konttiravintola" satamassa, kesäkaudella auki · morton.fi',
+          'M/S Musta Magia — Limanda-ravintolalaiva 200 hengelle, karaokea perjantaisin ja lauantaisin, sunnuntain livemusiikki · mustamagia.fi',
+          'Ravintolalaivat Gaia ja Siipirataslaiva Vellamo — kelluvaa à la cartea järven äärellä',
+          'Risteilyt Päijänteelle: M/S Rhea, M/S Hilja ja M/S Flamia (maailman ensimmäinen iglu-saunalaiva)',
+          'Container-ravintola Waves, Satamakahvila ja Trattoria Aukio Lutakonaukiolla',
+          'HIISI-panimon taproom & bottleshop ja luonnonviinibaarit kortteleilla',
           'Kauden makujen menut: kalaa Päijänteestä, sieniä lähimetsistä',
         ],
       },
       features: [
         {
           icon: 'sauna',
-          title: 'Saunaravintola Viilu',
+          title: 'Saunaravintola Sataman Viilu',
           description: 'Saaristolaisen makuinen menu ja jatkuvat löylyt — varaa pöytä auringonlaskuun.',
         },
         {
           icon: 'food',
           title: 'Ravintolalaiva Gaia',
           description: 'Historiallinen sisävesilaiva, jossa illallinen liikkuu ulapalle ja takaisin satamaan.',
+        },
+        {
+          icon: 'food',
+          title: 'M/S Musta Magia',
+          description: '"Tervetuloa nauttimaan laivan antimista!" Limanda-ravintolalaiva 200 hengelle: karaokea perjantaisin ja lauantaisin (Mikon Karaoke), sunnuntaisin livemusiikkia ja terassikansi järven yllä. mustamagia.fi',
+        },
+        {
+          icon: 'food',
+          title: 'Konttiravintola Morton',
+          description: '"Se alkuperäinen Konttiravintola" Lutakon satamassa Satamakatu 2:ssa. Ravintola, kahvila ja terassi kesäkaudella; Wolt-toimitukset koteihin. morton.fi',
         },
         {
           icon: 'food',
@@ -386,12 +411,12 @@ export const CATEGORIES: Category[] = [
     },
     en: {
       title: 'Taste & steam',
-      subtitle: 'Sauna restaurant Viilu, harbour cafés and nightlife',
+      subtitle: 'Sauna restaurant Sataman Viilu, harbour cafés and nightlife',
       description:
         'Mornings start with espresso and a steamy lake view, evenings end with sauna heat and locally sourced dishes at Viilu — Lutakko’s flavours are as much architecture as gastronomy.',
       tagline: 'A Nordic flavour journey by the water',
       section1: {
-        title: 'Sauna restaurant Viilu',
+        title: 'Sauna restaurant Sataman Viilu',
         subtitle:
           'A timber pavilion hovering over the lake, a 270° view, smoked salmon and craft cider — sauna is part of dinner.',
       },
@@ -403,29 +428,42 @@ export const CATEGORIES: Category[] = [
       section3: {
         title: 'Lutakko nights',
         subtitle:
-          'Ilokivi, Lutakko Live, terraces and floating bars — harbour evenings stretch until dawn cyclists pass by.',
+          'Ilokivi, Tanssisali Lutakko, terraces and floating bars — harbour evenings stretch until dawn cyclists pass by.',
       },
       details: {
         title: 'The gastronomic route through Lutakko',
         desc: 'One walk takes you from pop-up bistros to smoke-sauna to a late-night bar – this is a district built to be lingered in.',
         bulletPoints: [
-          'Sauna restaurant Viilu — neighbour to the Alvar Aalto museum',
-          'Restaurant ship Gaia — floating à la carte out on the open lake',
-          'Specialty cafés and bakeries along the promenade',
-          'Microbrewery taprooms and natural-wine bars',
+          'Sauna restaurant Sataman Viilu · neighbour to the Alvar Aalto museum · satamanviilu.fi',
+          'Konttiravintola Morton — "the original container restaurant" right at the harbour, open through the summer season · morton.fi',
+          'M/S Musta Magia — the Limanda restaurant ship at the harbour, 200-seat capacity, karaoke on Fridays & Saturdays and live music on Sundays · mustamagia.fi',
+          'Restaurant ship Gaia and the paddle-wheeler Vellamo — floating à la carte by the lake',
+          'Lake Päijänne cruises aboard M/S Rhea, M/S Hilja and M/S Flamia (the world’s first igloo-sauna boat)',
+          'Container restaurant Waves, Satamakahvila and Trattoria Aukio on Lutakonaukio',
+          'HIISI Brewery taproom & bottleshop and natural-wine bars in the district',
           'Seasonal menus: Päijänne fish, foraged mushrooms',
         ],
       },
       features: [
         {
           icon: 'sauna',
-          title: 'Sauna restaurant Viilu',
+          title: 'Sauna restaurant Sataman Viilu',
           description: 'An archipelago-inspired menu and continuous löyly — book a table to catch the sunset.',
         },
         {
           icon: 'food',
           title: 'Restaurant ship Gaia',
           description: 'Historic inland steamer where dinner sails out onto the lake and returns to the marina.',
+        },
+        {
+          icon: 'food',
+          title: 'M/S Musta Magia',
+          description: '"Welcome to enjoy the ship’s offerings!" The Limanda restaurant ship seats 200: Karaoke on Fridays & Saturdays (Mikon Karaoke), live music on Sundays, and a terrace deck right above the lake. mustamagia.fi',
+        },
+        {
+          icon: 'food',
+          title: 'Konttiravintola Morton',
+          description: '"The original container restaurant" at Lutakko harbour, Satamakatu 2. Restaurant, café and terrace through the summer season; Wolt delivery to your home. morton.fi',
         },
         {
           icon: 'food',
@@ -481,7 +519,7 @@ export const CATEGORIES: Category[] = [
       section1: {
         title: 'Vierasvenesatama',
         subtitle:
-          'Yli 60 vieraspaikkaa, sähkö, vesi ja saunapalvelut – Päijänteen sisäsataman moderneimpia.',
+          '46 vieraspaikkaa, sähkö, vesi, polttoaine ja saunapalvelut – Päijänteen pohjoisin matkustajasatama, Vuoden vierassatama 2017 -kunniamaininta.',
       },
       section2: {
         title: 'Urheilu ja liike',
@@ -497,18 +535,18 @@ export const CATEGORIES: Category[] = [
         title: 'Lutakon vapaa-ajan infra',
         desc: 'Suunniteltu niin että lapset, urheilijat ja veneilijät risteävät turvallisesti samalla rantapromenadilla.',
         bulletPoints: [
-          'Vierasvenesatama: 60+ paikkaa, polttoaine, saunaliittymä',
-          'Beach volley, padel, ulkokuntosali ja kuntoporras',
+          'Vierasvenesatama: 46 paikkaa, sähkö, vesi, polttoaine ja saunaliittymä — Vuoden vierassatama 2017 -kunniamaininta',
+          'Beach volley, padel, ulkokuntosali, kuntoporras ja Gr8 Wake -vesiurheilukeskus (wakeboard, SUP, vesipuisto)',
           'Lasten leikki- ja vesileikkialueet Lutakonaukiolla',
           'Piknikniityt sekä grillipaikat veden äärellä',
-          'Näköalaterassi ja rantapromenadi pyörätuolikuntoinen',
+          'Jyväskylän Rantaraitti — 13 km esteetön rantareitti lähtee satamasta; Kuokkalan silta kaartuu yli järven',
         ],
       },
       features: [
         {
           icon: 'marina',
           title: 'Vierasvenesatama',
-          description: 'Päijänteen modernein sisäsatama — sähkö, vesi, saunavuoroja ja kävelymatka kaupungin keskustaan.',
+          description: '46 vieraspaikkaa Päijänteen pohjoisimmassa matkustajasatamassa — sähkö, vesi, polttoaine ja saunavuoroja, kävelymatkan päässä kaupungin keskustasta.',
         },
         {
           icon: 'sports',
@@ -528,7 +566,7 @@ export const CATEGORIES: Category[] = [
         {
           icon: 'viilu',
           title: 'Arkkitehtuurin polku',
-          description: 'Alvar Aalto -museon ja Viilun puuarkkitehtuurin reitti kulkee suoraan satamasta.',
+          description: 'Satamassa pysyvä Alvar Aalto -venenäyttely; arkkitehtuurin reitti vie Aalto-museolle ja Saunaravintola Sataman Viilun puuarkkitehtuuriin.',
         },
       ],
       cta: { label: 'Suunnittele päivä', href: '#marina' },
@@ -542,7 +580,7 @@ export const CATEGORIES: Category[] = [
       section1: {
         title: 'Yacht & guest marina',
         subtitle:
-          'Over 60 guest berths with shore power, water and sauna access — one of Päijänne’s most modern inland harbours.',
+          '46 guest berths with shore power, water, fuel and sauna access — Päijänne’s northernmost passenger harbour and an honourable mention in the 2017 Guest Harbour of the Year vote.',
       },
       section2: {
         title: 'Sports & motion',
@@ -558,18 +596,18 @@ export const CATEGORIES: Category[] = [
         title: 'Lutakko leisure infrastructure',
         desc: 'Designed so that kids, athletes and sailors safely share the same waterfront promenade.',
         bulletPoints: [
-          'Guest marina: 60+ berths, fuel, sauna access',
-          'Beach volleyball, padel, outdoor gym and stairs run',
+          'Guest marina: 46 berths with shore power, water, fuel and sauna access — 2017 Guest Harbour of the Year honourable mention',
+          'Beach volleyball, padel, outdoor gym, stairs run and Gr8 Wake water-sports centre (wakeboard, SUP, water park)',
           'Children’s play and water-play areas at Lutakonaukio',
           'Picnic meadows and grill spots by the water',
-          'Observation terrace and wheelchair-accessible promenade',
+          'Jyväskylä Rantaraitti — the 13 km accessible lakeside trail starts at the marina; Kuokkala bridge arches across the lake',
         ],
       },
       features: [
         {
           icon: 'marina',
           title: 'Guest marina',
-          description: 'Päijänne’s most modern inland harbour — shore power, water, sauna slots, walking distance to downtown.',
+          description: '46 guest berths in Päijänne’s northernmost passenger harbour — shore power, water, fuel and sauna access, all within a short walk of downtown.',
         },
         {
           icon: 'sports',
@@ -589,7 +627,7 @@ export const CATEGORIES: Category[] = [
         {
           icon: 'viilu',
           title: 'The architecture trail',
-          description: 'The Alvar Aalto Museum and Viilu timber pavilion are linked by a route that starts at the marina.',
+          description: 'A permanent Alvar Aalto-designed boat is displayed at the harbour, and the architecture route leads to the Aalto Museum and the timber pavilion of Sauna restaurant Sataman Viilu.',
         },
       ],
       cta: { label: 'Plan a day', href: '#marina' },
@@ -696,7 +734,7 @@ export const FOOTER_LINKS = {
       button: 'Tilaa',
     },
     rights: 'Kaikki oikeudet pidätetään.',
-    location: 'Jyväskylä, Suomi',
+    location: 'Satamakatu 8, 40100 Jyväskylä · 014 569 5000',
   },
   en: {
     explore: 'Explore',
@@ -710,6 +748,6 @@ export const FOOTER_LINKS = {
       button: 'Subscribe',
     },
     rights: 'All rights reserved.',
-    location: 'Jyväskylä, Finland',
+    location: 'Satamakatu 8, 40100 Jyväskylä, Finland · +358 14 569 5000',
   },
 } as const;
