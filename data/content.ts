@@ -335,6 +335,10 @@ export const CATEGORIES: Category[] = [
           alt: { fi: 'Ravintolalaiva Gaia satamassa', en: 'Restaurant ship Gaia at the marina' },
         },
         {
+          src: '/images/featured/food-sauna/sataman-kahvila.jpg',
+          alt: { fi: 'Jyväskylän Sataman Kahvila vuoden 1919 puurakennuksessa', en: 'Jyväskylä Harbour Café in its 1919 timber building' },
+        },
+        {
           src: '/images/featured/food-sauna/gallery-3.jpg',
           alt: { fi: 'Rantaterassi aurinkoisena päivänä', en: 'Lakefront café terrace on a sunny day' },
         },
@@ -370,7 +374,8 @@ export const CATEGORIES: Category[] = [
           'M/S Musta Magia — Limanda-ravintolalaiva 200 hengelle, karaokea perjantaisin ja lauantaisin, sunnuntain livemusiikki · mustamagia.fi',
           'Ravintolalaivat Gaia ja Siipirataslaiva Vellamo — kelluvaa à la cartea järven äärellä',
           'Risteilyt Päijänteelle: M/S Rhea, M/S Hilja ja M/S Flamia (maailman ensimmäinen iglu-saunalaiva)',
-          'Container-ravintola Waves, Satamakahvila ja Trattoria Aukio Lutakonaukiolla',
+          'Jyväskylän Sataman Kahvila — MatkaRhean ylläpitämä, vieraslaiturin vieressä Sataman Viilun naapurissa, avoinna joka päivä klo 10–20 huhtikuun alusta · msrhea.fi/jyvaskylan-sataman-kahvila',
+          'Container-ravintola Waves ja Trattoria Aukio Lutakonaukiolla',
           'HIISI-panimon taproom & bottleshop ja luonnonviinibaarit kortteleilla',
           'Kauden makujen menut: kalaa Päijänteestä, sieniä lähimetsistä',
         ],
@@ -395,6 +400,11 @@ export const CATEGORIES: Category[] = [
           icon: 'food',
           title: 'Konttiravintola Morton',
           description: '"Se alkuperäinen Konttiravintola" Lutakon satamassa Satamakatu 2:ssa. Ravintola, kahvila ja terassi kesäkaudella; Wolt-toimitukset koteihin. morton.fi',
+        },
+        {
+          icon: 'food',
+          title: 'Jyväskylän Sataman Kahvila',
+          description: 'Vuonna 1919 rakennetussa keltaisessa puurakennuksessa vieraslaiturin vieressä — MatkaRhean ylläpitämä kahvila, jossa tuoreita leivonnaisia, jäätelöä ja ranta-anniskelua joka päivä klo 10–20 huhtikuun alusta. "Tervetuloa viihtymään." msrhea.fi',
         },
         {
           icon: 'food',
@@ -439,7 +449,8 @@ export const CATEGORIES: Category[] = [
           'M/S Musta Magia — the Limanda restaurant ship at the harbour, 200-seat capacity, karaoke on Fridays & Saturdays and live music on Sundays · mustamagia.fi',
           'Restaurant ship Gaia and the paddle-wheeler Vellamo — floating à la carte by the lake',
           'Lake Päijänne cruises aboard M/S Rhea, M/S Hilja and M/S Flamia (the world’s first igloo-sauna boat)',
-          'Container restaurant Waves, Satamakahvila and Trattoria Aukio on Lutakonaukio',
+          'Jyväskylä Harbour Café (Sataman Kahvila) — run by MatkaRhea right next to the guest dock and Sataman Viilu, open daily 10:00–20:00 from April · msrhea.fi/jyvaskylan-sataman-kahvila',
+          'Container restaurant Waves and Trattoria Aukio on Lutakonaukio',
           'HIISI Brewery taproom & bottleshop and natural-wine bars in the district',
           'Seasonal menus: Päijänne fish, foraged mushrooms',
         ],
@@ -464,6 +475,11 @@ export const CATEGORIES: Category[] = [
           icon: 'food',
           title: 'Konttiravintola Morton',
           description: '"The original container restaurant" at Lutakko harbour, Satamakatu 2. Restaurant, café and terrace through the summer season; Wolt delivery to your home. morton.fi',
+        },
+        {
+          icon: 'food',
+          title: 'Jyväskylä Harbour Café',
+          description: 'Set in a 1919 yellow timber building right by the guest dock — MatkaRhea’s café serves fresh pastries, ice cream and licensed drinks daily 10:00–20:00 from April onwards. "Welcome to enjoy yourself." msrhea.fi',
         },
         {
           icon: 'food',

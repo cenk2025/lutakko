@@ -121,7 +121,7 @@ const CategorySection = forwardRef<HTMLDivElement, Props>(function CategorySecti
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-16 grid gap-4 sm:grid-cols-3"
+          className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
         >
           {category.assets.gallery.map((g, i) => (
             <motion.div

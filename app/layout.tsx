@@ -33,6 +33,8 @@ export const metadata: Metadata = {
     'Morton',
     'Musta Magia',
     'Limanda',
+    'Sataman Kahvila',
+    'MatkaRhea',
     'Lutakonaukio',
     'Jyväskylän Rantaraitti',
     'Kuokkalan silta',
