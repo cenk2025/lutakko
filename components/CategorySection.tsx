@@ -66,12 +66,12 @@ const CategorySection = forwardRef<HTMLDivElement, Props>(function CategorySecti
               style={{ background: `rgba(${category.themeRgb.join(',')},0.25)` }}
             />
             <div
-              className="absolute bottom-4 left-4 right-4 rounded-2xl border border-white/10 bg-black/55 px-4 py-3 backdrop-blur-xl sm:bottom-6 sm:left-6 sm:right-auto sm:max-w-xs"
+              className="absolute bottom-4 left-4 right-4 rounded-2xl border border-white/10 bg-black/65 px-5 py-4 backdrop-blur-xl sm:bottom-6 sm:left-6 sm:right-auto sm:max-w-xs"
             >
-              <p className="text-[0.6rem] uppercase tracking-[0.4em] text-white/55">
+              <p className="text-xs uppercase tracking-[0.4em] text-white/65">
                 {String(index + 1).padStart(2, '0')} · {category.navLabel[lang]}
               </p>
-              <p className="mt-1 text-sm font-semibold text-white">{t.title}</p>
+              <p className="mt-2 text-base font-bold text-white sm:text-lg">{t.title}</p>
             </div>
           </div>
 
@@ -102,13 +102,13 @@ const CategorySection = forwardRef<HTMLDivElement, Props>(function CategorySecti
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: i * 0.07 }}
-                  className="rounded-2xl border border-white/10 bg-white/[0.04] p-4 backdrop-blur"
+                  className="rounded-2xl border border-white/10 bg-white/[0.04] p-5 sm:p-6 backdrop-blur"
                 >
-                  <p className="text-[0.6rem] font-semibold uppercase tracking-[0.4em] text-white/45">
+                  <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/55">
                     0{i + 1}
                   </p>
-                  <h3 className="mt-2 text-sm font-semibold text-white">{s.title}</h3>
-                  <p className="mt-2 text-xs leading-relaxed text-white/65">{s.subtitle}</p>
+                  <h3 className="mt-3 text-lg font-bold leading-tight text-white sm:text-xl">{s.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-white/80 sm:text-base">{s.subtitle}</p>
                 </motion.div>
               ))}
             </div>
@@ -139,7 +139,7 @@ const CategorySection = forwardRef<HTMLDivElement, Props>(function CategorySecti
                 className="aspect-[4/3] w-full transition-transform duration-700 group-hover:scale-[1.04]"
               />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-              <p className="pointer-events-none absolute bottom-3 left-3 right-3 text-xs text-white/85">
+              <p className="pointer-events-none absolute bottom-3 left-3 right-3 text-sm font-semibold text-white sm:text-base">
                 {g.alt[lang]}
               </p>
             </motion.div>
