@@ -84,7 +84,7 @@ export default function HeroScrolly({ onAllLoaded }: HeroScrollyProps = {}) {
                     {t.beat1.title.split(' ').slice(1).join(' ')}
                   </span>
                 </h1>
-                <p className="mt-6 max-w-xl text-base font-semibold text-white/90 sm:text-lg">{t.beat1.sub}</p>
+                <p className="mt-6 max-w-xl text-base font-light text-white/90 sm:text-lg">{t.beat1.sub}</p>
               </motion.div>
 
               {/* Beat 2 — left */}
@@ -98,7 +98,7 @@ export default function HeroScrolly({ onAllLoaded }: HeroScrollyProps = {}) {
                 <h2 className="mt-4 font-display text-[clamp(2rem,5.4vw,4.4rem)] font-extrabold leading-[0.98] tracking-tightest text-white">
                   {t.beat2.title}
                 </h2>
-                <p className="mt-5 max-w-xl text-base font-semibold text-white/90 sm:text-lg">
+                <p className="mt-5 max-w-xl text-base font-light text-white/90 sm:text-lg">
                   {t.beat2.sub}
                 </p>
               </motion.div>
@@ -114,7 +114,7 @@ export default function HeroScrolly({ onAllLoaded }: HeroScrollyProps = {}) {
                 <h2 className="mt-4 font-display text-[clamp(2rem,5.4vw,4.4rem)] font-extrabold leading-[0.98] tracking-tightest text-white">
                   {t.beat3.title}
                 </h2>
-                <p className="mt-5 max-w-2xl text-base font-semibold text-white/90 sm:text-lg">
+                <p className="mt-5 max-w-2xl text-base font-light text-white/90 sm:text-lg">
                   {t.beat3.sub}
                 </p>
               </motion.div>
@@ -130,7 +130,7 @@ export default function HeroScrolly({ onAllLoaded }: HeroScrollyProps = {}) {
                 <h2 className="mt-4 font-display text-[clamp(2.2rem,6vw,5.2rem)] font-extrabold leading-[0.95] tracking-tightest text-white">
                   {t.beat4.title}
                 </h2>
-                <p className="mt-5 max-w-2xl text-base font-semibold text-white/90 sm:text-lg">{t.beat4.sub}</p>
+                <p className="mt-5 max-w-2xl text-base font-light text-white/90 sm:text-lg">{t.beat4.sub}</p>
 
                 <div className="pointer-events-auto mt-8 flex flex-wrap items-center gap-3">
                   <a

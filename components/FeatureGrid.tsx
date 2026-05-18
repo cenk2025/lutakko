@@ -78,7 +78,7 @@ export default function FeatureGrid({ category }: Props) {
                 >
                   {String(i + 1).padStart(2, '0')}
                 </span>
-                <span className="text-base leading-relaxed text-white/90 sm:text-lg">{b}</span>
+                <span className="text-base font-light leading-relaxed text-white/85 sm:text-lg">{b}</span>
               </li>
             ))}
           </motion.ul>
@@ -107,7 +107,7 @@ export default function FeatureGrid({ category }: Props) {
                 <h3 className="mt-5 font-display text-xl font-bold tracking-tight text-white">
                   {feature.title}
                 </h3>
-                <p className="mt-2 text-base leading-relaxed text-white/80">
+                <p className="mt-2 text-base font-light leading-relaxed text-white/75">
                   {feature.description}
                 </p>
                 <div

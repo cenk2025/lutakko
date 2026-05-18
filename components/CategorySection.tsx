@@ -71,7 +71,7 @@ const CategorySection = forwardRef<HTMLDivElement, Props>(function CategorySecti
               <p className="text-xs uppercase tracking-[0.4em] text-white/65">
                 {String(index + 1).padStart(2, '0')} · {category.navLabel[lang]}
               </p>
-              <p className="mt-2 text-base font-bold text-white sm:text-lg">{t.title}</p>
+              <p className="mt-2 text-base font-light tracking-tight text-white sm:text-lg">{t.title}</p>
             </div>
           </div>
 
@@ -90,8 +90,8 @@ const CategorySection = forwardRef<HTMLDivElement, Props>(function CategorySecti
             <h2 className="mt-5 font-display text-[clamp(2.2rem,5.4vw,4.4rem)] font-extrabold leading-[0.98] tracking-tightest text-white">
               {t.title}
             </h2>
-            <p className="mt-4 max-w-2xl text-base text-white/70 sm:text-lg">{t.subtitle}</p>
-            <p className="mt-4 max-w-2xl text-sm text-white/55 sm:text-base">{t.description}</p>
+            <p className="mt-4 max-w-2xl text-base font-light text-white/80 sm:text-lg">{t.subtitle}</p>
+            <p className="mt-4 max-w-2xl text-sm font-light text-white/65 sm:text-base">{t.description}</p>
 
             {/* Mini sub-sections */}
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -107,8 +107,8 @@ const CategorySection = forwardRef<HTMLDivElement, Props>(function CategorySecti
                   <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/55">
                     0{i + 1}
                   </p>
-                  <h3 className="mt-3 text-lg font-bold leading-tight text-white sm:text-xl">{s.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-white/80 sm:text-base">{s.subtitle}</p>
+                  <h3 className="mt-3 text-lg font-light leading-tight text-white sm:text-xl">{s.title}</h3>
+                  <p className="mt-3 text-sm font-light leading-relaxed text-white/75 sm:text-base">{s.subtitle}</p>
                 </motion.div>
               ))}
             </div>
@@ -139,7 +139,7 @@ const CategorySection = forwardRef<HTMLDivElement, Props>(function CategorySecti
                 className="aspect-[4/3] w-full transition-transform duration-700 group-hover:scale-[1.04]"
               />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-              <p className="pointer-events-none absolute bottom-3 left-3 right-3 text-sm font-semibold text-white sm:text-base">
+              <p className="pointer-events-none absolute bottom-3 left-3 right-3 text-sm font-light text-white sm:text-base">
                 {g.alt[lang]}
               </p>
             </motion.div>
