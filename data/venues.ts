@@ -523,6 +523,153 @@ export const VENUES: VenueEntry[] = [
   },
 ];
 
+/* ====================================================================== */
+/*  STUBS — content to follow                                              */
+/* ====================================================================== */
+
+VENUES.push(
+  {
+    slug: 'saunalautta',
+    kind: 'venue',
+    category: 'food-sauna',
+    themeColor: '#fbbf24',
+    themeRgb: [251, 191, 36],
+    image: null,
+    url: null,
+    email: null,
+    phone: null,
+    address: 'Lutakon satama, Jyväskylä',
+    facts: [],
+    fi: {
+      hero: {
+        eyebrow: 'Saunalautat',
+        title: 'Saunalautat Lutakon satamassa',
+        subtitle: 'Lutakon sataman saunalauttojen varauskeskus — sisältö täydentyy pian.',
+      },
+      about: 'Sisältö lisätään pian. Tavoitteena on koota kaikkien Lutakon saunalauttayrittäjien varauskalenterit saman katon alle.',
+      highlights: ['Sisältö täydentyy pian'],
+      pitch:
+        'Saunalauttojen varausalusta — Lutakossa toimii useita saunalauttayrittäjiä. Etsimme ensimmäisiä kumppaneita pilottiin.',
+    },
+    en: {
+      hero: {
+        eyebrow: 'Sauna rafts',
+        title: 'Sauna rafts at Lutakon Satama',
+        subtitle: 'Booking hub for Lutakko’s sauna rafts — content coming soon.',
+      },
+      about: 'Content to follow. The goal is to gather every Lutakko sauna-raft operator’s booking calendar under one roof.',
+      highlights: ['Content coming soon'],
+      pitch:
+        'Sauna-raft booking platform — Lutakko hosts several sauna-raft operators. We are signing up first pilot partners.',
+    },
+  },
+  {
+    slug: 'trattoria-aukio',
+    kind: 'venue',
+    category: 'food-sauna',
+    themeColor: '#22d3ee',
+    themeRgb: [34, 211, 238],
+    image: null,
+    url: null,
+    email: null,
+    phone: null,
+    address: 'Lutakonaukio, Jyväskylä',
+    facts: [],
+    fi: {
+      hero: {
+        eyebrow: 'Italialainen ravintola',
+        title: 'Trattoria Aukio',
+        subtitle: 'Lutakonaukion italialainen klassikko — sisältö täydentyy pian.',
+      },
+      about: 'Sisältö lisätään pian.',
+      highlights: ['Sisältö täydentyy pian'],
+      pitch:
+        'Trattoria Aukio — listaa ravintolasi etusivulle, lisää menut ja varauspyynnöt suoraan.',
+    },
+    en: {
+      hero: {
+        eyebrow: 'Italian restaurant',
+        title: 'Trattoria Aukio',
+        subtitle: 'Lutakonaukio’s Italian classic — content coming soon.',
+      },
+      about: 'Content to follow.',
+      highlights: ['Content coming soon'],
+      pitch:
+        'Trattoria Aukio — list on the homepage, add menus and capture booking enquiries.',
+    },
+  },
+  {
+    slug: 'hiisi',
+    kind: 'venue',
+    category: 'food-sauna',
+    themeColor: '#a3e635',
+    themeRgb: [163, 230, 53],
+    image: null,
+    url: 'https://hiisi.beer/',
+    email: null,
+    phone: null,
+    address: 'Lutakko, Jyväskylä',
+    facts: [],
+    fi: {
+      hero: {
+        eyebrow: 'Pienpanimo',
+        title: 'HIISI-panimo',
+        subtitle: 'Lutakon paikallinen pienpanimo, taproom & bottleshop — sisältö täydentyy pian.',
+      },
+      about: 'Sisältö lisätään pian.',
+      highlights: ['Sisältö täydentyy pian'],
+      pitch:
+        'HIISI-panimo — taproom-näkyvyys etusivulla ja brändikampanjat festivaalisesonkien aikana.',
+    },
+    en: {
+      hero: {
+        eyebrow: 'Microbrewery',
+        title: 'HIISI Brewery',
+        subtitle: 'Lutakko’s local microbrewery, taproom & bottleshop — content coming soon.',
+      },
+      about: 'Content to follow.',
+      highlights: ['Content coming soon'],
+      pitch:
+        'HIISI Brewery — taproom visibility on the homepage and brand campaigns during festival seasons.',
+    },
+  },
+  {
+    slug: 'finlandia-marathon',
+    kind: 'event',
+    category: 'festivals-culture',
+    themeColor: '#a78bfa',
+    themeRgb: [167, 139, 250],
+    image: null,
+    url: 'https://finlandiamarathon.fi/',
+    email: null,
+    phone: null,
+    address: 'Jyväskylä, Finland',
+    facts: [],
+    fi: {
+      hero: {
+        eyebrow: 'Tapahtuma · Liikunta',
+        title: 'Finlandia Marathon',
+        subtitle: 'Jyväskylän marathon-klassikko — sisältö täydentyy pian.',
+      },
+      about: 'Sisältö lisätään pian. Marathonin osallistujat täyttävät Lutakon palvelut tapahtumaviikonloppuna.',
+      highlights: ['Sisältö täydentyy pian'],
+      pitch:
+        'Finlandia Marathon — sponsoripaketit ja tapahtumakohtainen näkyvyys reittikorttilla ja huoltopisteillä.',
+    },
+    en: {
+      hero: {
+        eyebrow: 'Event · Sport',
+        title: 'Finlandia Marathon',
+        subtitle: 'Jyväskylä’s marathon classic — content coming soon.',
+      },
+      about: 'Content to follow. The marathon’s participants fill Lutakko’s venues during the event weekend.',
+      highlights: ['Content coming soon'],
+      pitch:
+        'Finlandia Marathon — sponsor packages and event-specific visibility on the route map and aid stations.',
+    },
+  },
+);
+
 export function getVenue(slug: string): VenueEntry | undefined {
   return VENUES.find((v) => v.slug === slug);
 }

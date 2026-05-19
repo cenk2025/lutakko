@@ -144,6 +144,63 @@ export const NAV_LINKS: Array<{ key: string; fi: string; en: string }> = [
 ];
 
 /* -------------------------------------------------------------------------- */
+/*  Top-nav dropdown menu — 3 groups with per-venue links                     */
+/* -------------------------------------------------------------------------- */
+
+export interface NavMenuItem {
+  slug: string;
+  fi: string;
+  en: string;
+}
+export interface NavMenuGroup {
+  key: string;
+  fi: string;
+  en: string;
+  items: NavMenuItem[];
+}
+
+export const NAV_MENU: NavMenuGroup[] = [
+  {
+    key: 'events',
+    fi: 'Tapahtumat',
+    en: 'Events',
+    items: [
+      { slug: 'secto-rally', fi: 'Ralli',    en: 'Rally' },
+      { slug: 'suomipop',    fi: 'SuomiPop', en: 'SuomiPop' },
+    ],
+  },
+  {
+    key: 'food-sauna',
+    fi: 'Ruoka & Sauna',
+    en: 'Dine & Sauna',
+    items: [
+      { slug: 'viilu',           fi: 'Viilu',           en: 'Viilu' },
+      { slug: 'saunalautta',     fi: 'Saunalautat',     en: 'Sauna rafts' },
+      { slug: 'morton',          fi: 'Morton',          en: 'Morton' },
+      { slug: 'trattoria-aukio', fi: 'Trattoria Aukio', en: 'Trattoria Aukio' },
+      { slug: 'musta-magia',     fi: 'M/S Musta Magia', en: 'M/S Musta Magia' },
+      { slug: 'hiisi',           fi: 'HIISI-panimo',    en: 'HIISI Brewery' },
+      { slug: 'gaia',            fi: 'Gaia',            en: 'Gaia' },
+    ],
+  },
+  {
+    key: 'culture-sports',
+    fi: 'Kulttuuri & liikunta',
+    en: 'Culture & sports',
+    items: [
+      { slug: 'tanssisali-lutakko', fi: 'Tanssisali Lutakko', en: 'Tanssisali Lutakko' },
+      { slug: 'finlandia-marathon', fi: 'Finlandia Marathon', en: 'Finlandia Marathon' },
+    ],
+  },
+];
+
+/** Resolve which NAV_MENU group a given /venues/<slug> page belongs to. */
+export function navGroupForSlug(slug: string | null | undefined): NavMenuGroup | null {
+  if (!slug) return null;
+  return NAV_MENU.find((g) => g.items.some((i) => i.slug === slug)) ?? null;
+}
+
+/* -------------------------------------------------------------------------- */
 /*  THE THREE CONTENT CATEGORIES                                              */
 /* -------------------------------------------------------------------------- */
 
