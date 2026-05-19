@@ -13,8 +13,9 @@ import SectionActivities from '@/components/dashboard/SectionActivities';
 import SectionSauna from '@/components/dashboard/SectionSauna';
 import SectionBookings from '@/components/dashboard/SectionBookings';
 import SectionProfile from '@/components/dashboard/SectionProfile';
+import SectionAds from '@/components/dashboard/SectionAds';
 
-const VALID_TABS: DashboardTab[] = ['overview', 'activities', 'sauna', 'bookings', 'profile'];
+const VALID_TABS: DashboardTab[] = ['overview', 'activities', 'sauna', 'bookings', 'profile', 'ads'];
 
 export default function DashboardPage() {
   const { user, loading } = useAuth();
@@ -106,6 +107,7 @@ export default function DashboardPage() {
       {tab === 'sauna'      && <SectionSauna      onBooked={onBooked} />}
       {tab === 'bookings'   && <SectionBookings   refreshKey={refreshKey} />}
       {tab === 'profile'    && <SectionProfile />}
+      {tab === 'ads'        && <SectionAds />}
     </DashboardShell>
   );
 }

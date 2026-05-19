@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import HeroScrolly from '@/components/HeroScrolly';
 import CategorySection from '@/components/CategorySection';
 import CategoryDeck from '@/components/CategoryDeck';
+import HeroBannerAd from '@/components/ads/HeroBannerAd';
 import { CATEGORIES } from '@/data/content';
 
 export default function HomePage() {
@@ -119,6 +120,7 @@ export default function HomePage() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           >
+            <HeroBannerAd />
             {CATEGORIES.map((c, i) => (
               <CategorySection
                 key={c.id}

@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import type { Category, FeatureCardCopy } from '@/data/content';
 import { useLang } from '@/context/LanguageContext';
+import SponsoredCard from './ads/SponsoredCard';
 
 interface Props {
   category: Category;
@@ -122,6 +123,8 @@ export default function FeatureGrid({ category }: Props) {
                 </div>
               </motion.article>
             ))}
+            {/* Sponsored slot — only renders when a live ad targets this category. */}
+            <SponsoredCard category={category.id} themeRgb={category.themeRgb} />
           </div>
         </div>
 

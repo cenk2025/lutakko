@@ -23,6 +23,8 @@ interface AuthContextValue {
   session: Session | null;
   loading: boolean;
   configured: boolean;
+  /** True only after the profile row has loaded AND is_admin = true. */
+  isAdmin: boolean;
   signIn: (email: string, password: string) => Promise<AuthResult>;
   signUp: (email: string, password: string) => Promise<AuthResult>;
   signInWithMagicLink: (email: string) => Promise<AuthResult>;
@@ -40,6 +42,28 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [session, setSession] = useState<Session | null>(null);
   const [loading, setLoading] = useState(true);
+  const [isAdmin, setIsAdmin] = useState(false);
+
+  // Re-fetch is_admin whenever the user changes.
+  useEffect(() => {
+    if (!supabase || !user) {
+      setIsAdmin(false);
+      return;
+    }
+    let active = true;
+    supabase
+      .from('profiles')
+      .select('is_admin')
+      .eq('id', user.id)
+      .maybeSingle()
+      .then(({ data }) => {
+        if (!active) return;
+        setIsAdmin(Boolean((data as { is_admin?: boolean } | null)?.is_admin));
+      });
+    return () => {
+      active = false;
+    };
+  }, [user]);
 
   useEffect(() => {
     if (!supabase) {
@@ -106,12 +130,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       session,
       loading,
       configured: supabaseConfigured,
+      isAdmin,
       signIn,
       signUp,
       signInWithMagicLink,
       signOut,
     }),
-    [user, session, loading, signIn, signUp, signInWithMagicLink, signOut],
+    [user, session, loading, isAdmin, signIn, signUp, signInWithMagicLink, signOut],
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

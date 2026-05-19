@@ -12,7 +12,7 @@ interface Props {
   children: React.ReactNode;
 }
 
-const TABS: { id: DashboardTab; icon: React.ReactNode }[] = [
+const BASE_TABS: { id: DashboardTab; icon: React.ReactNode }[] = [
   { id: 'overview',   icon: <DotsIcon /> },
   { id: 'activities', icon: <SportsIcon /> },
   { id: 'sauna',      icon: <SaunaIcon /> },
@@ -20,10 +20,16 @@ const TABS: { id: DashboardTab; icon: React.ReactNode }[] = [
   { id: 'profile',    icon: <UserIcon /> },
 ];
 
+const ADMIN_TABS: { id: DashboardTab; icon: React.ReactNode }[] = [
+  { id: 'ads',        icon: <AdIcon /> },
+];
+
 export default function DashboardShell({ activeTab, onTabChange, children }: Props) {
   const { lang, toggle } = useLang();
-  const { user, signOut } = useAuth();
+  const { user, signOut, isAdmin } = useAuth();
   const t = DASHBOARD_COPY[lang];
+
+  const TABS = isAdmin ? [...BASE_TABS, ...ADMIN_TABS] : BASE_TABS;
 
   return (
     <div className="relative min-h-screen pb-20">
@@ -192,6 +198,15 @@ function UserIcon() {
     <svg viewBox="0 0 20 20" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">
       <circle cx="10" cy="7" r="3" />
       <path d="M3 17a7 7 0 0 1 14 0" />
+    </svg>
+  );
+}
+function AdIcon() {
+  return (
+    <svg viewBox="0 0 20 20" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 5h14v10H3z" />
+      <path d="M6 9h8M6 12h5" />
+      <circle cx="15.5" cy="4.5" r="2.2" fill="currentColor" stroke="none" />
     </svg>
   );
 }
