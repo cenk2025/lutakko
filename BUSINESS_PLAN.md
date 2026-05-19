@@ -1,6 +1,6 @@
-# Lutakon Satama — Business Plan
+# Lutakko.info — Business Plan
 
-> A destination-marketing micro-platform for Jyväskylä's Lutakon Satama district. Bilingual (FI/EN), built on Next.js + Supabase, deployed on Vercel.
+> **Lutakko.info** is the destination-marketing micro-platform for Jyväskylä's **Lutakon Satama** district, operated by **Voon IQ** (voon.fi · info@voon.fi). Bilingual (FI/EN), built on Next.js + Supabase, deployed on Vercel.
 
 ---
 

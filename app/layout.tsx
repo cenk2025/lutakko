@@ -12,10 +12,11 @@ const display = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Lutakon Satama | Finland’s most experiential harbour',
+  title: 'Lutakko.info — Lutakon Satama',
   description:
-    'Lutakon Satama is Päijänne’s northernmost passenger harbour at the heart of Jyväskylä — 46 guest berths, restaurant ships, sauna, water sports, Tanssisali Lutakko and family activities along the 13 km Rantaraitti promenade.',
+    'Lutakko.info on Lutakon Sataman virallinen kävijä- ja kumppanisivusto. Lutakon Satama on Päijänteen pohjoisin matkustajasatama Jyväskylän sydämessä — festivaaleja, ravintolalaivoja, saunaa ja perheaktiviteetteja.',
   keywords: [
+    'Lutakko.info',
     'Lutakko',
     'Jyväskylä',
     'Lutakon Satama',
@@ -47,12 +48,12 @@ export const metadata: Metadata = {
     'Finland',
   ],
   openGraph: {
-    title: 'Lutakon Satama | The Heart of Jyväskylä',
+    title: 'Lutakko.info — Lutakon Satama',
     description:
-      'A premium interactive scrollytelling tour through festivals, food, sauna, marina and family life on Jyväskylä’s waterfront.',
+      'A premium interactive scrollytelling tour through festivals, food, sauna, marina and family life on Jyväskylä’s Lutakon Satama waterfront.',
     type: 'website',
     locale: 'fi_FI',
-    siteName: 'Lutakon Satama',
+    siteName: 'Lutakko.info',
   },
   icons: {
     icon: '/favicon.svg',

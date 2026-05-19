@@ -105,10 +105,10 @@ export default function Navbar({ activeCategory, onNavigate }: Props) {
               <BrandMark color={activeCategory.themeColor} />
               <div className="flex flex-col items-start leading-tight">
                 <span className="font-display text-base font-extrabold tracking-tight text-white sm:text-lg">
-                  Lutakon Satama
+                  Lutakko.info
                 </span>
                 <span className="text-[0.62rem] uppercase tracking-[0.32em] text-white/55">
-                  {lang === 'fi' ? 'Jyväskylän sydän' : 'Heart of Jyväskylä'}
+                  Lutakon Satama
                 </span>
               </div>
             </Link>

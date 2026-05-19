@@ -70,7 +70,7 @@ export default function DashboardPage() {
             className="relative w-full max-w-md rounded-3xl border border-white/10 bg-[#080c14]/85 p-8 text-center backdrop-blur-2xl"
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-[0.6rem] uppercase tracking-[0.4em] text-cyan-300">
-              Lutakon Satama
+              Lutakko.info
             </span>
             <h1 className="mt-4 font-display text-2xl font-extrabold text-white sm:text-3xl">
               {t.guard.title}

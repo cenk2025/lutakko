@@ -176,7 +176,7 @@ export default function AuthModal({ open, onClose, initialTab = 'signIn' }: Prop
 
             <div className="relative">
               <span className="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-[0.6rem] uppercase tracking-[0.4em] text-cyan-300">
-                Lutakon Satama
+                Lutakko.info
               </span>
               <h2 className="mt-4 font-display text-2xl font-extrabold leading-tight tracking-tight text-white sm:text-3xl">
                 {t.title}

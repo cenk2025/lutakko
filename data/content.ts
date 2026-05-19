@@ -124,13 +124,15 @@ export const HERO_TEXT = {
 
 export const SITE_META = {
   fi: {
-    name: 'Lutakon Satama',
+    name: 'Lutakko.info',
+    subtitle: 'Lutakon Satama',
     tagline: 'Suomen elämyksellisin satama',
     description:
       'Päijänteen pohjoisin matkustajasatama Jyväskylän sydämessä — festivaaleja, ravintolalaivoja, saunaa, vesiurheilua ja perheaktiviteetteja Lutakonaukion ja rantaraitin tuntumassa.',
   },
   en: {
-    name: 'Lutakon Satama',
+    name: 'Lutakko.info',
+    subtitle: 'Lutakon Satama',
     tagline: 'Finland’s most experiential harbour',
     description:
       'Päijänne’s northernmost passenger harbour at the heart of Jyväskylä — festivals, restaurant ships, sauna, water sports and family activities along Lutakonaukio square and the lakeside promenade.',

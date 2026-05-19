@@ -60,7 +60,7 @@ export default function DashboardShell({ activeTab, onTabChange, children }: Pro
             </span>
             <div className="leading-tight">
               <p className="font-display text-base font-extrabold text-white sm:text-lg">
-                Lutakon Satama
+                Lutakko.info
               </p>
               <p className="text-[0.62rem] uppercase tracking-[0.32em] text-white/55">
                 {t.title}
