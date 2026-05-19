@@ -235,7 +235,7 @@ function ClaimSection({
   const body = encodeURIComponent(
     `Slug: ${slug}\nName: ${name}\nOrganisation: ${org}\nEmail: ${email}\n\n${note}`,
   );
-  const mailto = `mailto:cenk.yakinlar@hotmail.com?subject=${subject}&body=${body}`;
+  const mailto = `mailto:info@voon.fi?subject=${subject}&body=${body}`;
 
   const isFi = lang === 'fi';
 
@@ -318,8 +318,8 @@ function ClaimSection({
           </a>
           <span className="text-xs font-light text-white/55">
             {isFi ? 'tai suoraan ' : 'or directly '}
-            <a href="mailto:cenk.yakinlar@hotmail.com" className="underline-offset-4 hover:underline">
-              cenk.yakinlar@hotmail.com
+            <a href="mailto:info@voon.fi" className="underline-offset-4 hover:underline">
+              info@voon.fi
             </a>
           </span>
         </div>

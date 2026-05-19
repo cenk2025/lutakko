@@ -197,14 +197,25 @@ export default function Footer() {
             © {new Date().getFullYear()} {meta.name}. {f.rights}
           </p>
           <p className="text-white/60">
-            {lang === 'fi' ? 'Suunnitellut ' : 'Crafted by '}
+            {lang === 'fi' ? 'Toteuttaja ' : 'Operated by '}
             <a
-              className="text-white/80 underline-offset-4 hover:underline"
-              href="mailto:hello@lutakonsatama.fi"
+              className="text-white/85 underline-offset-4 hover:underline"
+              href="https://voon.fi"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Lutakko Studio
+              Voon IQ
             </a>
-            {lang === 'fi' ? ' — sydämellä Jyväskylässä.' : ' — with love in Jyväskylä.'}
+            <span className="text-white/40"> · </span>
+            <a
+              className="text-white/75 underline-offset-4 hover:underline"
+              href="mailto:info@voon.fi"
+            >
+              info@voon.fi
+            </a>
+            {lang === 'fi'
+              ? ' — sydämellä Jyväskylässä.'
+              : ' — with love in Jyväskylä.'}
           </p>
         </div>
       </div>
