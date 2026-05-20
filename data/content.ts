@@ -140,9 +140,10 @@ export const SITE_META = {
 } as const;
 
 export const NAV_LINKS: Array<{ key: string; fi: string; en: string }> = [
-  { key: 'festivals-culture', fi: 'Kulttuuri', en: 'Culture' },
-  { key: 'food-sauna',        fi: 'Ruoka & Sauna', en: 'Dine & Sauna' },
-  { key: 'marina-recreation', fi: 'Satama & Perhe', en: 'Marina & Family' },
+  { key: 'festivals-culture', fi: 'Tapahtumat',          en: 'Events' },
+  { key: 'food-sauna',        fi: 'Ruoka & Sauna',       en: 'Dine & Sauna' },
+  { key: 'marina-recreation', fi: 'Kulttuuri & liikunta', en: 'Culture & sports' },
+  { key: 'business',          fi: 'Business',            en: 'Business' },
 ];
 
 /* -------------------------------------------------------------------------- */
