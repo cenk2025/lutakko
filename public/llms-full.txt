@@ -8,8 +8,7 @@
 
 ## 1. Place: Lutakon Satama
 
-- **Address:** Satamakatu 8, 40100 Jyväskylä, Finland
-- **Phone (harbour):** +358 14 569 5000
+- **District:** Lutakko, 40100 Jyväskylä, Finland
 - **Lake:** Päijänne (the harbour is the northernmost passenger harbour on Lake Päijänne)
 - **City:** Jyväskylä, Central Finland
 - **Marketing tagline:** *"Suomen elämyksellisin satama"* — "Finland's most experiential harbour" (per Visit Jyväskylä)
@@ -211,9 +210,9 @@
 
 ## 7. Contact
 
-- **Sales / partnerships:** info@voon.fi
-- **Harbour office:** +358 14 569 5000
-- **Address:** Satamakatu 8, 40100 Jyväskylä, Finland
+- **Sales / partnerships / general enquiries:** info@voon.fi
+- **Site operator:** Voon IQ — https://voon.fi
+- **District:** Lutakko, 40100 Jyväskylä, Finland
 
 ---
 

@@ -80,7 +80,7 @@ export default function Footer() {
                 <p className="text-sm font-semibold text-white">
                   {lang === 'fi' ? 'Avaa kartta' : 'Open map'}
                 </p>
-                <p className="text-xs text-white/55">Satamakatu 8 · 40100 Jyväskylä</p>
+                <p className="text-xs text-white/55">Lutakko · 40100 Jyväskylä</p>
               </div>
               <svg
                 viewBox="0 0 24 24"

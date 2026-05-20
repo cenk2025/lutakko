@@ -1007,7 +1007,7 @@ export const FOOTER_LINKS = {
       button: 'Tilaa',
     },
     rights: 'Kaikki oikeudet pidätetään.',
-    location: 'Satamakatu 8, 40100 Jyväskylä · 014 569 5000',
+    location: 'Voon IQ · info@voon.fi',
   },
   en: {
     explore: 'Explore',
@@ -1021,6 +1021,6 @@ export const FOOTER_LINKS = {
       button: 'Subscribe',
     },
     rights: 'All rights reserved.',
-    location: 'Satamakatu 8, 40100 Jyväskylä, Finland · +358 14 569 5000',
+    location: 'Voon IQ · info@voon.fi',
   },
 } as const;
