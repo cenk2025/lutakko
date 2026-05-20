@@ -204,9 +204,10 @@ export const NAV_MENU: NavMenuGroup[] = [
     fi: 'Business',
     en: 'Business',
     items: [
-      { slug: 'innova-1', fi: 'Innova 1 (Piippukatu 11)',  en: 'Innova 1 (Piippukatu 11)' },
-      { slug: 'innova-2', fi: 'Innova 2 (Lutakonaukio 7)', en: 'Innova 2 (Lutakonaukio 7)' },
-      { slug: 'innova-4', fi: 'Innova 4 (Lutakonaukio 1)', en: 'Innova 4 (Lutakonaukio 1)' },
+      { slug: 'paviljonki', fi: 'Jyväskylän Paviljonki',     en: 'Jyväskylän Paviljonki' },
+      { slug: 'innova-1',   fi: 'Innova 1 (Piippukatu 11)',  en: 'Innova 1 (Piippukatu 11)' },
+      { slug: 'innova-2',   fi: 'Innova 2 (Lutakonaukio 7)', en: 'Innova 2 (Lutakonaukio 7)' },
+      { slug: 'innova-4',   fi: 'Innova 4 (Lutakonaukio 1)', en: 'Innova 4 (Lutakonaukio 1)' },
     ],
   },
 ];
@@ -774,38 +775,44 @@ export const CATEGORIES: Category[] = [
     },
     fi: {
       title: 'Lutakon yrityskortteli',
-      subtitle: 'Innova 1, Innova 2 ja Innova 4 — Kielo Toimitilojen ydinkohteet Lutakossa',
+      subtitle: 'Jyväskylän Paviljonki + Innova 1, 2 ja 4 — tapahtumatalo ja kestävät toimitilat saman korttelin sisällä',
       description:
-        'Lutakko on Jyväskylän nopeimmin kasvava liike-elämän kortteli. Kolme moderni, sertifioitu Innova-toimistorakennusta tarjoavat joustavia toimitiloja startupeille ja kasvuyhtiöille — kaikissa sauna, ravintola, kokoustilat ja sähköauton lataus.',
-      tagline: 'Vihreää, joustavaa ja keskellä tapahtumakorttelia',
+        'Lutakko on Jyväskylän nopeimmin kasvava liike-elämän kortteli. Jyväskylän Paviljonki — "Suomen monipuolisin tapahtumatalo" — toimii alueen sydämenä, ja sen ympärillä kolme sertifioitua Innova-toimistorakennusta tarjoaa joustavia tiloja startupeille ja kasvuyhtiöille. Sauna, ravintola, kokoustilat ja sähköauton lataus kaikissa.',
+      tagline: 'Messut, kokoukset ja kasvuyhtiöt — vihreällä energialla',
       section1: {
-        title: 'Innova 1 — Piippukatu 11',
+        title: 'Jyväskylän Paviljonki',
         subtitle:
-          'BREEAM Very Good · Ravintola Fiilu, kokouskeskus, sauna "Lutakon Huippu" · linja-auto- ja juna-asema 400 m päässä.',
+          '"Suomen monipuolisin tapahtumatalo" Lutakonaukio 12:ssa — messut, kongressit, konsertit, gaalat ja Secto Rally Finlandin Servicepark.',
       },
       section2: {
-        title: 'Innova 2 — Lutakonaukio 7',
+        title: 'Innova 1, 2 & 4 — Kielo Toimitilat',
         subtitle:
-          'LEED Platinum · 6 kerrosta · vapaina 112 m², 163 m² ja 166 m² yksiköt · sauna, kokoustilat, aulapalvelu.',
+          'Kolme sertifioitua toimistorakennusta Paviljongin ympärillä — BREEAM Very Good, LEED Platinum ja LEED Gold; sauna, ravintola, kokoustilat ja sähköauton lataus kaikissa.',
       },
       section3: {
-        title: 'Innova 4 — Lutakonaukio 1',
+        title: 'Yritysverkosto Paviljongin ympärillä',
         subtitle:
-          'LEED Gold · vapaana 51 m² ja 69 m² · Reserved Gym ja ruokakauppa samassa rakennuksessa · sauna järvinäkymin.',
+          'Reserved Gym (Innova 4:ssä), Ravintola Fiilu (Innova 1:ssä) ja kymmeniä yrityksiä kävelymatkan päässä — kaikki tapahtumatalon ja festivaalikorttelin tuntumassa.',
       },
       details: {
-        title: 'Toimitilakumppanit Lutakossa',
-        desc: 'Lutakossa toimii kymmeniä yrityksiä — yhteistyö Lutakko.infon kanssa avaa kanavan sekä uusiin vuokralaisiin että alueen kävijävirtaan.',
+        title: 'Tapahtumat ja toimitilat Lutakossa',
+        desc: 'Paviljonki ja Innova-toimistot muodostavat yhdessä Lutakon yritysverkoston — yhteistyö Lutakko.infon kanssa avaa kanavan uusiin vuokralaisiin, messukävijöihin ja kongressiyleisöön.',
         bulletPoints: [
+          'Jyväskylän Paviljonki · Lutakonaukio 12 · "Suomen monipuolisin tapahtumatalo" · paviljonki.fi · +358 14 339 8100',
           'Innova 1 · Piippukatu 11 · BREEAM Very Good · kielotoimitilat.fi/property/piippukatu-11',
           'Innova 2 · Lutakonaukio 7 · LEED Platinum · vapaina 112/163/166 m² · kielotoimitilat.fi/property/lutakonaukio-7',
           'Innova 4 · Lutakonaukio 1 · LEED Gold · vapaina 51/69 m² · kielotoimitilat.fi/property/lutakonaukio-1',
-          'Yhteinen vuokrauskanava: Minna Hämäläinen +358 40 564 8042 · minna.hamalainen@kielotoimitilat.fi',
+          'Toimitilojen vuokrauskanava: Minna Hämäläinen +358 40 564 8042 · minna.hamalainen@kielotoimitilat.fi',
           'Kaikki rakennukset: 100 % vihreä energia, sähköauton lataus, sauna, kokoustilat',
-          'Innova 4:n vuokralaisina mm. Reserved Gym -kuntosali ja ruokakauppa',
+          'Paviljongin toistuvat tapahtumat 2026: Cheerleading SM 13.–14.6., BUS-messut 16.–17.6., Secto Rally Finland Servicepark 30.7.–2.8., Jyväskylä Sinfonia',
         ],
       },
       features: [
+        {
+          icon: 'stage',
+          title: 'Jyväskylän Paviljonki',
+          description: '"Suomen monipuolisin tapahtumatalo" Lutakonaukio 12:ssa — messut, kongressit, konsertit ja Secto Rally Finlandin Servicepark. Operaattori Jyväskylän Messut Oy + Paviljonki Productions. paviljonki.fi',
+        },
         {
           icon: 'viilu',
           title: 'Innova 1 (Piippukatu 11)',
@@ -824,55 +831,56 @@ export const CATEGORIES: Category[] = [
         {
           icon: 'food',
           title: 'Ravintola Fiilu (Innova 1)',
-          description: 'Päivittäinen lounaslista Innova 1:n alakerrassa — kävelymatkan päässä kaikista kolmesta Innova-rakennuksesta.',
+          description: 'Päivittäinen lounaslista Innova 1:n alakerrassa — kävelymatkan päässä kaikista kolmesta Innova-rakennuksesta ja Paviljongista.',
         },
         {
           icon: 'sports',
           title: 'Reserved Gym (Innova 4)',
           description: 'Yksityinen tuntivaraus-kuntosali samassa rakennuksessa kuin Innova 4 — panoraamanäkymä Lutakonaukiolle. reservedgym.fi',
         },
-        {
-          icon: 'sauna',
-          title: 'Sauna ja kokoustilat',
-          description: 'Kaikissa kolmessa Innovassa sauna ja kokoustilat — yritystapahtumat ja saunaillat suoraan toimitilan yhteydessä.',
-        },
       ],
       cta: { label: 'Pyydä vuokratarjous', href: '#business' },
     },
     en: {
       title: 'Lutakko business district',
-      subtitle: 'Innova 1, Innova 2 and Innova 4 — Kielo Toimitilat’s core properties in Lutakko',
+      subtitle: 'Jyväskylän Paviljonki + Innova 1, 2 and 4 — Finland’s most versatile event house and the surrounding sustainable office buildings',
       description:
-        'Lutakko is Jyväskylä’s fastest-growing business block. Three modern, certified Innova office buildings offer flexible spaces for startups and growth companies — every building has sauna, restaurant, meeting rooms and EV charging.',
-      tagline: 'Green, flexible, and right in the event district',
+        'Lutakko is Jyväskylä’s fastest-growing business block. Jyväskylän Paviljonki — "Finland’s most versatile event house" — sits at the heart of the district, surrounded by three certified Innova office buildings offering flexible space for startups and growth companies. Sauna, restaurant, meeting rooms and EV charging across the lot.',
+      tagline: 'Trade fairs, meetings and growth companies — on green energy',
       section1: {
-        title: 'Innova 1 — Piippukatu 11',
+        title: 'Jyväskylän Paviljonki',
         subtitle:
-          'BREEAM Very Good · Fiilu restaurant, conference centre, "Lutakon Huippu" sauna · bus & train stations within 400 m.',
+          '"Finland’s most versatile event house" at Lutakonaukio 12 — trade fairs, congresses, concerts, galas and the Secto Rally Finland Service Park.',
       },
       section2: {
-        title: 'Innova 2 — Lutakonaukio 7',
+        title: 'Innova 1, 2 & 4 — Kielo Toimitilat',
         subtitle:
-          'LEED Platinum · 6 floors · available 112 m², 163 m² and 166 m² units · sauna, meeting rooms, lobby service.',
+          'Three certified office buildings around Paviljonki — BREEAM Very Good, LEED Platinum and LEED Gold; sauna, restaurant, meeting rooms and EV charging in every building.',
       },
       section3: {
-        title: 'Innova 4 — Lutakonaukio 1',
+        title: 'Business network around Paviljonki',
         subtitle:
-          'LEED Gold · available 51 m² and 69 m² · Reserved Gym and grocery store in the same building · lake-view sauna.',
+          'Reserved Gym (in Innova 4), Fiilu restaurant (in Innova 1) and dozens of companies within walking distance — all next to the event house and the festival district.',
       },
       details: {
-        title: 'Office partners in Lutakko',
-        desc: 'Dozens of companies operate in Lutakko — partnering with Lutakko.info opens a channel to both new tenants and the district’s visitor traffic.',
+        title: 'Events and offices in Lutakko',
+        desc: 'Paviljonki and the Innova buildings form Lutakko’s business network — partnering with Lutakko.info opens a channel to new tenants, fair visitors and congress audiences alike.',
         bulletPoints: [
+          'Jyväskylän Paviljonki · Lutakonaukio 12 · "Finland’s most versatile event house" · paviljonki.fi · +358 14 339 8100',
           'Innova 1 · Piippukatu 11 · BREEAM Very Good · kielotoimitilat.fi/property/piippukatu-11',
           'Innova 2 · Lutakonaukio 7 · LEED Platinum · available 112/163/166 m² · kielotoimitilat.fi/property/lutakonaukio-7',
           'Innova 4 · Lutakonaukio 1 · LEED Gold · available 51/69 m² · kielotoimitilat.fi/property/lutakonaukio-1',
-          'Single leasing contact: Minna Hämäläinen +358 40 564 8042 · minna.hamalainen@kielotoimitilat.fi',
+          'Office leasing channel: Minna Hämäläinen +358 40 564 8042 · minna.hamalainen@kielotoimitilat.fi',
           'Across all buildings: 100% green energy, EV charging, sauna, meeting rooms',
-          'Innova 4 tenants include Reserved Gym and a grocery store',
+          'Paviljonki recurring events 2026: Cheerleading SM 13–14 Jun, BUS trade fair 16–17 Jun, Secto Rally Finland Service Park 30 Jul – 2 Aug, Jyväskylä Sinfonia',
         ],
       },
       features: [
+        {
+          icon: 'stage',
+          title: 'Jyväskylän Paviljonki',
+          description: '"Finland’s most versatile event house" at Lutakonaukio 12 — trade fairs, congresses, concerts and the Secto Rally Finland Service Park. Operated by Jyväskylän Messut Oy + Paviljonki Productions. paviljonki.fi',
+        },
         {
           icon: 'viilu',
           title: 'Innova 1 (Piippukatu 11)',
@@ -891,17 +899,12 @@ export const CATEGORIES: Category[] = [
         {
           icon: 'food',
           title: 'Fiilu restaurant (Innova 1)',
-          description: 'Daily lunch downstairs in Innova 1 — walking distance from all three Innova buildings.',
+          description: 'Daily lunch downstairs in Innova 1 — walking distance from all three Innova buildings and Paviljonki.',
         },
         {
           icon: 'sports',
           title: 'Reserved Gym (Innova 4)',
           description: 'Hourly-booked private gym in the same building as Innova 4 — panoramic view over Lutakonaukio square. reservedgym.fi',
-        },
-        {
-          icon: 'sauna',
-          title: 'Sauna & meeting rooms',
-          description: 'Every Innova building offers sauna and meeting rooms — corporate events and sauna evenings right inside the office.',
         },
       ],
       cta: { label: 'Request a leasing offer', href: '#business' },

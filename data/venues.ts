@@ -988,6 +988,66 @@ VENUES.push(
     },
   },
 
+  /* -------- Jyväskylän Paviljonki -------- */
+  {
+    slug: 'paviljonki',
+    kind: 'venue',
+    category: 'business',
+    themeColor: '#a78bfa',
+    themeRgb: [167, 139, 250],
+    image: null,
+    url: 'https://www.paviljonki.fi/',
+    email: 'paviljonki@paviljonki.fi',
+    phone: '+358 14 339 8100',
+    address: 'Lutakonaukio 12, 40100 Jyväskylä',
+    facts: [
+      { fi: { label: 'Tyyppi', value: 'Messukeskus, kongressitalo ja konserttisali (Jyväskylän Messut Oy)' }, en: { label: 'Type', value: 'Exhibition centre, congress house and concert hall (operated by Jyväskylän Messut Oy)' } },
+      { fi: { label: 'Slogan', value: '"Suomen monipuolisin tapahtumatalo"' }, en: { label: 'Tagline', value: '"Finland’s most versatile event house"' } },
+      { fi: { label: 'Käyttötarkoitukset', value: 'Messut, kongressit, seminaarit, yritystapahtumat, konsertit, gaalat' }, en: { label: 'Use cases', value: 'Trade fairs, congresses, seminars, corporate events, concerts, galas' } },
+      { fi: { label: 'Palvelut', value: 'Omat ravintolat, AV-tekniikka, parkkihalli, Paviljonki Productions -tapahtumatuotanto' }, en: { label: 'Services', value: 'In-house restaurants, AV technology, parking, Paviljonki Productions in-house event management' } },
+      { fi: { label: 'Tunnetut tapahtumat 2026', value: 'Cheerleadingin SM 13.–14.6. · BUS 2026 -messut 16.–17.6. · Secto Rally Finland Servicepark 30.7.–2.8. · Jyväskylä Sinfonia -konsertit' }, en: { label: 'Notable events 2026', value: 'Cheerleading SM 13–14 Jun · BUS 2026 trade fair 16–17 Jun · Secto Rally Finland Service Park 30 Jul – 2 Aug · Jyväskylä Sinfonia concerts' } },
+      { fi: { label: 'Y-tunnus', value: '0626505-0' }, en: { label: 'Business ID', value: '0626505-0' } },
+    ],
+    fi: {
+      hero: {
+        eyebrow: 'Business · Tapahtumatalo',
+        title: 'Jyväskylän Paviljonki',
+        subtitle: '"Suomen monipuolisin tapahtumatalo" Lutakonaukion vieressä — messut, kongressit, konsertit ja yritystapahtumat saman katon alla.',
+      },
+      about:
+        'Paviljonki on Jyväskylän pääasiallinen tapahtumatalo ja Lutakon ydinrakennuksia: messukeskus, kongressisali ja konserttitila samassa kompleksissa Lutakonaukion laidalla. Operaattorina toimii Jyväskylän Messut Oy. Paikalla järjestetään ympäri vuoden suuria messuja, kongresseja, konsertteja, yritystapahtumia ja gaaloja — sekä toistuvasti Secto Rally Finlandin Servicepark. Talossa toimii myös oma tapahtumatuotantotiimi (Paviljonki Productions).',
+      highlights: [
+        'Osoite: Lutakonaukio 12, 40100 Jyväskylä',
+        '"Suomen monipuolisin tapahtumatalo" — messut, kongressit, konsertit, gaalat',
+        'Operaattori: Jyväskylän Messut Oy (Y 0626505-0)',
+        'Omat ravintolat, AV-tekniikka, parkkihalli, Paviljonki Productions -tapahtumatuotanto',
+        'Tunnettuja tapahtumia 2026: Cheerleading SM 13.–14.6., BUS 2026 16.–17.6., Secto Rally Finland Servicepark 30.7.–2.8., Jyväskylä Sinfonia',
+        'Yhteys: +358 14 339 8100 · paviljonki@paviljonki.fi · paviljonki.fi',
+      ],
+      pitch:
+        'Paviljonki on Lutakon yritys- ja tapahtumaverkoston ydin. Lutakko.info voi yhdistää näkyvyyspaketit, oheistapahtumat ja kävijöiden palvelut yhden kanavan kautta — etusivun sponsoroitu kortti tai event-takeover -slotti messuviikkojen ympärille.',
+    },
+    en: {
+      hero: {
+        eyebrow: 'Business · Event house',
+        title: 'Jyväskylän Paviljonki',
+        subtitle: '"Finland’s most versatile event house" right beside Lutakonaukio — trade fairs, congresses, concerts and corporate events under one roof.',
+      },
+      about:
+        'Paviljonki is Jyväskylä’s principal event house and one of Lutakko’s core buildings: an exhibition centre, congress hall and concert venue in a single complex beside Lutakonaukio square. Operated by Jyväskylän Messut Oy, it hosts trade fairs, congresses, concerts, corporate events and galas year-round — and is the recurring home of the Secto Rally Finland Service Park. The in-house team Paviljonki Productions handles full event production.',
+      highlights: [
+        'Address: Lutakonaukio 12, 40100 Jyväskylä',
+        '"Finland’s most versatile event house" — trade fairs, congresses, concerts, galas',
+        'Operator: Jyväskylän Messut Oy (Business ID 0626505-0)',
+        'In-house restaurants, AV technology, parking, Paviljonki Productions event production',
+        'Notable events 2026: Cheerleading SM 13–14 Jun · BUS 2026 trade fair 16–17 Jun · Secto Rally Finland Service Park 30 Jul – 2 Aug · Jyväskylä Sinfonia',
+        'Contact: +358 14 339 8100 · paviljonki@paviljonki.fi · paviljonki.fi',
+      ],
+      pitch:
+        'Paviljonki is the core of Lutakko’s business and event network. Lutakko.info can route visibility packages, side events and visitor services through one channel — homepage sponsored card or event-takeover slot around major fair weeks.',
+    },
+  },
+
   /* -------- Kielo Innova 4 -------- */
   {
     slug: 'innova-4',
