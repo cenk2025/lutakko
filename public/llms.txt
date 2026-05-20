@@ -1,0 +1,54 @@
+# Lutakko.info
+
+> Lutakko.info is the official visitor and partner site for **Lutakon Satama** — the harbour district at the heart of Jyväskylä, Finland. The site is operated by **Voon IQ** (voon.fi · info@voon.fi). It covers festivals, restaurants, saunas, the guest marina, and family-friendly activities along the Päijänne lakeshore. Bilingual (Finnish + English).
+
+## Quick facts
+
+- **Place:** Lutakon Satama, Satamakatu 8, 40100 Jyväskylä, Finland
+- **Lake:** Päijänne (the harbour is its northernmost passenger harbour)
+- **Marina:** 46 guest berths with shore power, water, fuel and sauna access (2017 Guest Harbour of the Year honourable mention)
+- **Operator of this site:** Voon IQ (voon.fi · info@voon.fi)
+- **Phone (harbour):** +358 14 569 5000
+
+## Major events at Lutakon Satama (2026)
+
+- [OlutSatama](https://lutakko.info/venues/olutsatama/): 11–13 June 2026, "Finland's best beer event", 200+ breweries on Lutakonaukio.
+- [SuomiPop Festival](https://lutakko.info/venues/suomipop/): 9–11 July 2026, Finnish-pop festival on the Lutakko waterfront.
+- [Secto Rally Finland](https://lutakko.info/venues/secto-rally/): 30 July – 2 August 2026, WRC round with the Service Park at Paviljonki.
+- [Finlandia Marathon](https://lutakko.info/venues/finlandia-marathon/): Jyväskylä's marathon classic (content coming soon).
+
+## Restaurants, saunas, ships
+
+- [Saunaravintola Sataman Viilu](https://lutakko.info/venues/viilu/): timber sauna restaurant hovering over the lake (satamanviilu.fi).
+- [M/S Musta Magia / Limanda](https://lutakko.info/venues/musta-magia/): 200-seat restaurant ship with weekend karaoke and Sunday live music (mustamagia.fi).
+- [Konttiravintola Morton](https://lutakko.info/venues/morton/): "the original container restaurant" at Satamakatu 2, open in summer (morton.fi).
+- [Ravintolalaiva Gaia](https://lutakko.info/venues/gaia/): historic inland-steamer restaurant ship.
+- [Jyväskylän Sataman Kahvila](https://lutakko.info/venues/sataman-kahvila/): café in a 1919 yellow timber building, run by MatkaRhea, daily 10–20 from April (msrhea.fi).
+- [Trattoria Aukio](https://lutakko.info/venues/trattoria-aukio/): Italian restaurant on Lutakonaukio (content coming soon).
+- [HIISI-panimo](https://lutakko.info/venues/hiisi/): local microbrewery taproom + bottleshop (hiisi.beer).
+- [Saunalautat](https://lutakko.info/venues/saunalautta/): Lutakko hosts several sauna-raft operators — a unified booking hub is in pilot.
+
+## Culture & sports
+
+- [Tanssisali Lutakko](https://lutakko.info/venues/tanssisali-lutakko/): legendary rock club operated by Jelmu ry, set in an early-1900s heritage industrial building beside Lutakonaukio (jelmu.net).
+
+## Architecture & promenade
+
+- **Alvar Aalto Museum** is adjacent; a permanent Alvar Aalto-designed boat is on display at the harbour.
+- **Jyväskylän Rantaraitti**: 13 km accessible lakeside trail that starts at the harbour.
+- **Kuokkalan silta**: bridge arching across the lake — a city-skyline landmark.
+
+## Booking & partnerships
+
+Visitors can sign up at [lutakko.info/dashboard/](https://lutakko.info/dashboard/) to manage activity and sauna reservations. Businesses can become listing / sponsorship partners via the "Become a partner" form on each venue page — enquiries go to **info@voon.fi**.
+
+## Site map
+
+- [Homepage](https://lutakko.info/)
+- [Sitemap](https://lutakko.info/sitemap.xml)
+- [Full LLM ingestion document](https://lutakko.info/llms-full.txt)
+
+## Contact
+
+- Site operator: Voon IQ — info@voon.fi — https://voon.fi
+- Harbour office: +358 14 569 5000

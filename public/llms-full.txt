@@ -1,0 +1,220 @@
+# Lutakko.info — Full content for AI / LLM ingestion
+
+> Lutakko.info is the official visitor and partner site for **Lutakon Satama**, the harbour district at the heart of Jyväskylä, Finland. The site is bilingual (Finnish + English) and operated by **Voon IQ** (voon.fi · info@voon.fi).
+>
+> This file gathers every important fact across the site in a single, AI-friendly Markdown document — suitable for direct ingestion by Claude, ChatGPT, Perplexity, Gemini, and similar systems.
+
+---
+
+## 1. Place: Lutakon Satama
+
+- **Address:** Satamakatu 8, 40100 Jyväskylä, Finland
+- **Phone (harbour):** +358 14 569 5000
+- **Lake:** Päijänne (the harbour is the northernmost passenger harbour on Lake Päijänne)
+- **City:** Jyväskylä, Central Finland
+- **Marketing tagline:** *"Suomen elämyksellisin satama"* — "Finland's most experiential harbour" (per Visit Jyväskylä)
+
+### Marina
+
+- **46 guest boat berths** with shore power, water, fuel, sewage and sauna access
+- **2017 Guest Harbour of the Year** honourable mention (Finnish Sailing & Boating Association)
+- RV parking: 6 spots (3.2 m × 8 m), overnight allowed, no electricity
+- Guest mooring at Sataman Kahvila pier: €17 / day, max 4 h without permission
+
+### Landmarks at the harbour
+
+- **Permanent Alvar Aalto-designed boat** on display at the harbour
+- **Alvar Aalto Museum** adjacent to the harbour
+- **Kuokkalan silta** — landmark bridge arching across the lake
+- **Solo Sokos Hotel Paviljonki** + **Paviljonki** convention centre on the block
+- **Jyväskylän Rantaraitti** — 13 km accessible lakeside trail begins at the harbour
+- **Lutakon uimaranta** (public beach) within walking distance
+
+### Sports & activities
+
+- Beach volleyball courts
+- Padel hall (floodlit)
+- Outdoor gym + stairs run
+- **Gr8 Wake** water-sports centre (wakeboarding, SUP rental, water park)
+- Jet-ski rental, flyboard, kayak rental
+
+---
+
+## 2. Events
+
+### OlutSatama — 11–13 June 2026
+
+- **Tagline:** *"Suomen paras olut-tapahtuma"* / "Finland's best beer event"
+- **Schedule:** Thu 11 Jun 17:00–23:00 · Fri 12 Jun 15:00–02:00 · Sat 13 Jun 14:00–02:00
+- **Location:** Lutakonaukio (Satamakatu 3, 40100 Jyväskylä)
+- **Format:** 200+ breweries, food stalls, on-stage programme
+- **Audience:** 49 000+ visitors since 2016
+- **Tickets:** coregoshop.fi/olutsatama-2026-1
+- **Official site:** https://www.olutsatama.fi/
+- **Partners (selected):** Aito Elämys, Teerenpeli, Harvestian, JV Media, Maukka, WorkPower
+- **Detail page:** https://lutakko.info/venues/olutsatama/
+
+### SuomiPop Festival 2026 — 9–11 July 2026
+
+- One of Finland's biggest Finnish-pop festivals
+- Location: Lutakon rantakortteli (waterfront block)
+- **Tickets:** https://suomipopfestivaali.fi/jyvaskyla/liput/
+- **Official site:** https://suomipopfestivaali.fi/jyvaskyla/
+- Lutakko hotels are walking distance: Solo Sokos Paviljonki, Original Sokos Alexandra
+- **Detail page:** https://lutakko.info/venues/suomipop/
+
+### Secto Rally Finland 2026 — 30 July – 2 August 2026
+
+- FIA World Rally Championship (WRC) round — one of the most iconic on the calendar
+- **Service Park:** Paviljonki, Lutakonaukio (walking distance from the harbour)
+- Tens of thousands of international spectators
+- **Official site:** https://sectorallyfinland.fi/
+- **Detail page:** https://lutakko.info/venues/secto-rally/
+
+### Finlandia Marathon
+
+- Jyväskylä's marathon classic
+- Detailed schedule TBD — content coming soon
+- **Official site:** https://finlandiamarathon.fi/
+- **Detail page:** https://lutakko.info/venues/finlandia-marathon/
+
+---
+
+## 3. Venues — Food, drink, sauna
+
+### Saunaravintola Sataman Viilu
+
+- **Type:** Sauna restaurant; timber pavilion over the lake
+- **Location:** Next to the Alvar Aalto Museum
+- **Concept:** Archipelago-inspired Nordic menu, 270° lake view, continuous löyly
+- **Official site:** https://satamanviilu.fi/
+- **Detail page:** https://lutakko.info/venues/viilu/
+
+### M/S Musta Magia (Limanda restaurant)
+
+- **Type:** Restaurant ship; the Limanda restaurant operates on board
+- **Capacity:** 200 seats + open terrace deck
+- **Phone:** 040 189 0801 · **Email:** info@mustamagia.fi
+- **Programme:** Karaoke Fri & Sat (Mikon Karaoke 21:00–00:30), live music Sundays 19:00–21:00
+- **May hours:** Mon–Thu 14:00–22:00 · Fri 14:00–01:00 · Sat 12:00–01:00 · Sun 12:00–22:00
+- **Tagline:** *"Tervetuloa nauttimaan laivan antimista!"*
+- **Official site:** https://mustamagia.fi/
+- **Detail page:** https://lutakko.info/venues/musta-magia/
+
+### Konttiravintola Morton
+
+- **Type:** Container restaurant + café with open terrace
+- **Address:** Satamakatu 2, 40100 Jyväskylä
+- **Tagline:** *"Se alkuperäinen Konttiravintola"* — "the original container restaurant"
+- **Season:** Summer only · Wolt delivery available · Group bookings
+- **Phone:** 0400 416 372
+- **Official site:** https://morton.fi/konttiravintola/jyvaskyla/
+- **Detail page:** https://lutakko.info/venues/morton/
+
+### Ravintolalaiva Gaia
+
+- **Type:** Historic inland-steamer restaurant ship
+- **Concept:** À la carte dinner cruises onto the open lake and back
+- **Detail page:** https://lutakko.info/venues/gaia/
+
+### Jyväskylän Sataman Kahvila (Harbour Café)
+
+- **Type:** Café in a 1919 yellow timber building, right next to the guest dock
+- **Operator:** MatkaRhea (also operates M/S Rhea + cruises)
+- **Hours:** Daily 10:00–20:00 from 1 April onwards
+- **Offer:** Fresh pastries, ice cream, A-licence
+- **Phone:** 0400 706 691 · **Email:** myynti@msrhea.fi
+- **Tagline:** *"Tervetuloa viihtymään"*
+- **Official site:** https://msrhea.fi/jyvaskylan-sataman-kahvila/
+- **Detail page:** https://lutakko.info/venues/sataman-kahvila/
+
+### Trattoria Aukio
+
+- **Type:** Italian restaurant on Lutakonaukio
+- Detailed content coming soon
+- **Detail page:** https://lutakko.info/venues/trattoria-aukio/
+
+### HIISI-panimo (HIISI Brewery)
+
+- **Type:** Local Lutakko microbrewery, taproom + bottleshop
+- Detailed content coming soon
+- **Official site:** https://hiisi.beer/
+- **Detail page:** https://lutakko.info/venues/hiisi/
+
+### Saunalautat (sauna rafts)
+
+- Lutakko hosts multiple sauna-raft operators
+- A unified booking hub is in pilot development on Lutakko.info
+- **Detail page:** https://lutakko.info/venues/saunalautta/
+
+### Cruise ships at the harbour
+
+- **M/S Rhea, M/S Hilja, Päijänne-Risteilyt Hilden** — Päijänne cruises to Lahti, Jämsä, Suolahti, Laukaa, Viitasaari
+- **M/S Löyly, SS Kippari, Saunalautta Eden, M/S Flamia** — sauna boats. M/S Flamia is reportedly the world's first igloo-sauna boat.
+- **Siipirataslaiva Vellamo** — paddle-wheel restaurant ship
+- **Kavaljeeri II** — additional restaurant ship
+
+### Other restaurants on Lutakonaukio
+
+- **Waves** — container restaurant
+- **Satamakahvila** — café at the dock (see Jyväskylän Sataman Kahvila above)
+- **Trattoria Aukio** — Italian (own listing)
+
+---
+
+## 4. Culture & nightlife
+
+### Tanssisali Lutakko
+
+- **Type:** Legendary rock club in an early-1900s heritage industrial building beside Lutakonaukio
+- **Operator:** Jyväskylän Elävän Musiikin Yhdistys (Jelmu ry)
+- **Programme:** Rock, punk, metal and indie shows year-round
+- **Official site:** https://www.jelmu.net/
+- **History:** https://www.jelmu.net/historia
+- **Wikipedia:** https://fi.wikipedia.org/wiki/Tanssisali_Lutakko
+- **Detail page:** https://lutakko.info/venues/tanssisali-lutakko/
+
+---
+
+## 5. Operator — Voon IQ
+
+- **Operator of Lutakko.info:** Voon IQ
+- **Website:** https://voon.fi
+- **Email:** info@voon.fi
+- **Founder:** Cenk Yakinlar (Jyväskylä, Finland)
+- **Concept:** Voon IQ is a destination-marketing studio. Lutakko.info is the first production deployment of the platform; it can be re-skinned for additional Finnish harbour cities.
+
+### Business model (high level)
+
+- **Listing subscriptions** for venues (Free / Starter €590 / Pro €1 490 / Premium €3 990 per year)
+- **Scheduled banner & sponsored-card ads** (hero banner, category card, footer banner, event takeover, newsletter slot) — all managed through the admin dashboard with auto-expiry
+- **Booking commissions** on activities and sauna reservations (10–12 % typical)
+- **Affiliate income** on cruise tickets, hotel bookings, brewery merchandise
+- **Future B2B data product** for partners (Visit Jyväskylä, city tourism office)
+
+---
+
+## 6. Technical layout
+
+- **Live URL:** https://lutakko.info
+- **Repository:** https://github.com/cenk2025/lutakko (public)
+- **Stack:** Next.js 14 (App Router) + TypeScript + Tailwind CSS + Framer Motion
+- **Backend:** Supabase (Postgres + Auth + Row-Level Security)
+- **Hosting:** Vercel with static export (`output: 'export'` in production)
+- **Search-engine artefacts:**
+  - Sitemap: https://lutakko.info/sitemap.xml
+  - Robots: https://lutakko.info/robots.txt
+  - This file: https://lutakko.info/llms-full.txt
+  - Quick LLM index: https://lutakko.info/llms.txt
+
+---
+
+## 7. Contact
+
+- **Sales / partnerships:** info@voon.fi
+- **Harbour office:** +358 14 569 5000
+- **Address:** Satamakatu 8, 40100 Jyväskylä, Finland
+
+---
+
+*Generated for AI / LLM ingestion. Updated alongside the codebase.*
