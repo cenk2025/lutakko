@@ -352,7 +352,7 @@ export const CATEGORIES: Category[] = [
           description: 'WRC-osakilpailu 30.7.–2.8.2026, Servicepark Paviljongilla — pääset lähelle koneita, joiden ääni täyttää koko kaupungin. sectorallyfinland.fi',
         },
       ],
-      cta: { label: 'Selaa tapahtumia', href: '#festivals-culture' },
+      cta: { label: 'Tapahtumakalenteri', href: '/dashboard/#calendar' },
     },
     en: {
       title: 'The stages light up',
@@ -409,7 +409,7 @@ export const CATEGORIES: Category[] = [
           description: 'WRC round 30 Jul – 2 Aug 2026, Service Park at Paviljonki — walk right up to the machines roaring through the city. sectorallyfinland.fi',
         },
       ],
-      cta: { label: 'Browse events', href: '#festivals-culture' },
+      cta: { label: 'Event calendar', href: '/dashboard/#calendar' },
     },
   },
 
@@ -529,7 +529,7 @@ export const CATEGORIES: Category[] = [
           description: 'Avantouintia talvella, palju ja pesäkivisauna ympäri vuoden – vain muutaman askeleen päässä Viilusta.',
         },
       ],
-      cta: { label: 'Varaa pöytä', href: '#food-sauna' },
+      cta: { label: 'Varaa saunalautta', href: '/dashboard/#calendar' },
     },
     en: {
       title: 'Taste & steam',
@@ -610,7 +610,7 @@ export const CATEGORIES: Category[] = [
           description: 'Ice swimming in winter, hot tub and wood sauna year-round — steps from Viilu.',
         },
       ],
-      cta: { label: 'Reserve a table', href: '#food-sauna' },
+      cta: { label: 'Book a sauna raft', href: '/dashboard/#calendar' },
     },
   },
 

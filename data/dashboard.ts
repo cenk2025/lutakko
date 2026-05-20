@@ -1,9 +1,9 @@
 import type { Lang } from './content';
 
-export type BookingKind = 'activity' | 'sauna';
+export type BookingKind = 'activity' | 'sauna' | 'event';
 export type BookingStatus = 'pending' | 'confirmed' | 'cancelled';
 
-export type DashboardTab = 'overview' | 'activities' | 'sauna' | 'bookings' | 'profile' | 'ads';
+export type DashboardTab = 'overview' | 'activities' | 'sauna' | 'calendar' | 'bookings' | 'profile' | 'ads';
 
 type IconKey = 'sports' | 'marina' | 'picnic' | 'kids' | 'food' | 'sauna' | 'stage' | 'viilu' | 'rally';
 
@@ -92,6 +92,15 @@ export const ACTIVITIES: ActivityItem[] = [
 
 export const SAUNAS: SaunaItem[] = [
   {
+    id: 'saunalautta',
+    icon: 'sauna',
+    durationMins: 180,
+    maxParty: 12,
+    accent: 'lime',
+    fi: { title: 'Saunalautta', desc: 'Lutakon sataman saunalautan kelluva yksityislöyly', cta: 'Varaa saunalautta' },
+    en: { title: 'Sauna raft', desc: 'Floating private sauna raft at Lutakon Satama', cta: 'Book the sauna raft' },
+  },
+  {
     id: 'sauna-viilu-private',
     icon: 'sauna',
     durationMins: 120,
@@ -159,6 +168,7 @@ export const DASHBOARD_COPY = {
       overview: 'Yleiskuva',
       activities: 'Aktiviteetit',
       sauna: 'Sauna',
+      calendar: 'Kalenteri',
       bookings: 'Varaukseni',
       profile: 'Profiili',
       ads: 'Mainokset',
@@ -237,6 +247,35 @@ export const DASHBOARD_COPY = {
       save: 'Tallenna muutokset',
       memberSince: 'Jäsen alkaen',
     },
+    calendar: {
+      title: 'Kalenteri',
+      sub: 'Kaikki varauksesi ja omat tapahtumat yhdessä näkymässä. Lisää tapahtumia, joihin osallistut — saat halutessasi muistutuksen sähköpostiin.',
+      addEvent: 'Lisää tapahtuma',
+      newEventTitle: 'Uusi tapahtuma',
+      eventNameField: 'Tapahtuman nimi',
+      eventNamePlaceholder: 'Esim. SuomiPop päälava, Saunalautta yhden illan',
+      dateField: 'Päivämäärä',
+      startField: 'Alkaa',
+      endField: 'Päättyy',
+      partyField: 'Osallistujia',
+      notesField: 'Muistiinpanot',
+      remindEmail: 'Muistuta minua sähköpostilla tunti ennen tapahtumaa',
+      save: 'Tallenna',
+      cancel: 'Peruuta',
+      dayHeaders: ['Ma', 'Ti', 'Ke', 'To', 'Pe', 'La', 'Su'],
+      monthNames: [
+        'Tammikuu', 'Helmikuu', 'Maaliskuu', 'Huhtikuu',
+        'Toukokuu', 'Kesäkuu', 'Heinäkuu', 'Elokuu',
+        'Syyskuu', 'Lokakuu', 'Marraskuu', 'Joulukuu',
+      ],
+      today: 'Tänään',
+      prev: 'Edellinen',
+      next: 'Seuraava',
+      noBookingsToday: 'Ei varauksia tälle päivälle.',
+      noBookingsMonth: 'Ei varauksia tässä kuussa.',
+      reminderHint:
+        'Sähköpostimuistutukset käyttöön: lisää info@voon.fi:n kautta toimintaan otetaan käyttöön — ottakaa yhteyttä.',
+    },
     ads: {
       title: 'Mainosten hallinta',
       sub: 'Lisää, ajasta ja arkistoi sponsori- ja mainoskampanjat. Ajan päättyessä mainos poistuu sivustolta automaattisesti.',
@@ -285,6 +324,7 @@ export const DASHBOARD_COPY = {
       overview: 'Overview',
       activities: 'Activities',
       sauna: 'Sauna',
+      calendar: 'Calendar',
       bookings: 'My bookings',
       profile: 'Profile',
       ads: 'Ads',
@@ -362,6 +402,35 @@ export const DASHBOARD_COPY = {
       preferredLang: 'Interface language',
       save: 'Save changes',
       memberSince: 'Member since',
+    },
+    calendar: {
+      title: 'Calendar',
+      sub: 'All your bookings and personal events in one view. Add events you plan to attend — opt in to an email reminder one hour before.',
+      addEvent: 'Add event',
+      newEventTitle: 'New event',
+      eventNameField: 'Event title',
+      eventNamePlaceholder: 'E.g. SuomiPop mainstage, Sauna raft Saturday',
+      dateField: 'Date',
+      startField: 'Starts',
+      endField: 'Ends',
+      partyField: 'Party size',
+      notesField: 'Notes',
+      remindEmail: 'Remind me by email one hour before the event',
+      save: 'Save',
+      cancel: 'Cancel',
+      dayHeaders: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+      monthNames: [
+        'January', 'February', 'March', 'April',
+        'May', 'June', 'July', 'August',
+        'September', 'October', 'November', 'December',
+      ],
+      today: 'Today',
+      prev: 'Previous',
+      next: 'Next',
+      noBookingsToday: 'No bookings on this day.',
+      noBookingsMonth: 'No bookings in this month.',
+      reminderHint:
+        'Email reminders activation: contact info@voon.fi — backend integration pending.',
     },
     ads: {
       title: 'Ad management',

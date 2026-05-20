@@ -10,6 +10,12 @@ export interface Booking {
   ends_at: string;
   party_size: number;
   notes: string | null;
+  /** Free-text title for custom calendar events (null for system bookings). */
+  title: string | null;
+  /** User wants an email reminder one hour before the event. */
+  remind_email: boolean;
+  /** Set by the reminder worker once email has been sent. */
+  notification_sent_at: string | null;
   status: BookingStatus;
   created_at: string;
   cancelled_at: string | null;
@@ -22,6 +28,8 @@ export interface NewBooking {
   ends_at: string;
   party_size: number;
   notes?: string | null;
+  title?: string | null;
+  remind_email?: boolean;
 }
 
 export async function listBookings(): Promise<Booking[]> {
@@ -49,6 +57,8 @@ export async function createBooking(input: NewBooking): Promise<Booking> {
       ends_at: input.ends_at,
       party_size: input.party_size,
       notes: input.notes ?? null,
+      title: input.title ?? null,
+      remind_email: input.remind_email ?? false,
     })
     .select('*')
     .single();

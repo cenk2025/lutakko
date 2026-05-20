@@ -16,6 +16,7 @@ const BASE_TABS: { id: DashboardTab; icon: React.ReactNode }[] = [
   { id: 'overview',   icon: <DotsIcon /> },
   { id: 'activities', icon: <SportsIcon /> },
   { id: 'sauna',      icon: <SaunaIcon /> },
+  { id: 'calendar',   icon: <CalendarIcon /> },
   { id: 'bookings',   icon: <ListIcon /> },
   { id: 'profile',    icon: <UserIcon /> },
 ];
@@ -198,6 +199,15 @@ function UserIcon() {
     <svg viewBox="0 0 20 20" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">
       <circle cx="10" cy="7" r="3" />
       <path d="M3 17a7 7 0 0 1 14 0" />
+    </svg>
+  );
+}
+function CalendarIcon() {
+  return (
+    <svg viewBox="0 0 20 20" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="5" width="14" height="12" rx="1.5" />
+      <path d="M3 9h14" />
+      <path d="M7 3v4M13 3v4" />
     </svg>
   );
 }
