@@ -158,7 +158,7 @@ Aggregated, anonymised visitor data dashboard for partners (Visit Jyväskylä, c
 12. Solo Sokos Hotel Paviljonki
 
 **Tier-2 (Phase-2 outreach):**
-* Trattoria Aukio, Waves, Ilokivi, Päijänne-Risteilyt Hilden, jet-ski rentals, padel halls, beach-volley operators.
+* Trattoria Aukio, Waves, Ilokivi, Päijänne-Risteilyt Hilden, jet-ski rentals, beach-volley operators.
 
 **Adjacent (sponsorship/ad, not listing):**
 * OP Bank, S-Pankki (event sponsorship)

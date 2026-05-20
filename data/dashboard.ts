@@ -49,16 +49,6 @@ export const ACTIVITIES: ActivityItem[] = [
     en: { title: 'Beach volleyball court', desc: 'Shoreline court booking', cta: 'Book the court' },
   },
   {
-    id: 'padel',
-    icon: 'sports',
-    durationMins: [60, 90, 120],
-    defaultDurationIdx: 1,
-    maxParty: 4,
-    accent: 'violet',
-    fi: { title: 'Padel-kenttä', desc: 'Sisäkenttä, valaistu', cta: 'Varaa pelivuoro' },
-    en: { title: 'Padel court', desc: 'Indoor, floodlit court', cta: 'Book a slot' },
-  },
-  {
     id: 'outdoor-gym',
     icon: 'sports',
     durationMins: [30, 45, 60],

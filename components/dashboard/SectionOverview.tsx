@@ -174,8 +174,8 @@ export default function SectionOverview({ onJump, refreshKey = 0 }: Props) {
           </p>
           <p className="relative mt-1 text-xs text-white/60">
             {lang === 'fi'
-              ? 'Beach volley, padel, kajakit, vierasvenepaikat…'
-              : 'Beach volley, padel, kayaks, marina berths…'}
+              ? 'Beach volley, kajakit, vierasvenepaikat, ulkokuntosali…'
+              : 'Beach volley, kayaks, marina berths, outdoor gym…'}
           </p>
         </button>
 

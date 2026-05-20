@@ -87,7 +87,7 @@ create table if not exists public.bookings (
     id            uuid primary key default gen_random_uuid(),
     user_id       uuid not null references auth.users(id) on delete cascade,
     kind          booking_kind   not null,
-    item_key      text           not null,                                -- e.g. 'padel', 'sauna-viilu-private'
+    item_key      text           not null,                                -- e.g. 'beach-volley', 'sauna-viilu-private'
     starts_at     timestamptz    not null,
     ends_at       timestamptz    not null,
     party_size    int            not null default 2 check (party_size between 1 and 30),

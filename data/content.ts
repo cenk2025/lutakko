@@ -84,7 +84,7 @@ export const HERO_TEXT = {
     beat3: {
       title: 'Lutakon Kulttuuri & Liikunta',
       sub:
-        'Tanssisali Lutakon legendaariset keikat, Finlandia Marathon, Reserved Gym, beach volley, padel, Gr8 Wake -vesiurheilukeskus ja 13 km Jyväskylän Rantaraitti — konsertit, kuntosalit ja kilometrit veden äärellä.',
+        'Tanssisali Lutakon legendaariset keikat, Finlandia Marathon, Reserved Gym, beach volley, Gr8 Wake -vesiurheilukeskus ja 13 km Jyväskylän Rantaraitti — konsertit, kuntosalit ja kilometrit veden äärellä.',
     },
     beat4: {
       title: 'Lutakon Business',
@@ -107,7 +107,7 @@ export const HERO_TEXT = {
     beat3: {
       title: 'Lutakko Culture & Sports',
       sub:
-        'Legendary gigs at Tanssisali Lutakko, the Finlandia Marathon, Reserved Gym, beach volleyball, padel, the Gr8 Wake water-sports centre and the 13 km Rantaraitti trail — concerts, gyms and kilometres by the water.',
+        'Legendary gigs at Tanssisali Lutakko, the Finlandia Marathon, Reserved Gym, beach volleyball, the Gr8 Wake water-sports centre and the 13 km Rantaraitti trail — concerts, gyms and kilometres by the water.',
     },
     beat4: {
       title: 'Lutakko Business',
@@ -658,7 +658,7 @@ export const CATEGORIES: Category[] = [
       section2: {
         title: 'Liike ja liikunta',
         subtitle:
-          'Reserved Gym -yksityiskuntosali, Finlandia Marathon, beach volley, padel, ulkokuntosali ja Gr8 Wake -vesiurheilukeskus.',
+          'Reserved Gym -yksityiskuntosali, Finlandia Marathon, beach volley, ulkokuntosali ja Gr8 Wake -vesiurheilukeskus.',
       },
       section3: {
         title: 'Rantaraitti ja vierasvenesatama',
@@ -673,7 +673,7 @@ export const CATEGORIES: Category[] = [
           'Reserved Gym · Yksityinen kuntosali Lutakonaukio 1:ssä, tuntivaraus (ei kuukausimaksua) · reservedgym.fi',
           'Finlandia Marathon · Jyväskylän marathon-klassikko (osallistujat täyttävät Lutakon palvelut) · finlandiamarathon.fi',
           'Vierasvenesatama: 46 paikkaa, sähkö, vesi, polttoaine — Vuoden vierassatama 2017 -kunniamaininta',
-          'Beach volley, padel, ulkokuntosali, kuntoporras ja Gr8 Wake -vesiurheilukeskus (wakeboard, SUP, vesipuisto)',
+          'Beach volley, ulkokuntosali, kuntoporras ja Gr8 Wake -vesiurheilukeskus (wakeboard, SUP, vesipuisto)',
           'Lasten leikki- ja vesileikkialueet Lutakonaukiolla',
           'Jyväskylän Rantaraitti — 13 km esteetön rantareitti lähtee satamasta; Kuokkalan silta kaartuu yli järven',
           'Satamassa pysyvä Alvar Aalto -venenäyttely; arkkitehtuurireitti Aalto-museolle ja Saunaravintola Sataman Viilun puuarkkitehtuuriin',
@@ -702,8 +702,8 @@ export const CATEGORIES: Category[] = [
         },
         {
           icon: 'sports',
-          title: 'Beach volley, padel & Gr8 Wake',
-          description: 'Rantakentät, padel-kupolit ja Gr8 Wake -vesiurheilukeskus (wakeboard, SUP, vesipuisto) — kaikki kävelymatkan päässä toisistaan.',
+          title: 'Beach volley & Gr8 Wake',
+          description: 'Rantakentät ja Gr8 Wake -vesiurheilukeskus (wakeboard, SUP, vesipuisto) — kaikki kävelymatkan päässä toisistaan.',
         },
         {
           icon: 'viilu',
@@ -727,7 +727,7 @@ export const CATEGORIES: Category[] = [
       section2: {
         title: 'Movement and sport',
         subtitle:
-          'Reserved Gym private gym, Finlandia Marathon, beach volleyball, padel, outdoor gym and Gr8 Wake water-sports centre.',
+          'Reserved Gym private gym, Finlandia Marathon, beach volleyball, outdoor gym and Gr8 Wake water-sports centre.',
       },
       section3: {
         title: 'Rantaraitti and the guest marina',
@@ -742,7 +742,7 @@ export const CATEGORIES: Category[] = [
           'Reserved Gym · private hourly-booked gym at Lutakonaukio 1 (no monthly fee) · reservedgym.fi',
           'Finlandia Marathon · Jyväskylä’s marathon classic — participants fill Lutakko’s venues during race weekend · finlandiamarathon.fi',
           'Guest marina: 46 berths with shore power, water, fuel and sauna access — 2017 Guest Harbour of the Year honourable mention',
-          'Beach volleyball, padel, outdoor gym, stairs run and Gr8 Wake water-sports centre (wakeboard, SUP, water park)',
+          'Beach volleyball, outdoor gym, stairs run and Gr8 Wake water-sports centre (wakeboard, SUP, water park)',
           'Children’s play and water-play areas at Lutakonaukio',
           'Picnic meadows and grill spots by the water',
           'Jyväskylä Rantaraitti — the 13 km accessible lakeside trail starts at the marina; Kuokkala bridge arches across the lake',
@@ -771,8 +771,8 @@ export const CATEGORIES: Category[] = [
         },
         {
           icon: 'sports',
-          title: 'Beach volley, padel & Gr8 Wake',
-          description: 'Shoreline courts, padel domes and the Gr8 Wake water-sports centre (wakeboard, SUP, water park) — all within walking distance of one another.',
+          title: 'Beach volley & Gr8 Wake',
+          description: 'Shoreline courts and the Gr8 Wake water-sports centre (wakeboard, SUP, water park) — all within walking distance of one another.',
         },
         {
           icon: 'viilu',
