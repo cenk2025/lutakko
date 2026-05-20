@@ -139,6 +139,47 @@ export const SITE_META = {
   },
 } as const;
 
+/* -------------------------------------------------------------------------- */
+/*  FEATURE CARD → /venues/<slug>/ registry                                   */
+/* -------------------------------------------------------------------------- */
+/* Maps a FeatureCardCopy.title (FI or EN) to the matching venue-page slug.
+   When a feature card's title is present here, FeatureGrid wraps the entire
+   card in a <Link> so the homepage "Lue lisää / Learn more" callout actually
+   navigates to /venues/<slug>/.                                              */
+
+export const FEATURE_VENUE_SLUGS: Record<string, string> = {
+  // Events
+  'Kansainväliset Suurmarkkinat':   'kansainvaliset-suurmarkkinat',
+  'International Grand Markets':    'kansainvaliset-suurmarkkinat',
+  'OlutSatama':                     'olutsatama',
+  'SuomiPop Festival':              'suomipop',
+  'Secto Rally Finland':            'secto-rally',
+
+  // Food & Sauna
+  'Saunaravintola Sataman Viilu':   'viilu',
+  'Sauna restaurant Sataman Viilu': 'viilu',
+  'Ravintolalaiva Gaia':            'gaia',
+  'Restaurant ship Gaia':           'gaia',
+  'M/S Musta Magia':                'musta-magia',
+  'Konttiravintola Morton':         'morton',
+  'Jyväskylän Sataman Kahvila':     'sataman-kahvila',
+  'Jyväskylä Harbour Café':         'sataman-kahvila',
+  'Konttiravintola Waves':          'waves',
+  'HIISI Taproom & Bottleshop':     'hiisi',
+
+  // Culture & Sports
+  'Tanssisali Lutakko':             'tanssisali-lutakko',
+  'Reserved Gym':                   'reserved-gym',
+  'Reserved Gym (Innova 4)':        'reserved-gym',
+  'Finlandia Marathon':             'finlandia-marathon',
+
+  // Business
+  'Jyväskylän Paviljonki':          'paviljonki',
+  'Innova 1 (Piippukatu 11)':       'innova-1',
+  'Innova 2 (Lutakonaukio 7)':      'innova-2',
+  'Innova 4 (Lutakonaukio 1)':      'innova-4',
+};
+
 export const NAV_LINKS: Array<{ key: string; fi: string; en: string }> = [
   { key: 'festivals-culture', fi: 'Tapahtumat',          en: 'Events' },
   { key: 'food-sauna',        fi: 'Ruoka & Sauna',       en: 'Dine & Sauna' },

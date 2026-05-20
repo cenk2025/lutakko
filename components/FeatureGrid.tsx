@@ -1,7 +1,8 @@
 'use client';
 
+import Link from 'next/link';
 import { motion } from 'framer-motion';
-import type { Category, FeatureCardCopy } from '@/data/content';
+import { FEATURE_VENUE_SLUGS, type Category, type FeatureCardCopy } from '@/data/content';
 import { useLang } from '@/context/LanguageContext';
 import SponsoredCard from './ads/SponsoredCard';
 
@@ -86,43 +87,60 @@ export default function FeatureGrid({ category }: Props) {
 
           {/* Card grid */}
           <div className="grid gap-5 sm:grid-cols-2">
-            {t.features.map((feature, i) => (
-              <motion.article
-                key={feature.title + i}
-                initial={{ opacity: 0, y: 28 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-60px' }}
-                transition={{
-                  duration: 0.75,
-                  ease: [0.22, 1, 0.36, 1],
-                  delay: i * 0.08,
-                }}
-                className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-xl transition-transform duration-500 hover:-translate-y-1 hover:border-white/20"
-              >
-                <span
-                  aria-hidden
-                  className="absolute -right-10 -top-10 h-32 w-32 rounded-full blur-2xl opacity-60 transition-opacity group-hover:opacity-100"
-                  style={{ background: `rgba(${category.themeRgb.join(',')},0.22)` }}
-                />
-                <FeatureIcon icon={feature.icon} color={category.themeColor} />
-                <h3 className="mt-5 font-display text-xl font-bold tracking-tight text-white">
-                  {feature.title}
-                </h3>
-                <p className="mt-2 text-base font-light leading-relaxed text-white/75">
-                  {feature.description}
-                </p>
-                <div
-                  className="mt-6 inline-flex items-center gap-2 text-[0.7rem] font-semibold uppercase tracking-[0.32em]"
-                  style={{ color: category.themeColor }}
+            {t.features.map((feature, i) => {
+              const slug = FEATURE_VENUE_SLUGS[feature.title];
+              const card = (
+                <motion.article
+                  initial={{ opacity: 0, y: 28 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '-60px' }}
+                  transition={{
+                    duration: 0.75,
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: i * 0.08,
+                  }}
+                  className="group relative h-full overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-xl transition-transform duration-500 hover:-translate-y-1 hover:border-white/20"
                 >
-                  <span>{lang === 'fi' ? 'Lue lisää' : 'Learn more'}</span>
-                  <svg viewBox="0 0 24 24" className="h-3 w-3" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M5 12h14" />
-                    <path d="M13 6l6 6-6 6" />
-                  </svg>
-                </div>
-              </motion.article>
-            ))}
+                  <span
+                    aria-hidden
+                    className="absolute -right-10 -top-10 h-32 w-32 rounded-full blur-2xl opacity-60 transition-opacity group-hover:opacity-100"
+                    style={{ background: `rgba(${category.themeRgb.join(',')},0.22)` }}
+                  />
+                  <FeatureIcon icon={feature.icon} color={category.themeColor} />
+                  <h3 className="mt-5 font-display text-xl font-bold tracking-tight text-white">
+                    {feature.title}
+                  </h3>
+                  <p className="mt-2 text-base font-light leading-relaxed text-white/75">
+                    {feature.description}
+                  </p>
+                  {slug && (
+                    <div
+                      className="mt-6 inline-flex items-center gap-2 text-[0.7rem] font-semibold uppercase tracking-[0.32em] transition-transform group-hover:translate-x-1"
+                      style={{ color: category.themeColor }}
+                    >
+                      <span>{lang === 'fi' ? 'Lue lisää' : 'Learn more'}</span>
+                      <svg viewBox="0 0 24 24" className="h-3 w-3" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="M13 6l6 6-6 6" />
+                      </svg>
+                    </div>
+                  )}
+                </motion.article>
+              );
+
+              return slug ? (
+                <Link
+                  key={feature.title + i}
+                  href={`/venues/${slug}/`}
+                  className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 rounded-3xl"
+                  aria-label={feature.title}
+                >
+                  {card}
+                </Link>
+              ) : (
+                <div key={feature.title + i}>{card}</div>
+              );
+            })}
             {/* Sponsored slot — only renders when a live ad targets this category. */}
             <SponsoredCard category={category.id} themeRgb={category.themeRgb} />
           </div>
