@@ -77,21 +77,21 @@ export const HERO_TEXT = {
       sub: 'Suomen sykkivin järvenrantakortteli — festivaaleja, ravintoloita, satamaa ja saunaa.',
     },
     beat2: {
-      title: 'Vesi tekee tästä paikan',
+      title: 'Lutakon Ruoka & Sauna',
       sub:
-        'Päijänteen pohjoinen päätesatama avautuu suoraan kaupungin sydämeen. Veneet, rantapromenadi ja pyöräilijät kohtaavat samalla aukiolla.',
+        'Saunaravintola Sataman Viilu, ravintolalaivat Gaia ja Musta Magia, Konttiravintolat Morton ja Waves, HIISI-panimon taproom ja iglu-saunalaiva — pohjoismainen makumatka veden äärellä.',
     },
     beat3: {
-      title: 'Lavat, löylyt, lyhdyt',
+      title: 'Lutakon Kulttuuri & Liikunta',
       sub:
-        'OlutSatama 11.–13.6.2026, SuomiPop 9.–11.7.2026, Secto Rally Finland 30.7.–2.8.2026, viikoittaisia konsertteja Tanssisali Lutakon lavalla — ja Saunaravintola Sataman Viilu vastapäätä järveä.',
+        'Tanssisali Lutakon legendaariset keikat, Finlandia Marathon, Reserved Gym, beach volley, padel, Gr8 Wake -vesiurheilukeskus ja 13 km Jyväskylän Rantaraitti — konsertit, kuntosalit ja kilometrit veden äärellä.',
     },
     beat4: {
-      title: 'Yksi kortteli, kaikki vuodenajat',
+      title: 'Lutakon Business',
       sub:
-        'Aamukahveista myöhäisiin DJ-iltoihin, kesäpurjehduksista talven jääbaariin. Lutakko ei lopu koskaan.',
+        'Innova 1, 2 ja 4 — Kielo Toimitilojen kestävät toimistorakennukset tapahtumakorttelin sydämessä. Joustavat sopimukset, 100 % vihreä energia, sauna ja kokoustilat.',
     },
-    floor: 'Vieritä alas — tarinan kolme lukua odottavat',
+    floor: 'Vieritä alas — neljä lukua odottavat',
   },
   en: {
     eyebrow: 'Jyväskylä · Lutakko',
@@ -100,21 +100,21 @@ export const HERO_TEXT = {
       sub: 'Finland’s most alive lakeshore quarter — festivals, restaurants, marina and sauna.',
     },
     beat2: {
-      title: 'The water makes the place',
+      title: 'Lutakko Dine & Sauna',
       sub:
-        'Päijänte’s northern terminus opens straight into the city centre. Yachts, the promenade and cyclists meet on the same square.',
+        'Sauna restaurant Sataman Viilu, restaurant ships Gaia and Musta Magia, container kitchens Morton and Waves, the HIISI Brewery taproom and the world’s first igloo-sauna boat — a Nordic flavour journey by the water.',
     },
     beat3: {
-      title: 'Stages, steam, lanterns',
+      title: 'Lutakko Culture & Sports',
       sub:
-        'OlutSatama 11–13 Jun 2026, SuomiPop 9–11 Jul 2026, Secto Rally Finland 30 Jul – 2 Aug 2026, weekly gigs at Tanssisali Lutakko — and Sauna restaurant Sataman Viilu just across the water.',
+        'Legendary gigs at Tanssisali Lutakko, the Finlandia Marathon, Reserved Gym, beach volleyball, padel, the Gr8 Wake water-sports centre and the 13 km Rantaraitti trail — concerts, gyms and kilometres by the water.',
     },
     beat4: {
-      title: 'One block, every season',
+      title: 'Lutakko Business',
       sub:
-        'From morning coffees to late-night DJ sets, from summer sailing to a winter ice bar. Lutakko never closes.',
+        'Innova 1, 2 and 4 — Kielo Toimitilat’s sustainable office buildings at the heart of the event district. Flexible terms, 100% green energy, sauna and meeting rooms.',
     },
-    floor: 'Scroll down — three chapters await',
+    floor: 'Scroll down — four chapters await',
   },
 } as const;
 
