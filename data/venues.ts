@@ -18,7 +18,7 @@ export interface VenueCopy {
 export interface VenueEntry {
   slug: string;
   kind: VenueKind;
-  category: 'festivals-culture' | 'food-sauna' | 'marina-recreation';
+  category: 'festivals-culture' | 'food-sauna' | 'marina-recreation' | 'business';
   themeColor: string;
   themeRgb: [number, number, number];
   /** Optional hero image path under /public/ */
@@ -605,32 +605,54 @@ VENUES.push(
     themeColor: '#a3e635',
     themeRgb: [163, 230, 53],
     image: null,
-    url: 'https://hiisi.beer/',
-    email: null,
-    phone: null,
-    address: 'Lutakko, Jyväskylä',
-    facts: [],
+    url: 'https://hiisi.beer/en/taproom/',
+    email: 'taproom@hiisi.beer',
+    phone: '+358 50 339 9416',
+    address: 'Lutakonaukio 3, 40100 Jyväskylä',
+    facts: [
+      { fi: { label: 'Tyyppi', value: 'Taproom & bottleshop · ravintola ja baari' }, en: { label: 'Type', value: 'Taproom & bottleshop · restaurant and bar' } },
+      { fi: { label: 'Lounas', value: 'Ma–pe 10:30–15:00, 15 € (päivän erikoinen, keitto, salaatti, leipä, juoma)' }, en: { label: 'Lunch', value: 'Mon–Fri 10:30–15:00, €15 (daily special, soup, salad, bread, drink)' } },
+      { fi: { label: 'À la carte', value: 'Iltaisin ja viikonloppuisin — burgereita, snacksejä, pääruokia, jälkiruokia (gluteeniton & vegaani-vaihtoehdot)' }, en: { label: 'À la carte', value: 'Evenings & weekends — burgers, snacks, mains, desserts (GF & vegan options)' } },
+      { fi: { label: 'Aukiolot', value: 'Ma–ke 10:30–16, to 10:30–21, pe 10:30–23, la 16–23, su suljettu' }, en: { label: 'Hours', value: 'Mon–Wed 10:30–16, Thu 10:30–21, Fri 10:30–23, Sat 16–23, Sun closed' } },
+      { fi: { label: 'Bottleshop', value: 'Auki klo 21:00 asti' }, en: { label: 'Bottleshop', value: 'Open until 21:00' } },
+    ],
     fi: {
       hero: {
-        eyebrow: 'Pienpanimo',
-        title: 'HIISI-panimo',
-        subtitle: 'Lutakon paikallinen pienpanimo, taproom & bottleshop — sisältö täydentyy pian.',
+        eyebrow: 'Ravintola · Baari · Panimo',
+        title: 'HIISI Taproom & Bottleshop',
+        subtitle: 'Lutakonaukio 3 — pienpanimon ravintola, baari ja pullopuoti yhdessä.',
       },
-      about: 'Sisältö lisätään pian.',
-      highlights: ['Sisältö täydentyy pian'],
+      about:
+        'HIISI Taproom & Bottleshop yhdistää pienpanimon, ravintolan ja baarin Lutakonaukion laidalla. Arkisin 15 € lounas, iltaisin à la carte: burgereita, snacksejä ja pääruokia. Gluteeniton ja vegaani-vaihtoehdot. Bottleshop tarjoaa HIISIn omat oluet kotiin vietäväksi.',
+      highlights: [
+        'Lounas ma–pe 10:30–15 · 15 € sis. päivän erikoisen, keiton, salaatin, leivän ja juoman',
+        'À la carte: burgerit, snackit, pääruoat, jälkiruoat (GF & vegaani)',
+        'Bottleshop auki klo 21:00 saakka',
+        'Pöytävaraukset puhelimitse tai verkossa; 7+ hengen ryhmät sähköpostilla',
+        'Olutmaisteluja ja yksityinen kabinetti ryhmille',
+        'Sijainti: Lutakonaukio 3, 40100 Jyväskylä · taproom@hiisi.beer · +358 50 339 9416',
+      ],
       pitch:
-        'HIISI-panimo — taproom-näkyvyys etusivulla ja brändikampanjat festivaalisesonkien aikana.',
+        'HIISI on Lutakon vahvin oluttuottaja. Brändi-yhteistyö (etusivun sponsoroitu kortti tai event-takeover festivaalisesonkina) tavoittaa olutyhteisön ja festivaalikävijät.',
     },
     en: {
       hero: {
-        eyebrow: 'Microbrewery',
-        title: 'HIISI Brewery',
-        subtitle: 'Lutakko’s local microbrewery, taproom & bottleshop — content coming soon.',
+        eyebrow: 'Restaurant · Bar · Brewery',
+        title: 'HIISI Taproom & Bottleshop',
+        subtitle: 'Lutakonaukio 3 — microbrewery restaurant, bar and bottle shop in one.',
       },
-      about: 'Content to follow.',
-      highlights: ['Content coming soon'],
+      about:
+        'HIISI Taproom & Bottleshop combines a microbrewery, restaurant and bar right by Lutakonaukio square. Weekday €15 lunch and evening à la carte: burgers, snacks and mains, with gluten-free and vegan options. The Bottleshop sells HIISI’s own beers to take home.',
+      highlights: [
+        'Lunch Mon–Fri 10:30–15:00 · €15 incl. daily special, soup, salad, bread, drink',
+        'À la carte: burgers, snacks, mains, desserts (GF & vegan)',
+        'Bottleshop open until 21:00',
+        'Table reservations by phone or online; groups of 7+ by email',
+        'Beer tastings and a private cabinet for groups',
+        'Location: Lutakonaukio 3, 40100 Jyväskylä · taproom@hiisi.beer · +358 50 339 9416',
+      ],
       pitch:
-        'HIISI Brewery — taproom visibility on the homepage and brand campaigns during festival seasons.',
+        'HIISI is the strongest craft-beer producer in Lutakko. Brand partnerships (homepage sponsored card or festival-season event takeovers) reach the beer community and festival-goers.',
     },
   },
   {
@@ -666,6 +688,299 @@ VENUES.push(
       highlights: ['Content coming soon'],
       pitch:
         'Finlandia Marathon — sponsor packages and event-specific visibility on the route map and aid stations.',
+    },
+  },
+
+  /* -------- Konttiravintola Waves -------- */
+  {
+    slug: 'waves',
+    kind: 'venue',
+    category: 'food-sauna',
+    themeColor: '#22d3ee',
+    themeRgb: [34, 211, 238],
+    image: null,
+    url: null,
+    email: null,
+    phone: '050 366 6736',
+    address: 'Satamakatu 2 B, 40100 Jyväskylä',
+    facts: [
+      { fi: { label: 'Tyyppi', value: 'Konttiravintola · länsimaista keittiötä, burgereita ja salaatteja' }, en: { label: 'Type', value: 'Container restaurant · Western cuisine, burgers and salads' } },
+      { fi: { label: 'Aukeaa', value: 'Klo 10:30 alkaen' }, en: { label: 'Opens', value: 'From 10:30' } },
+      { fi: { label: 'Sijainti', value: 'Satamakatu 2 B — Konttiravintola Mortonin naapurissa' }, en: { label: 'Location', value: 'Satamakatu 2 B — next door to Konttiravintola Morton' } },
+      { fi: { label: 'Asiakasarvio', value: 'Google 4,4 / 5 (86 arviota)' }, en: { label: 'Customer rating', value: 'Google 4.4 / 5 (86 reviews)' } },
+      { fi: { label: 'Yhteistyö', value: 'Sandels-olutkumppani' }, en: { label: 'Partnership', value: 'Sandels beer partner' } },
+    ],
+    fi: {
+      hero: {
+        eyebrow: 'Konttiravintola · Burger',
+        title: 'Konttiravintola Waves',
+        subtitle: 'Satamakatu 2 B — burgereita ja salaatteja kontista, Sandels-oluella.',
+      },
+      about:
+        'Konttiravintola Waves on Lutakon sataman vilkkaimpia kesäravintoloita Satamakatu 2 B:ssä, Konttiravintola Mortonin naapurissa. Menulla burgereita, salaatteja ja länsimaista pikaruokaa, Sandels-olut kumppanina. Google-arviointi 4,4/5 (86 arviota).',
+      highlights: [
+        'Burgerit ja salaatit kontti-ravintolasta',
+        'Sandels-olutkumppani',
+        'Avoinna klo 10:30 alkaen',
+        'Sijainti: Satamakatu 2 B, 40100 Jyväskylä',
+        'Puhelin: 050 366 6736',
+        'Google-arvio 4,4 / 5 (86 arviota)',
+      ],
+      pitch:
+        'Konttiravintola Waves — dedikoitu sivu Lutakko.info-etusivulla, menut ja sponsoroitu kortti Ruoka-osiossa.',
+    },
+    en: {
+      hero: {
+        eyebrow: 'Container restaurant · Burgers',
+        title: 'Konttiravintola Waves',
+        subtitle: 'Satamakatu 2 B — burgers and salads from a container, with Sandels beer.',
+      },
+      about:
+        'Konttiravintola Waves is one of Lutakon Satama’s busiest summer container restaurants at Satamakatu 2 B, right next door to Konttiravintola Morton. The menu features burgers, salads and Western fast food, with Sandels beer as the partner brand. 4.4 / 5 on Google (86 reviews).',
+      highlights: [
+        'Burgers and salads from a shipping-container kitchen',
+        'Sandels beer partner',
+        'Open from 10:30',
+        'Location: Satamakatu 2 B, 40100 Jyväskylä',
+        'Phone: 050 366 6736',
+        'Google rating 4.4 / 5 (86 reviews)',
+      ],
+      pitch:
+        'Konttiravintola Waves — dedicated page on Lutakko.info, menus and a sponsored card in the Food section.',
+    },
+  },
+
+  /* -------- Reserved Gym -------- */
+  {
+    slug: 'reserved-gym',
+    kind: 'venue',
+    category: 'festivals-culture',
+    themeColor: '#22d3ee',
+    themeRgb: [34, 211, 238],
+    image: null,
+    url: 'https://www.reservedgym.fi/',
+    email: 'info@reservedgym.fi',
+    phone: '+358 50 581 5372',
+    address: 'Lutakonaukio 1, 40100 Jyväskylä',
+    facts: [
+      { fi: { label: 'Tyyppi', value: 'Yksityinen kuntosali (tuntivaraus)' }, en: { label: 'Type', value: 'Private booking gym (hourly)' } },
+      { fi: { label: 'Sijainti', value: 'Lutakonaukio 1, panoraamanäkymä aukiolle' }, en: { label: 'Location', value: 'Lutakonaukio 1, panoramic view over the square' } },
+      { fi: { label: 'Konsepti', value: 'Varaa koko sali itsellesi tai pienelle ryhmälle (1 + 3 valmentajaa)' }, en: { label: 'Concept', value: 'Book the whole gym for yourself or a small group (1 + 3 trainers)' } },
+      { fi: { label: 'Varaus', value: 'erp.asio.fi/onlinekalenturi/reservedgym' }, en: { label: 'Booking', value: 'erp.asio.fi/onlinekalenturi/reservedgym' } },
+    ],
+    fi: {
+      hero: {
+        eyebrow: 'Liikunta · Kuntosali',
+        title: 'Reserved Gym',
+        subtitle: '"Yksityinen kuntosali Jyväskylän keskustassa" — Lutakonaukio 1.',
+      },
+      about:
+        'Reserved Gym on tuntiperusteinen yksityiskuntosali Lutakonaukion laidalla. Varaa koko sali itsellesi tai pienelle ryhmälle — ei kuukausimaksua, vain tuntivarauksia. Sopii personal trainerille ja asiakkaalle (1 + jopa 3 valmentajaa per vuoro). Salin panoraamanäkymä avautuu Lutakonaukiolle.',
+      highlights: [
+        'Tuntivaraus — koko sali käytössäsi varauksen ajan',
+        'Ei kuukausi- tai vuosijäsenmaksua',
+        'Panoraamanäkymä Lutakonaukiolle',
+        'Sopii personal trainereille (1 valmentaja + 3 asiakasta)',
+        'Varaus: erp.asio.fi/onlinekalenturi/reservedgym',
+        'Yhteys: info@reservedgym.fi · +358 50 581 5372',
+      ],
+      pitch:
+        'Reserved Gym — Lutakko.info kävijöille suunnattu kuntosalivaraus. Voimme nostaa salin Liikunta-osion ykköskorttina ja ohjata varauksia.',
+    },
+    en: {
+      hero: {
+        eyebrow: 'Sports · Gym',
+        title: 'Reserved Gym',
+        subtitle: '"A private gym in the heart of Jyväskylä" — Lutakonaukio 1.',
+      },
+      about:
+        'Reserved Gym is an hourly-booked private gym at the edge of Lutakonaukio. Reserve the entire facility for yourself or a small group — no monthly fees, just per-use bookings. Ideal for personal trainers and their clients (1 trainer + up to 3 clients per slot). Panoramic view over Lutakonaukio square.',
+      highlights: [
+        'Hourly booking — the whole gym is yours for the slot',
+        'No monthly or annual membership fees',
+        'Panoramic view over Lutakonaukio square',
+        'Ideal for personal trainers (1 trainer + 3 clients)',
+        'Booking: erp.asio.fi/onlinekalenturi/reservedgym',
+        'Contact: info@reservedgym.fi · +358 50 581 5372',
+      ],
+      pitch:
+        'Reserved Gym — visitor-facing booking partner for Lutakko.info. We can feature the gym as the top card in the Sports section and route bookings.',
+    },
+  },
+
+  /* -------- Kielo Innova 1 -------- */
+  {
+    slug: 'innova-1',
+    kind: 'venue',
+    category: 'business',
+    themeColor: '#a78bfa',
+    themeRgb: [167, 139, 250],
+    image: null,
+    url: 'https://www.kielotoimitilat.fi/property/piippukatu-11/',
+    email: 'minna.hamalainen@kielotoimitilat.fi',
+    phone: '+358 40 564 8042',
+    address: 'Piippukatu 11, 40100 Jyväskylä',
+    facts: [
+      { fi: { label: 'Operaattori', value: 'Kielo Toimitilat' }, en: { label: 'Operator', value: 'Kielo Toimitilat' } },
+      { fi: { label: 'Sertifikaatti', value: 'BREEAM Very Good · 100 % vihreä sähkö ja kaukolämpö' }, en: { label: 'Certification', value: 'BREEAM Very Good · 100% green electricity & district heating' } },
+      { fi: { label: 'Palvelut', value: 'Ravintola Fiilu, kokouskeskus, sauna ("Lutakon Huippu"), parkkihalli + sähköauton lataus, pyöräpaikat + e-pyörät' }, en: { label: 'Amenities', value: 'Fiilu restaurant, conference centre, "Lutakon Huippu" sauna, parking + EV charging, bike storage + e-bikes' } },
+      { fi: { label: 'Etäisyydet', value: 'Linja-autoasema 400 m · juna-asema 400 m · lentokenttä 23 km' }, en: { label: 'Distances', value: 'Bus station 400 m · train station 400 m · airport 23 km' } },
+      { fi: { label: 'Vuokraus', value: 'Minna Hämäläinen, Key Account Manager' }, en: { label: 'Leasing', value: 'Minna Hämäläinen, Key Account Manager' } },
+    ],
+    fi: {
+      hero: {
+        eyebrow: 'Business · Toimitila',
+        title: 'Innova 1',
+        subtitle: 'Piippukatu 11 — Kielon edustava ja kestävän kehityksen mukainen toimistorakennus Lutakossa.',
+      },
+      about:
+        'Innova 1 on Lutakon sydämessä sijaitseva moderni toimistorakennus, joka yhdistää keskeisen sijainnin, laadukkaat palvelut ja kestävän kehityksen. Joustavat ja muunneltavat toimitilat eri kokoisille yrityksille. BREEAM Very Good -sertifioitu, 100 % vihreä energia.',
+      highlights: [
+        'Osoite: Piippukatu 11, 40100 Jyväskylä',
+        'BREEAM Very Good -sertifikaatti',
+        'Ravintola Fiilu, kokouskeskus, sauna ja edustustila "Lutakon Huippu"',
+        'Parkkihalli sähköauton latausasemilla; pyöräpaikat ja yhteiskäyttöiset e-pyörät',
+        'Linja-autoasema ja juna-asema 400 m päässä',
+        'Vuokraus: Minna Hämäläinen +358 40 564 8042 · minna.hamalainen@kielotoimitilat.fi',
+      ],
+      pitch:
+        'Innova 1 — Lutakon yritysverkoston ydin. Lutakko.info voi yhdistää toimistovuokrauksen ja kävijä- / asiakasakvisitiopaketit yhdeksi kanavaksi.',
+    },
+    en: {
+      hero: {
+        eyebrow: 'Business · Office',
+        title: 'Innova 1',
+        subtitle: 'Piippukatu 11 — Kielo’s flagship sustainable office building in the heart of Lutakko.',
+      },
+      about:
+        'Innova 1 is a modern office building in the heart of Lutakko combining central location, premium services and sustainability. Flexible, customisable spaces for companies of every size. BREEAM Very Good certification, 100% green energy.',
+      highlights: [
+        'Address: Piippukatu 11, 40100 Jyväskylä',
+        'BREEAM Very Good certification',
+        'Fiilu restaurant, conference centre, sauna and "Lutakon Huippu" representation space',
+        'Parking garage with EV charging; bike storage + shared e-bikes',
+        'Bus & train stations within 400 m',
+        'Leasing: Minna Hämäläinen +358 40 564 8042 · minna.hamalainen@kielotoimitilat.fi',
+      ],
+      pitch:
+        'Innova 1 — the core of Lutakko’s business network. Lutakko.info can bundle office leasing with visitor and client-acquisition packages.',
+    },
+  },
+
+  /* -------- Kielo Innova 2 -------- */
+  {
+    slug: 'innova-2',
+    kind: 'venue',
+    category: 'business',
+    themeColor: '#a78bfa',
+    themeRgb: [167, 139, 250],
+    image: null,
+    url: 'https://www.kielotoimitilat.fi/property/lutakonaukio-7/',
+    email: 'minna.hamalainen@kielotoimitilat.fi',
+    phone: '+358 40 564 8042',
+    address: 'Lutakonaukio 7, 40100 Jyväskylä',
+    facts: [
+      { fi: { label: 'Operaattori', value: 'Kielo Toimitilat' }, en: { label: 'Operator', value: 'Kielo Toimitilat' } },
+      { fi: { label: 'Sertifikaatti', value: 'LEED Platinum · 100 % vihreä energia' }, en: { label: 'Certification', value: 'LEED Platinum · 100% green energy' } },
+      { fi: { label: 'Kerroksia', value: '6' }, en: { label: 'Floors', value: '6' } },
+      { fi: { label: 'Vapaina nyt', value: '112 m², 163 m², 166 m² yksiköt' }, en: { label: 'Available now', value: '112 m², 163 m², 166 m² units' } },
+      { fi: { label: 'Palvelut', value: 'Parkkihalli + EV-lataus, sauna, kokoustilat, aulapalvelu, catering' }, en: { label: 'Amenities', value: 'Parking + EV charging, sauna, meeting rooms, lobby service, catering' } },
+    ],
+    fi: {
+      hero: {
+        eyebrow: 'Business · Toimitila',
+        title: 'Innova 2',
+        subtitle: 'Lutakonaukio 7 — "Kestävää toimitilaa Lutakon sydämessä", LEED Platinum.',
+      },
+      about:
+        'Innova 2 on kuusikerroksinen, LEED Platinum -sertifioitu toimistorakennus Jyväsjärven rannassa, Lutakon ytimessä. Joustavat toimitilakoot, sauna, kokoustilat ja kaikki Innova 1:n palvelut kävelymatkan päässä. Vapaina nyt 112 m², 163 m² ja 166 m² yksiköt.',
+      highlights: [
+        'Osoite: Lutakonaukio 7, 40100 Jyväskylä',
+        '6 kerrosta · LEED Platinum · 100 % vihreä energia',
+        'Vapaana 112 m², 163 m², 166 m²',
+        'Parkkihalli + EV-lataus, sauna, kokoustilat, aulapalvelu',
+        'Naapurin Innova 1:n ravintola, Paviljonki vieressä',
+        'Vuokraus: Minna Hämäläinen +358 40 564 8042',
+      ],
+      pitch:
+        'Innova 2 — premium-toimitilakumppani Lutakko.infon Business-osiossa.',
+    },
+    en: {
+      hero: {
+        eyebrow: 'Business · Office',
+        title: 'Innova 2',
+        subtitle: 'Lutakonaukio 7 — "Sustainable office space in Lutakko’s heart", LEED Platinum.',
+      },
+      about:
+        'Innova 2 is a six-storey, LEED Platinum-certified office building on the shore of Jyväsjärvi, at the heart of Lutakko. Flexible unit sizes, sauna, meeting rooms and all Innova 1 services within walking distance. Available now: 112 m², 163 m², 166 m² units.',
+      highlights: [
+        'Address: Lutakonaukio 7, 40100 Jyväskylä',
+        '6 floors · LEED Platinum · 100% green energy',
+        'Available: 112 m², 163 m², 166 m²',
+        'Parking + EV charging, sauna, meeting rooms, lobby service',
+        'Restaurant in adjacent Innova 1; Paviljonki convention centre next door',
+        'Leasing: Minna Hämäläinen +358 40 564 8042',
+      ],
+      pitch:
+        'Innova 2 — premium office partner in Lutakko.info’s Business section.',
+    },
+  },
+
+  /* -------- Kielo Innova 4 -------- */
+  {
+    slug: 'innova-4',
+    kind: 'venue',
+    category: 'business',
+    themeColor: '#a78bfa',
+    themeRgb: [167, 139, 250],
+    image: null,
+    url: 'https://www.kielotoimitilat.fi/property/lutakonaukio-1/',
+    email: 'minna.hamalainen@kielotoimitilat.fi',
+    phone: '+358 40 564 8042',
+    address: 'Lutakonaukio 1, 40100 Jyväskylä',
+    facts: [
+      { fi: { label: 'Operaattori', value: 'Kielo Toimitilat' }, en: { label: 'Operator', value: 'Kielo Toimitilat' } },
+      { fi: { label: 'Sertifikaatti', value: 'LEED Gold · 100 % vihreä energia' }, en: { label: 'Certification', value: 'LEED Gold · 100% green energy' } },
+      { fi: { label: 'Vapaina nyt', value: '51 m² ja 69 m² toimistot' }, en: { label: 'Available now', value: '51 m² and 69 m² offices' } },
+      { fi: { label: 'Palvelut', value: 'Parkkihalli + EV-lataus, sauna (Vasikkasaari-järvinäkymin), kokoustilat, kuntosali (Reserved Gym), ruokakauppa' }, en: { label: 'Amenities', value: 'Parking + EV charging, sauna (Vasikkasaari lake views), meeting rooms, gym (Reserved Gym), grocery store' } },
+    ],
+    fi: {
+      hero: {
+        eyebrow: 'Business · Toimitila',
+        title: 'Innova 4',
+        subtitle: 'Lutakonaukio 1 — "Viihtyisä työympäristö Lutakon sydämessä", LEED Gold.',
+      },
+      about:
+        'Innova 4 on LEED Gold -sertifioitu moderni toimistorakennus Lutakon sydämessä. Joustavat toimistokoot pienille ja keskisuurille yrityksille; talossa kuntosali (Reserved Gym), ruokakauppa, sauna järvinäkymin, kokoustilat ja parkkihalli sähköauton latauksella.',
+      highlights: [
+        'Osoite: Lutakonaukio 1, 40100 Jyväskylä',
+        'LEED Gold · 100 % vihreä energia',
+        'Vapaana 51 m² ja 69 m² toimistot',
+        'Talossa: kuntosali (Reserved Gym), ruokakauppa, kokoustilat',
+        'Sauna Vasikkasaaren järvinäkymin',
+        'Linja-auto- ja juna-asema 750 m päässä',
+      ],
+      pitch:
+        'Innova 4 — kompaktit toimistot ja Lutakko.infon ristiinmainonta naapuripalveluista (mm. Reserved Gym samassa rakennuksessa).',
+    },
+    en: {
+      hero: {
+        eyebrow: 'Business · Office',
+        title: 'Innova 4',
+        subtitle: 'Lutakonaukio 1 — "A pleasant work environment in Lutakko’s heart", LEED Gold.',
+      },
+      about:
+        'Innova 4 is a LEED Gold-certified modern office building at the heart of Lutakko. Flexible office sizes for small and mid-sized companies; the building hosts a gym (Reserved Gym), a grocery store, a lake-view sauna, meeting rooms and a parking garage with EV charging.',
+      highlights: [
+        'Address: Lutakonaukio 1, 40100 Jyväskylä',
+        'LEED Gold · 100% green energy',
+        'Available: 51 m² and 69 m² offices',
+        'In-building: gym (Reserved Gym), grocery store, meeting rooms',
+        'Sauna with Vasikkasaari lake views',
+        'Bus & train stations within 750 m',
+      ],
+      pitch:
+        'Innova 4 — compact offices and Lutakko.info cross-promotion with neighbouring services (incl. Reserved Gym in the same building).',
     },
   },
 );

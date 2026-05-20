@@ -179,9 +179,10 @@ export const NAV_MENU: NavMenuGroup[] = [
       { slug: 'viilu',           fi: 'Viilu',           en: 'Viilu' },
       { slug: 'saunalautta',     fi: 'Saunalautat',     en: 'Sauna rafts' },
       { slug: 'morton',          fi: 'Morton',          en: 'Morton' },
+      { slug: 'waves',           fi: 'Waves',           en: 'Waves' },
       { slug: 'trattoria-aukio', fi: 'Trattoria Aukio', en: 'Trattoria Aukio' },
       { slug: 'musta-magia',     fi: 'M/S Musta Magia', en: 'M/S Musta Magia' },
-      { slug: 'hiisi',           fi: 'HIISI-panimo',    en: 'HIISI Brewery' },
+      { slug: 'hiisi',           fi: 'HIISI',           en: 'HIISI' },
       { slug: 'gaia',            fi: 'Gaia',            en: 'Gaia' },
     ],
   },
@@ -191,7 +192,18 @@ export const NAV_MENU: NavMenuGroup[] = [
     en: 'Culture & sports',
     items: [
       { slug: 'tanssisali-lutakko', fi: 'Tanssisali Lutakko', en: 'Tanssisali Lutakko' },
+      { slug: 'reserved-gym',       fi: 'Reserved Gym',       en: 'Reserved Gym' },
       { slug: 'finlandia-marathon', fi: 'Finlandia Marathon', en: 'Finlandia Marathon' },
+    ],
+  },
+  {
+    key: 'business',
+    fi: 'Business',
+    en: 'Business',
+    items: [
+      { slug: 'innova-1', fi: 'Innova 1 (Piippukatu 11)',  en: 'Innova 1 (Piippukatu 11)' },
+      { slug: 'innova-2', fi: 'Innova 2 (Lutakonaukio 7)', en: 'Innova 2 (Lutakonaukio 7)' },
+      { slug: 'innova-4', fi: 'Innova 4 (Lutakonaukio 1)', en: 'Innova 4 (Lutakonaukio 1)' },
     ],
   },
 ];
