@@ -167,8 +167,10 @@ export const NAV_MENU: NavMenuGroup[] = [
     fi: 'Tapahtumat',
     en: 'Events',
     items: [
-      { slug: 'secto-rally', fi: 'Ralli',    en: 'Rally' },
-      { slug: 'suomipop',    fi: 'SuomiPop', en: 'SuomiPop' },
+      { slug: 'kansainvaliset-suurmarkkinat', fi: 'Kansainväliset Suurmarkkinat', en: 'International Grand Markets' },
+      { slug: 'olutsatama',                   fi: 'OlutSatama',                   en: 'OlutSatama' },
+      { slug: 'suomipop',                     fi: 'SuomiPop',                     en: 'SuomiPop' },
+      { slug: 'secto-rally',                  fi: 'Ralli',                        en: 'Rally' },
     ],
   },
   {
@@ -224,7 +226,7 @@ export const CATEGORIES: Category[] = [
   /* ------------------------------------------------------------------ */
   {
     id: 'festivals-culture',
-    navLabel: { fi: 'Kulttuuri & Rallit', en: 'Culture & Rallies' },
+    navLabel: { fi: 'Tapahtumat', en: 'Events' },
     themeColor: '#fb7185',
     themeRgb: [251, 113, 133],
     themeRgbSecondary: [251, 191, 36],
@@ -277,42 +279,37 @@ export const CATEGORIES: Category[] = [
         title: 'Kulttuurikevät ja -kesä Lutakossa',
         desc: 'Tanssisali Lutakko, Paviljonki ja avoimet aukiot — tapahtumakortteli rakennettiin musiikille ja yhteisille hetkille.',
         bulletPoints: [
+          'Kansainväliset Suurmarkkinat 4.–7.6.2026 Lutakonaukiolla · yli 30 maan myyjät, kansainvälinen ruoka, käsityöt, lasten karnevaali · maksuton sisäänpääsy · eurooppamarkkinat.fi/jyvaskyla',
           'OlutSatama 11.–13.6.2026 Lutakonaukiolla · "Suomen paras olut-tapahtuma", 200+ panimoa · olutsatama.fi',
           'SuomiPop Festival 9.–11.7.2026 Jyväskylässä · liput suomipopfestivaali.fi/jyvaskyla/liput',
           'Secto Rally Finland 30.7.–2.8.2026 Jyväskylässä · Servicepark Paviljongilla · sectorallyfinland.fi',
-          'Tanssisali Lutakko · Jelmu ry:n legendaarinen rock-klubi vanhassa Lutakon teollisuusrakennuksessa · jelmu.net',
-          'Kesäteatteri ja street food -tapahtumat Lutakonaukiolla',
+          'Finlandia Marathon · Jyväskylän marathon-klassikko (osallistujat täyttävät Lutakon palvelut tapahtumaviikonloppuna) · finlandiamarathon.fi',
           'Talvitapahtumat: jääbaari ja valoinstallaatiot rantapromenadilla',
         ],
       },
       features: [
         {
-          icon: 'stage',
-          title: 'Päälava rannalla',
-          description: 'Pohjoismaiden komein järvinäkymä esiintyjien takana — auringonlasku osana showta.',
-        },
-        {
-          icon: 'rally',
-          title: 'Secto Rally Finland Servicepark',
-          description: 'WRC-tallit Paviljongin pihalla 30.7.–2.8.2026 – pääset lähelle koneita, joiden ääni täyttää koko kaupungin.',
-        },
-        {
-          icon: 'stage',
-          title: 'Tanssisali Lutakko',
-          description: 'Suomen rakastetuin underground-konserttipaikka 1900-luvun alun teollisuusrakennuksessa Lutakonaukion laidalla. Jelmu ry:n ohjelmistossa rockia, punkia, metallia ja indietä ympäri vuoden — jelmu.net.',
+          icon: 'food',
+          title: 'Kansainväliset Suurmarkkinat',
+          description: 'Yli 30 maan myyjät Lutakonaukiolle 4.–7.6.2026 — käsityöt, kansainvälinen ruoka, lasten karnevaali. Maksuton sisäänpääsy. eurooppamarkkinat.fi/jyvaskyla',
         },
         {
           icon: 'food',
           title: 'OlutSatama',
-          description: 'Suomen paras olut-tapahtuma 11.–13.6.2026 Lutakonaukiolla — yli 200 panimoa, ruokapisteitä ja keikkoja. 49 000+ kävijää vuodesta 2016. olutsatama.fi',
+          description: '"Suomen paras olut-tapahtuma" 11.–13.6.2026 Lutakonaukiolla — yli 200 panimoa, ruokapisteitä ja keikkoja. 49 000+ kävijää vuodesta 2016. olutsatama.fi',
         },
         {
-          icon: 'food',
-          title: 'Pop-up street food',
-          description: 'Aukio täyttyy ruoka-autoista ja pienpanimoista festivaalien aikaan.',
+          icon: 'stage',
+          title: 'SuomiPop Festival',
+          description: 'SuomiPop kerää 9.–11.7.2026 kymmeniä artisteja ja kymmenettuhannet kävijät — päälava rannalla, Pohjoismaiden komein järvinäkymä. suomipopfestivaali.fi/jyvaskyla',
+        },
+        {
+          icon: 'rally',
+          title: 'Secto Rally Finland',
+          description: 'WRC-osakilpailu 30.7.–2.8.2026, Servicepark Paviljongilla — pääset lähelle koneita, joiden ääni täyttää koko kaupungin. sectorallyfinland.fi',
         },
       ],
-      cta: { label: 'Selaa tapahtumia', href: '#events' },
+      cta: { label: 'Selaa tapahtumia', href: '#festivals-culture' },
     },
     en: {
       title: 'The stages light up',
@@ -339,42 +336,37 @@ export const CATEGORIES: Category[] = [
         title: 'Spring & summer culture in Lutakko',
         desc: 'Tanssisali Lutakko, Paviljonki and open squares — this district was built for music and gatherings.',
         bulletPoints: [
+          'International Grand Markets — 4–7 Jun 2026 on Lutakonaukio · vendors from 30+ countries, international food, crafts, children’s carnival · free entry · eurooppamarkkinat.fi/jyvaskyla',
           'OlutSatama — 11–13 Jun 2026 on Lutakonaukio · "Finland’s best beer event", 200+ breweries · olutsatama.fi',
           'SuomiPop Festival — 9–11 Jul 2026 in Jyväskylä · tickets at suomipopfestivaali.fi/jyvaskyla/liput',
           'Secto Rally Finland — 30 Jul – 2 Aug 2026 in Jyväskylä · Service Park at Paviljonki · sectorallyfinland.fi',
-          'Tanssisali Lutakko · Jelmu’s legendary rock club in a heritage industrial building beside Lutakonaukio · jelmu.net',
-          'Summer theatre & street food on Lutakonaukio square',
+          'Finlandia Marathon · Jyväskylä’s marathon classic — participants fill Lutakko’s venues during race weekend · finlandiamarathon.fi',
           'Winter events: ice bar and light installations along the promenade',
         ],
       },
       features: [
         {
-          icon: 'stage',
-          title: 'Mainstage on the shore',
-          description: 'The Nordics’ most cinematic lake view behind the artists — sunset becomes part of the show.',
-        },
-        {
-          icon: 'rally',
-          title: 'Secto Rally Finland Service Park',
-          description: 'WRC teams set up at Paviljonki 30 Jul – 2 Aug 2026 — walk right up to the machines roaring through the city.',
-        },
-        {
-          icon: 'stage',
-          title: 'Tanssisali Lutakko',
-          description: 'Finland’s most beloved underground gig venue, set in an early-1900s heritage industrial building right by Lutakonaukio square. Jelmu programmes rock, punk, metal and indie all year — jelmu.net.',
+          icon: 'food',
+          title: 'International Grand Markets',
+          description: 'Vendors from 30+ countries fill Lutakonaukio 4–7 Jun 2026 — crafts, international food, children’s carnival. Free entry. eurooppamarkkinat.fi/jyvaskyla',
         },
         {
           icon: 'food',
           title: 'OlutSatama',
-          description: 'Finland’s best beer event, 11–13 Jun 2026 on Lutakonaukio — 200+ breweries, food stalls and live gigs. 49,000+ visitors since 2016. olutsatama.fi',
+          description: '"Finland’s best beer event" 11–13 Jun 2026 on Lutakonaukio — 200+ breweries, food stalls and live gigs. 49,000+ visitors since 2016. olutsatama.fi',
         },
         {
-          icon: 'food',
-          title: 'Pop-up street food',
-          description: 'During festivals the square fills with food trucks and craft breweries.',
+          icon: 'stage',
+          title: 'SuomiPop Festival',
+          description: 'SuomiPop gathers dozens of artists and tens of thousands of visitors 9–11 Jul 2026 — mainstage on the shore, the Nordics’ most cinematic lake backdrop. suomipopfestivaali.fi/jyvaskyla',
+        },
+        {
+          icon: 'rally',
+          title: 'Secto Rally Finland',
+          description: 'WRC round 30 Jul – 2 Aug 2026, Service Park at Paviljonki — walk right up to the machines roaring through the city. sectorallyfinland.fi',
         },
       ],
-      cta: { label: 'Browse events', href: '#events' },
+      cta: { label: 'Browse events', href: '#festivals-culture' },
     },
   },
 
@@ -446,8 +438,9 @@ export const CATEGORIES: Category[] = [
           'Ravintolalaivat Gaia ja Siipirataslaiva Vellamo — kelluvaa à la cartea järven äärellä',
           'Risteilyt Päijänteelle: M/S Rhea, M/S Hilja ja M/S Flamia (maailman ensimmäinen iglu-saunalaiva)',
           'Jyväskylän Sataman Kahvila — MatkaRhean ylläpitämä, vieraslaiturin vieressä Sataman Viilun naapurissa, avoinna joka päivä klo 10–20 huhtikuun alusta · msrhea.fi/jyvaskylan-sataman-kahvila',
-          'Container-ravintola Waves ja Trattoria Aukio Lutakonaukiolla',
-          'HIISI-panimon taproom & bottleshop ja luonnonviinibaarit kortteleilla',
+          'Konttiravintola Waves Satamakatu 2 B — burgereita ja salaatteja Sandels-oluella, avoinna klo 10:30 alkaen',
+          'HIISI Taproom & Bottleshop Lutakonaukio 3 — pienpanimon ravintola ja baari, lounas ma–pe 10:30–15 (15 €), à la carte iltaisin · hiisi.beer',
+          'Trattoria Aukio Lutakonaukiolla',
           'Kauden makujen menut: kalaa Päijänteestä, sieniä lähimetsistä',
         ],
       },
@@ -479,8 +472,13 @@ export const CATEGORIES: Category[] = [
         },
         {
           icon: 'food',
-          title: 'Satamacafét',
-          description: 'Avoimet terassit aamiaisesta brunssiin – paras kuppi kahvia veden äärellä.',
+          title: 'Konttiravintola Waves',
+          description: 'Satamakatu 2 B — burgereita ja salaatteja kontti-ravintolasta, Sandels-olutkumppani. Avoinna klo 10:30 alkaen. Google-arvio 4,4/5 (86 arviota). 050 366 6736',
+        },
+        {
+          icon: 'food',
+          title: 'HIISI Taproom & Bottleshop',
+          description: 'Lutakonaukio 3 — pienpanimon ravintola, baari ja pullopuoti yhdessä. Arkilounas 15 € (ma–pe 10:30–15), à la carte iltaisin (GF & vegaani), bottleshop auki 21:00 saakka. taproom@hiisi.beer · hiisi.beer',
         },
         {
           icon: 'sauna',
@@ -488,7 +486,7 @@ export const CATEGORIES: Category[] = [
           description: 'Avantouintia talvella, palju ja pesäkivisauna ympäri vuoden – vain muutaman askeleen päässä Viilusta.',
         },
       ],
-      cta: { label: 'Varaa pöytä', href: '#restaurants' },
+      cta: { label: 'Varaa pöytä', href: '#food-sauna' },
     },
     en: {
       title: 'Taste & steam',
@@ -521,8 +519,9 @@ export const CATEGORIES: Category[] = [
           'Restaurant ship Gaia and the paddle-wheeler Vellamo — floating à la carte by the lake',
           'Lake Päijänne cruises aboard M/S Rhea, M/S Hilja and M/S Flamia (the world’s first igloo-sauna boat)',
           'Jyväskylä Harbour Café (Sataman Kahvila) — run by MatkaRhea right next to the guest dock and Sataman Viilu, open daily 10:00–20:00 from April · msrhea.fi/jyvaskylan-sataman-kahvila',
-          'Container restaurant Waves and Trattoria Aukio on Lutakonaukio',
-          'HIISI Brewery taproom & bottleshop and natural-wine bars in the district',
+          'Konttiravintola Waves at Satamakatu 2 B — burgers and salads with Sandels beer, open from 10:30',
+          'HIISI Taproom & Bottleshop at Lutakonaukio 3 — microbrewery restaurant and bar, weekday lunch 10:30–15:00 (€15), à la carte evenings · hiisi.beer',
+          'Trattoria Aukio on Lutakonaukio',
           'Seasonal menus: Päijänne fish, foraged mushrooms',
         ],
       },
@@ -554,8 +553,13 @@ export const CATEGORIES: Category[] = [
         },
         {
           icon: 'food',
-          title: 'Harbour cafés',
-          description: 'Open terraces from breakfast through brunch — the best coffee cup by the water.',
+          title: 'Konttiravintola Waves',
+          description: 'Satamakatu 2 B — burgers and salads from a container, Sandels beer partner. Open from 10:30. 4.4/5 on Google (86 reviews). 050 366 6736',
+        },
+        {
+          icon: 'food',
+          title: 'HIISI Taproom & Bottleshop',
+          description: 'Lutakonaukio 3 — microbrewery restaurant, bar and bottle shop in one. Weekday lunch €15 (Mon–Fri 10:30–15), à la carte evenings (GF & vegan options), bottleshop open until 21:00. taproom@hiisi.beer · hiisi.beer',
         },
         {
           icon: 'sauna',
@@ -563,7 +567,7 @@ export const CATEGORIES: Category[] = [
           description: 'Ice swimming in winter, hot tub and wood sauna year-round — steps from Viilu.',
         },
       ],
-      cta: { label: 'Reserve a table', href: '#restaurants' },
+      cta: { label: 'Reserve a table', href: '#food-sauna' },
     },
   },
 
@@ -572,7 +576,7 @@ export const CATEGORIES: Category[] = [
   /* ------------------------------------------------------------------ */
   {
     id: 'marina-recreation',
-    navLabel: { fi: 'Satama & Perhe', en: 'Marina & Family' },
+    navLabel: { fi: 'Kulttuuri & liikunta', en: 'Culture & sports' },
     themeColor: '#a3e635',
     themeRgb: [163, 230, 53],
     themeRgbSecondary: [34, 211, 238],
@@ -598,38 +602,56 @@ export const CATEGORIES: Category[] = [
       ],
     },
     fi: {
-      title: 'Vesi, valo, vapaa-aika',
-      subtitle: 'Vierasvenesatama, urheilukentät ja perheen suosikkipaikat',
+      title: 'Kulttuuri ja liike',
+      subtitle: 'Klubit, kuntosalit, marathon, marina ja rantaraitti',
       description:
-        'Lutakon Satama on yhtä aikaa vierasvenesatama, urheilukortteli ja perhepuisto — täältä lähdetään purjehtimaan Päijänteelle ja palataan piknikille auringonlaskuun.',
-      tagline: 'Päivä veden äärellä, lapset mukana',
+        'Lutakossa kulttuuri ja liikunta kohtaavat: legendaarinen rock-klubi vanhassa teollisuusrakennuksessa, yksityiskuntosali Lutakonaukion laidalla, marathon-klassikko, Päijänteen vierasvenesatama ja 13 km esteetön rantareitti.',
+      tagline: 'Konsertit, kuntosalit ja kilometrit veden äärellä',
       section1: {
-        title: 'Vierasvenesatama',
+        title: 'Tanssisali Lutakko',
         subtitle:
-          '46 vieraspaikkaa, sähkö, vesi, polttoaine ja saunapalvelut – Päijänteen pohjoisin matkustajasatama, Vuoden vierassatama 2017 -kunniamaininta.',
+          'Jelmu ry:n legendaarinen rock-klubi 1900-luvun alun teollisuusrakennuksessa Lutakonaukion laidalla.',
       },
       section2: {
-        title: 'Urheilu ja liike',
+        title: 'Liike ja liikunta',
         subtitle:
-          'Beach volley -kentät, padelhalli, ulkokuntosali ja juoksureitit lähtevät suoraan rannasta.',
+          'Reserved Gym -yksityiskuntosali, Finlandia Marathon, beach volley, padel, ulkokuntosali ja Gr8 Wake -vesiurheilukeskus.',
       },
       section3: {
-        title: 'Lapset ja perheet',
+        title: 'Rantaraitti ja vierasvenesatama',
         subtitle:
-          'Leikkialueet, vesileikit ja piknikniityt — Lutakonaukion vesielementit ovat lasten suosikkeja kuumimpina päivinä.',
+          'Jyväskylän Rantaraitti — 13 km esteetön reitti — lähtee satamasta; vieraslaiturilla 46 paikkaa, Kuokkalan silta kaartuu yli järven.',
       },
       details: {
-        title: 'Lutakon vapaa-ajan infra',
-        desc: 'Suunniteltu niin että lapset, urheilijat ja veneilijät risteävät turvallisesti samalla rantapromenadilla.',
+        title: 'Lutakon kulttuuri- ja liikunta-infra',
+        desc: 'Konsertit, kuntosalivuorot, Päijänteen sisäsatama ja perheen piknikniityt jakavat saman rantapromenadin.',
         bulletPoints: [
-          'Vierasvenesatama: 46 paikkaa, sähkö, vesi, polttoaine ja saunaliittymä — Vuoden vierassatama 2017 -kunniamaininta',
+          'Tanssisali Lutakko · Jelmu ry:n legendaarinen rock-klubi vanhassa Lutakon teollisuusrakennuksessa · jelmu.net',
+          'Reserved Gym · Yksityinen kuntosali Lutakonaukio 1:ssä, tuntivaraus (ei kuukausimaksua) · reservedgym.fi',
+          'Finlandia Marathon · Jyväskylän marathon-klassikko (osallistujat täyttävät Lutakon palvelut) · finlandiamarathon.fi',
+          'Vierasvenesatama: 46 paikkaa, sähkö, vesi, polttoaine — Vuoden vierassatama 2017 -kunniamaininta',
           'Beach volley, padel, ulkokuntosali, kuntoporras ja Gr8 Wake -vesiurheilukeskus (wakeboard, SUP, vesipuisto)',
           'Lasten leikki- ja vesileikkialueet Lutakonaukiolla',
-          'Piknikniityt sekä grillipaikat veden äärellä',
           'Jyväskylän Rantaraitti — 13 km esteetön rantareitti lähtee satamasta; Kuokkalan silta kaartuu yli järven',
+          'Satamassa pysyvä Alvar Aalto -venenäyttely; arkkitehtuurireitti Aalto-museolle ja Saunaravintola Sataman Viilun puuarkkitehtuuriin',
         ],
       },
       features: [
+        {
+          icon: 'stage',
+          title: 'Tanssisali Lutakko',
+          description: 'Suomen rakastetuin underground-konserttipaikka 1900-luvun alun teollisuusrakennuksessa Lutakonaukion laidalla. Jelmu ry:n ohjelmistossa rockia, punkia, metallia ja indietä ympäri vuoden — jelmu.net.',
+        },
+        {
+          icon: 'sports',
+          title: 'Reserved Gym',
+          description: '"Yksityinen kuntosali Jyväskylän keskustassa" — Lutakonaukio 1, tuntivaraus (ei kuukausimaksua), panoraamanäkymä aukiolle. Sopii personal trainereille. reservedgym.fi',
+        },
+        {
+          icon: 'sports',
+          title: 'Finlandia Marathon',
+          description: 'Jyväskylän marathon-klassikko — osallistujat ja kannustajat täyttävät Lutakon ravintolat ja saunat tapahtumaviikonloppuna. finlandiamarathon.fi',
+        },
         {
           icon: 'marina',
           title: 'Vierasvenesatama',
@@ -637,18 +659,8 @@ export const CATEGORIES: Category[] = [
         },
         {
           icon: 'sports',
-          title: 'Beach volley & padel',
-          description: 'Avoin pelivaraus rantakentille; padel-kupolit valaistu pikkutunneille saakka.',
-        },
-        {
-          icon: 'kids',
-          title: 'Lasten vesileikit',
-          description: 'Suihkulähteet, leikkialue ja matala uimaranta — turvallinen päivä, vaikka aikuiset jäisivät terassille.',
-        },
-        {
-          icon: 'picnic',
-          title: 'Piknik & näköalaterassi',
-          description: 'Suunniteltuja piknikniittyjä ja katettu näköalaterassi auringonlaskuun.',
+          title: 'Beach volley, padel & Gr8 Wake',
+          description: 'Rantakentät, padel-kupolit ja Gr8 Wake -vesiurheilukeskus (wakeboard, SUP, vesipuisto) — kaikki kävelymatkan päässä toisistaan.',
         },
         {
           icon: 'viilu',
@@ -656,33 +668,36 @@ export const CATEGORIES: Category[] = [
           description: 'Satamassa pysyvä Alvar Aalto -venenäyttely; arkkitehtuurin reitti vie Aalto-museolle ja Saunaravintola Sataman Viilun puuarkkitehtuuriin.',
         },
       ],
-      cta: { label: 'Suunnittele päivä', href: '#marina' },
+      cta: { label: 'Suunnittele päivä', href: '#marina-recreation' },
     },
     en: {
-      title: 'Water, light, leisure',
-      subtitle: 'Yacht marina, sports facilities and family favourites',
+      title: 'Culture and motion',
+      subtitle: 'Clubs, gyms, the marathon, the marina and the Rantaraitti',
       description:
-        'Lutakon Satama is at once a guest marina, a sports district and a family park — set sail to Päijänne and return for a picnic at sunset.',
-      tagline: 'A day by the water, with everyone',
+        'In Lutakko, culture meets motion: a legendary rock club in a heritage industrial building, a private gym on Lutakonaukio, a marathon classic, Päijänne’s guest marina and a 13 km accessible lakeside trail.',
+      tagline: 'Gigs, gyms and kilometres by the water',
       section1: {
-        title: 'Yacht & guest marina',
+        title: 'Tanssisali Lutakko',
         subtitle:
-          '46 guest berths with shore power, water, fuel and sauna access — Päijänne’s northernmost passenger harbour and an honourable mention in the 2017 Guest Harbour of the Year vote.',
+          'Jelmu ry’s legendary rock club in an early-1900s heritage industrial building beside Lutakonaukio square.',
       },
       section2: {
-        title: 'Sports & motion',
+        title: 'Movement and sport',
         subtitle:
-          'Beach volleyball courts, a padel hall, outdoor gym and running trails launch straight from the shore.',
+          'Reserved Gym private gym, Finlandia Marathon, beach volleyball, padel, outdoor gym and Gr8 Wake water-sports centre.',
       },
       section3: {
-        title: 'Kids & families',
+        title: 'Rantaraitti and the guest marina',
         subtitle:
-          'Playgrounds, splash zones and picnic meadows — Lutakonaukio’s water features become the kids’ favourite on hot days.',
+          'Jyväskylä Rantaraitti — a 13 km accessible trail — begins at the harbour; 46 guest berths at the marina, Kuokkala bridge arching across the lake.',
       },
       details: {
-        title: 'Lutakko leisure infrastructure',
-        desc: 'Designed so that kids, athletes and sailors safely share the same waterfront promenade.',
+        title: 'Lutakko culture & sports infrastructure',
+        desc: 'Concerts, gym slots, an inland-Päijänne harbour and family picnic meadows share the same waterfront promenade.',
         bulletPoints: [
+          'Tanssisali Lutakko · Jelmu’s legendary rock club in a heritage industrial building beside Lutakonaukio · jelmu.net',
+          'Reserved Gym · private hourly-booked gym at Lutakonaukio 1 (no monthly fee) · reservedgym.fi',
+          'Finlandia Marathon · Jyväskylä’s marathon classic — participants fill Lutakko’s venues during race weekend · finlandiamarathon.fi',
           'Guest marina: 46 berths with shore power, water, fuel and sauna access — 2017 Guest Harbour of the Year honourable mention',
           'Beach volleyball, padel, outdoor gym, stairs run and Gr8 Wake water-sports centre (wakeboard, SUP, water park)',
           'Children’s play and water-play areas at Lutakonaukio',
@@ -692,24 +707,29 @@ export const CATEGORIES: Category[] = [
       },
       features: [
         {
+          icon: 'stage',
+          title: 'Tanssisali Lutakko',
+          description: 'Finland’s most beloved underground gig venue, set in an early-1900s heritage industrial building right by Lutakonaukio square. Jelmu programmes rock, punk, metal and indie all year — jelmu.net.',
+        },
+        {
+          icon: 'sports',
+          title: 'Reserved Gym',
+          description: '"A private gym in the heart of Jyväskylä" — Lutakonaukio 1, hourly booking (no monthly fees), panoramic view over the square. Ideal for personal trainers. reservedgym.fi',
+        },
+        {
+          icon: 'sports',
+          title: 'Finlandia Marathon',
+          description: 'Jyväskylä’s marathon classic — runners and supporters fill Lutakko’s restaurants and saunas during race weekend. finlandiamarathon.fi',
+        },
+        {
           icon: 'marina',
           title: 'Guest marina',
           description: '46 guest berths in Päijänne’s northernmost passenger harbour — shore power, water, fuel and sauna access, all within a short walk of downtown.',
         },
         {
           icon: 'sports',
-          title: 'Beach volley & padel',
-          description: 'Open booking on shoreline courts; padel domes lit into the small hours.',
-        },
-        {
-          icon: 'kids',
-          title: 'Kids’ splash zones',
-          description: 'Fountains, playground and a shallow beach — a safe day even if the grown-ups stay on the terrace.',
-        },
-        {
-          icon: 'picnic',
-          title: 'Picnic & viewpoint',
-          description: 'Designed picnic meadows and a sheltered observation terrace for the sunset.',
+          title: 'Beach volley, padel & Gr8 Wake',
+          description: 'Shoreline courts, padel domes and the Gr8 Wake water-sports centre (wakeboard, SUP, water park) — all within walking distance of one another.',
         },
         {
           icon: 'viilu',
@@ -717,7 +737,173 @@ export const CATEGORIES: Category[] = [
           description: 'A permanent Alvar Aalto-designed boat is displayed at the harbour, and the architecture route leads to the Aalto Museum and the timber pavilion of Sauna restaurant Sataman Viilu.',
         },
       ],
-      cta: { label: 'Plan a day', href: '#marina' },
+      cta: { label: 'Plan a day', href: '#marina-recreation' },
+    },
+  },
+
+  /* ------------------------------------------------------------------ */
+  /* 4. Business — Kielo office buildings                                */
+  /* ------------------------------------------------------------------ */
+  {
+    id: 'business',
+    navLabel: { fi: 'Business', en: 'Business' },
+    themeColor: '#a78bfa',
+    themeRgb: [167, 139, 250],
+    themeRgbSecondary: [34, 211, 238],
+    gradient: 'linear-gradient(135deg, #a78bfa 0%, #22d3ee 60%, #a3e635 100%)',
+    assets: {
+      hero: {
+        src: '/images/featured/business/hero.jpg',
+        alt: { fi: 'Innova-toimistorakennukset Lutakossa', en: 'Innova office buildings in Lutakko' },
+      },
+      gallery: [
+        {
+          src: '/images/featured/business/gallery-1.jpg',
+          alt: { fi: 'Innova 1 — Piippukatu 11', en: 'Innova 1 — Piippukatu 11' },
+        },
+        {
+          src: '/images/featured/business/gallery-2.jpg',
+          alt: { fi: 'Innova 2 — Lutakonaukio 7', en: 'Innova 2 — Lutakonaukio 7' },
+        },
+        {
+          src: '/images/featured/business/gallery-3.jpg',
+          alt: { fi: 'Innova 4 — Lutakonaukio 1', en: 'Innova 4 — Lutakonaukio 1' },
+        },
+      ],
+    },
+    fi: {
+      title: 'Lutakon yrityskortteli',
+      subtitle: 'Innova 1, Innova 2 ja Innova 4 — Kielo Toimitilojen ydinkohteet Lutakossa',
+      description:
+        'Lutakko on Jyväskylän nopeimmin kasvava liike-elämän kortteli. Kolme moderni, sertifioitu Innova-toimistorakennusta tarjoavat joustavia toimitiloja startupeille ja kasvuyhtiöille — kaikissa sauna, ravintola, kokoustilat ja sähköauton lataus.',
+      tagline: 'Vihreää, joustavaa ja keskellä tapahtumakorttelia',
+      section1: {
+        title: 'Innova 1 — Piippukatu 11',
+        subtitle:
+          'BREEAM Very Good · Ravintola Fiilu, kokouskeskus, sauna "Lutakon Huippu" · linja-auto- ja juna-asema 400 m päässä.',
+      },
+      section2: {
+        title: 'Innova 2 — Lutakonaukio 7',
+        subtitle:
+          'LEED Platinum · 6 kerrosta · vapaina 112 m², 163 m² ja 166 m² yksiköt · sauna, kokoustilat, aulapalvelu.',
+      },
+      section3: {
+        title: 'Innova 4 — Lutakonaukio 1',
+        subtitle:
+          'LEED Gold · vapaana 51 m² ja 69 m² · Reserved Gym ja ruokakauppa samassa rakennuksessa · sauna järvinäkymin.',
+      },
+      details: {
+        title: 'Toimitilakumppanit Lutakossa',
+        desc: 'Lutakossa toimii kymmeniä yrityksiä — yhteistyö Lutakko.infon kanssa avaa kanavan sekä uusiin vuokralaisiin että alueen kävijävirtaan.',
+        bulletPoints: [
+          'Innova 1 · Piippukatu 11 · BREEAM Very Good · kielotoimitilat.fi/property/piippukatu-11',
+          'Innova 2 · Lutakonaukio 7 · LEED Platinum · vapaina 112/163/166 m² · kielotoimitilat.fi/property/lutakonaukio-7',
+          'Innova 4 · Lutakonaukio 1 · LEED Gold · vapaina 51/69 m² · kielotoimitilat.fi/property/lutakonaukio-1',
+          'Yhteinen vuokrauskanava: Minna Hämäläinen +358 40 564 8042 · minna.hamalainen@kielotoimitilat.fi',
+          'Kaikki rakennukset: 100 % vihreä energia, sähköauton lataus, sauna, kokoustilat',
+          'Innova 4:n vuokralaisina mm. Reserved Gym -kuntosali ja ruokakauppa',
+        ],
+      },
+      features: [
+        {
+          icon: 'viilu',
+          title: 'Innova 1 (Piippukatu 11)',
+          description: 'Kielon edustava lippulaiva: BREEAM Very Good, ravintola Fiilu, kokouskeskus ja sauna "Lutakon Huippu". 400 m juna-asemalle. kielotoimitilat.fi',
+        },
+        {
+          icon: 'viilu',
+          title: 'Innova 2 (Lutakonaukio 7)',
+          description: 'LEED Platinum -kuusikerroksinen toimistorakennus Jyväsjärven rannassa. Vapaina nyt 112 m², 163 m² ja 166 m² yksiköt.',
+        },
+        {
+          icon: 'viilu',
+          title: 'Innova 4 (Lutakonaukio 1)',
+          description: 'LEED Gold; 51 m² ja 69 m² toimistot vapaina. Samassa rakennuksessa Reserved Gym ja ruokakauppa; sauna järvinäkymin.',
+        },
+        {
+          icon: 'food',
+          title: 'Ravintola Fiilu (Innova 1)',
+          description: 'Päivittäinen lounaslista Innova 1:n alakerrassa — kävelymatkan päässä kaikista kolmesta Innova-rakennuksesta.',
+        },
+        {
+          icon: 'sports',
+          title: 'Reserved Gym (Innova 4)',
+          description: 'Yksityinen tuntivaraus-kuntosali samassa rakennuksessa kuin Innova 4 — panoraamanäkymä Lutakonaukiolle. reservedgym.fi',
+        },
+        {
+          icon: 'sauna',
+          title: 'Sauna ja kokoustilat',
+          description: 'Kaikissa kolmessa Innovassa sauna ja kokoustilat — yritystapahtumat ja saunaillat suoraan toimitilan yhteydessä.',
+        },
+      ],
+      cta: { label: 'Pyydä vuokratarjous', href: '#business' },
+    },
+    en: {
+      title: 'Lutakko business district',
+      subtitle: 'Innova 1, Innova 2 and Innova 4 — Kielo Toimitilat’s core properties in Lutakko',
+      description:
+        'Lutakko is Jyväskylä’s fastest-growing business block. Three modern, certified Innova office buildings offer flexible spaces for startups and growth companies — every building has sauna, restaurant, meeting rooms and EV charging.',
+      tagline: 'Green, flexible, and right in the event district',
+      section1: {
+        title: 'Innova 1 — Piippukatu 11',
+        subtitle:
+          'BREEAM Very Good · Fiilu restaurant, conference centre, "Lutakon Huippu" sauna · bus & train stations within 400 m.',
+      },
+      section2: {
+        title: 'Innova 2 — Lutakonaukio 7',
+        subtitle:
+          'LEED Platinum · 6 floors · available 112 m², 163 m² and 166 m² units · sauna, meeting rooms, lobby service.',
+      },
+      section3: {
+        title: 'Innova 4 — Lutakonaukio 1',
+        subtitle:
+          'LEED Gold · available 51 m² and 69 m² · Reserved Gym and grocery store in the same building · lake-view sauna.',
+      },
+      details: {
+        title: 'Office partners in Lutakko',
+        desc: 'Dozens of companies operate in Lutakko — partnering with Lutakko.info opens a channel to both new tenants and the district’s visitor traffic.',
+        bulletPoints: [
+          'Innova 1 · Piippukatu 11 · BREEAM Very Good · kielotoimitilat.fi/property/piippukatu-11',
+          'Innova 2 · Lutakonaukio 7 · LEED Platinum · available 112/163/166 m² · kielotoimitilat.fi/property/lutakonaukio-7',
+          'Innova 4 · Lutakonaukio 1 · LEED Gold · available 51/69 m² · kielotoimitilat.fi/property/lutakonaukio-1',
+          'Single leasing contact: Minna Hämäläinen +358 40 564 8042 · minna.hamalainen@kielotoimitilat.fi',
+          'Across all buildings: 100% green energy, EV charging, sauna, meeting rooms',
+          'Innova 4 tenants include Reserved Gym and a grocery store',
+        ],
+      },
+      features: [
+        {
+          icon: 'viilu',
+          title: 'Innova 1 (Piippukatu 11)',
+          description: 'Kielo’s flagship: BREEAM Very Good, Fiilu restaurant, conference centre and "Lutakon Huippu" sauna. 400 m to the train station. kielotoimitilat.fi',
+        },
+        {
+          icon: 'viilu',
+          title: 'Innova 2 (Lutakonaukio 7)',
+          description: 'LEED Platinum six-storey office building on the Jyväsjärvi shore. Available right now: 112 m², 163 m² and 166 m² units.',
+        },
+        {
+          icon: 'viilu',
+          title: 'Innova 4 (Lutakonaukio 1)',
+          description: 'LEED Gold; 51 m² and 69 m² offices available. The building also houses Reserved Gym and a grocery store; lake-view sauna.',
+        },
+        {
+          icon: 'food',
+          title: 'Fiilu restaurant (Innova 1)',
+          description: 'Daily lunch downstairs in Innova 1 — walking distance from all three Innova buildings.',
+        },
+        {
+          icon: 'sports',
+          title: 'Reserved Gym (Innova 4)',
+          description: 'Hourly-booked private gym in the same building as Innova 4 — panoramic view over Lutakonaukio square. reservedgym.fi',
+        },
+        {
+          icon: 'sauna',
+          title: 'Sauna & meeting rooms',
+          description: 'Every Innova building offers sauna and meeting rooms — corporate events and sauna evenings right inside the office.',
+        },
+      ],
+      cta: { label: 'Request a leasing offer', href: '#business' },
     },
   },
 ];

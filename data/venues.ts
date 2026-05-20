@@ -691,6 +691,68 @@ VENUES.push(
     },
   },
 
+  /* -------- Kansainväliset Suurmarkkinat -------- */
+  {
+    slug: 'kansainvaliset-suurmarkkinat',
+    kind: 'event',
+    category: 'festivals-culture',
+    themeColor: '#fbbf24',
+    themeRgb: [251, 191, 36],
+    image: null,
+    url: 'https://www.eurooppamarkkinat.fi/jyvaskyla/',
+    email: 'tmk@markkina.net',
+    phone: '+358 20 749 8700',
+    address: 'Lutakonaukio, 40100 Jyväskylä',
+    facts: [
+      { fi: { label: 'Päivämäärät', value: '4.–7.6.2026' }, en: { label: 'Dates', value: '4–7 Jun 2026' } },
+      { fi: { label: 'Aukiolot', value: 'To–La 10–20 · Su 10–18' }, en: { label: 'Hours', value: 'Thu–Sat 10:00–20:00 · Sun 10:00–18:00' } },
+      { fi: { label: 'Sijainti', value: 'Lutakonaukio, Jyväskylä' }, en: { label: 'Location', value: 'Lutakonaukio square, Jyväskylä' } },
+      { fi: { label: 'Maita', value: 'Yli 30 maan myyjät + suomalaiset alueet' }, en: { label: 'Countries', value: 'Vendors from 30+ countries + Finnish regions' } },
+      { fi: { label: 'Sisäänpääsy', value: 'Maksuton' }, en: { label: 'Entry', value: 'Free' } },
+      { fi: { label: 'Järjestäjä', value: 'TMK Tori- ja markkinakaupan palvelukeskus Oy' }, en: { label: 'Organizer', value: 'TMK Tori- ja markkinakaupan palvelukeskus Oy' } },
+    ],
+    fi: {
+      hero: {
+        eyebrow: 'Tapahtuma · Kesäkuu',
+        title: 'Kansainväliset Suurmarkkinat',
+        subtitle: '4.–7.6.2026 Lutakonaukiolla — yli 30 maan myyjät, käsityöt, kansainvälinen ruoka ja lapsille karnevaaliattraktioita.',
+      },
+      about:
+        'Jyväskylän Kansainväliset Suurmarkkinat tuovat Lutakonaukiolle yli 30 maan myyjät kesäkuun ensimmäisenä viikonloppuna. Tarjolla erikoistuotteita, kansainvälisiä ruokapisteitä, käsitöitä, tekstiilejä ja lasten karnevaalia — konsepti perustuu siihen, että tuottajat itse esittelevät ja myyvät tuotteitaan.',
+      highlights: [
+        'To 4.6. 10–20 · Pe 5.6. 10–20 · La 6.6. 10–20 · Su 7.6. 10–18',
+        'Yli 30 maan myyjät + suomalaiset alueet',
+        'Kansainväliset ruokapisteet, käsityöt, tekstiilit, erikoistuotteet',
+        'Lasten karnevaaliattraktioita',
+        'Maksuton sisäänpääsy',
+        'Järjestäjä: TMK Tori- ja markkinakaupan palvelukeskus Oy · +358 20 749 8700 · tmk@markkina.net',
+        'eurooppamarkkinat.fi/jyvaskyla',
+      ],
+      pitch:
+        'Suurmarkkinat tuovat Lutakonaukiolle tuhansia kävijöitä neljän päivän aikana. Brändi- ja sponsorinäkyvyys tapahtumasivulla tavoittaa kesäkauden avausyleisön.',
+    },
+    en: {
+      hero: {
+        eyebrow: 'Event · June',
+        title: 'International Grand Markets',
+        subtitle: '4–7 June 2026 on Lutakonaukio — vendors from 30+ countries, crafts, international food and a children’s carnival.',
+      },
+      about:
+        'Jyväskylä International Grand Markets bring vendors from over 30 countries to Lutakonaukio for the first weekend of June. The market features specialty goods, international food stations, crafts, textiles and a children’s carnival — built on the idea that producers themselves present and sell their products.',
+      highlights: [
+        'Thu–Sat 10:00–20:00 · Sun 10:00–18:00',
+        'Vendors from 30+ countries + Finnish regions',
+        'International food stations, crafts, textiles, specialty goods',
+        'Children’s carnival attractions',
+        'Free entry',
+        'Operator: TMK Tori- ja markkinakaupan palvelukeskus Oy · +358 20 749 8700 · tmk@markkina.net',
+        'eurooppamarkkinat.fi/jyvaskyla',
+      ],
+      pitch:
+        'The Grand Markets pull thousands of visitors to Lutakonaukio over four days — strong brand and sponsor visibility for the early-summer audience.',
+    },
+  },
+
   /* -------- Konttiravintola Waves -------- */
   {
     slug: 'waves',
