@@ -18,7 +18,7 @@ export interface VenueCopy {
 export interface VenueEntry {
   slug: string;
   kind: VenueKind;
-  category: 'festivals-culture' | 'food-sauna' | 'marina-recreation' | 'business';
+  category: 'festivals-culture' | 'food-sauna' | 'marina-recreation' | 'business-majoitus';
   themeColor: string;
   themeRgb: [number, number, number];
   /** Optional hero image path under /public/ */
@@ -151,7 +151,7 @@ export const VENUES: VenueEntry[] = [
     category: 'festivals-culture',
     themeColor: '#a78bfa',
     themeRgb: [167, 139, 250],
-    image: null,
+    image: '/images/featured/festivals-culture/secto-rally.jpg',
     url: 'https://sectorallyfinland.fi/',
     email: null,
     phone: null,
@@ -260,7 +260,7 @@ export const VENUES: VenueEntry[] = [
     category: 'festivals-culture',
     themeColor: '#fb7185',
     themeRgb: [251, 113, 133],
-    image: null,
+    image: '/images/featured/festivals-culture/tanssisali-lutakko.jpg',
     url: 'https://www.jelmu.net/',
     email: null,
     phone: null,
@@ -569,33 +569,54 @@ VENUES.push(
     category: 'food-sauna',
     themeColor: '#22d3ee',
     themeRgb: [34, 211, 238],
-    image: null,
-    url: null,
+    image: '/images/featured/food-sauna/trattoria-aukio.jpg',
+    url: 'https://www.sokoshotels.fi/hotellit/jyvaskyla/solo-sokos-hotel-paviljonki/ravintolat',
     email: null,
     phone: null,
-    address: 'Lutakonaukio, Jyväskylä',
-    facts: [],
+    address: 'Solo Sokos Hotel Paviljonki, Lutakonaukio 10, 40100 Jyväskylä',
+    facts: [
+      { fi: { label: 'Tyyppi', value: 'Italialainen ravintola Solo Sokos Hotel Paviljongin yhteydessä' }, en: { label: 'Type', value: 'Italian restaurant inside Solo Sokos Hotel Paviljonki' } },
+      { fi: { label: 'Slogan', value: '"Italialainen keittiö tulvillaan herkullisia makuja — La Tavola Italiana"' }, en: { label: 'Tagline', value: '"Italian kitchen filled with delicious flavours — La Tavola Italiana"' } },
+      { fi: { label: 'Erikoisuus', value: 'Puu-uunissa paistetut pizzat, pasta, risotto, bruschetta, italialaiset viinit' }, en: { label: 'Highlights', value: 'Wood-oven pizzas, pasta, risotto, bruschetta, Italian wines' } },
+      { fi: { label: 'Varaukset', value: 'raflaamo.fi/fi/ravintola/jyvaskyla/trattoria-aukio-jyvaskyla' }, en: { label: 'Reservations', value: 'raflaamo.fi/fi/ravintola/jyvaskyla/trattoria-aukio-jyvaskyla' } },
+    ],
     fi: {
       hero: {
         eyebrow: 'Italialainen ravintola',
         title: 'Trattoria Aukio',
-        subtitle: 'Lutakonaukion italialainen klassikko — sisältö täydentyy pian.',
+        subtitle: '"La Tavola Italiana" — Solo Sokos Hotel Paviljongin italialainen ravintola Lutakonaukio 10:ssä.',
       },
-      about: 'Sisältö lisätään pian.',
-      highlights: ['Sisältö täydentyy pian'],
+      about:
+        'Trattoria Aukio on Solo Sokos Hotel Paviljongin yhteydessä toimiva italialainen ravintola. Konsepti perustuu siihen, että italialainen ruoka, viini ja yhdessäolo kuuluvat yhteen — "La Tavola Italiana". Menulla pastat, risottot, bruschetat ja perinteisessä puu-uunissa paistetut, rapeapohjaiset pizzat. Italialaiset viinit lasittain tai pulloittain.',
+      highlights: [
+        'Italialainen keittiö Solo Sokos Hotel Paviljongin yhteydessä',
+        'Puu-uunissa paistetut pizzat — "herkullisen rapeiksi"',
+        'Pastat, risottot ja bruschetat tuoreilla raaka-aineilla',
+        'Italialaiset viinit lasittain tai pulloittain',
+        'Pöytävaraukset: raflaamo.fi/fi/ravintola/jyvaskyla/trattoria-aukio-jyvaskyla',
+        'Osoite: Lutakonaukio 10, 40100 Jyväskylä (Solo Sokos Hotel Paviljonki)',
+      ],
       pitch:
-        'Trattoria Aukio — listaa ravintolasi etusivulle, lisää menut ja varauspyynnöt suoraan.',
+        'Trattoria Aukio on Lutakonaukion vakiintunut italialainen — kävijät messu- ja festivaalipäivinä täyttävät pöydät. Brändi-yhteistyö ja menu-näkyvyys Lutakko.infon Ruoka & Sauna -osiossa.',
     },
     en: {
       hero: {
         eyebrow: 'Italian restaurant',
         title: 'Trattoria Aukio',
-        subtitle: 'Lutakonaukio’s Italian classic — content coming soon.',
+        subtitle: '"La Tavola Italiana" — the Italian restaurant inside Solo Sokos Hotel Paviljonki at Lutakonaukio 10.',
       },
-      about: 'Content to follow.',
-      highlights: ['Content coming soon'],
+      about:
+        'Trattoria Aukio operates inside Solo Sokos Hotel Paviljonki. The concept is built on the idea that Italian food, wine and togetherness belong together — "La Tavola Italiana." The menu features pasta, risotto, bruschetta and crispy wood-oven pizzas baked the traditional Italian way. Italian wines by the glass or bottle.',
+      highlights: [
+        'Italian kitchen inside Solo Sokos Hotel Paviljonki',
+        'Wood-oven pizzas baked "deliciously crisp"',
+        'Pasta, risotto and bruschetta with fresh seasonal ingredients',
+        'Italian wines by the glass or bottle',
+        'Reservations via raflaamo.fi/fi/ravintola/jyvaskyla/trattoria-aukio-jyvaskyla',
+        'Address: Lutakonaukio 10, 40100 Jyväskylä (Solo Sokos Hotel Paviljonki)',
+      ],
       pitch:
-        'Trattoria Aukio — list on the homepage, add menus and capture booking enquiries.',
+        'Trattoria Aukio is the established Italian restaurant on Lutakonaukio — diners fill the tables on fair and festival days. Brand partnerships and menu visibility in Lutakko.info’s Dine & Sauna section.',
     },
   },
   {
@@ -874,10 +895,10 @@ VENUES.push(
   {
     slug: 'innova-1',
     kind: 'venue',
-    category: 'business',
+    category: 'business-majoitus',
     themeColor: '#a78bfa',
     themeRgb: [167, 139, 250],
-    image: null,
+    image: '/images/featured/business-majoitus/innova-1.jpg',
     url: 'https://www.kielotoimitilat.fi/property/piippukatu-11/',
     email: 'minna.hamalainen@kielotoimitilat.fi',
     phone: '+358 40 564 8042',
@@ -933,10 +954,10 @@ VENUES.push(
   {
     slug: 'innova-2',
     kind: 'venue',
-    category: 'business',
+    category: 'business-majoitus',
     themeColor: '#a78bfa',
     themeRgb: [167, 139, 250],
-    image: null,
+    image: '/images/featured/business-majoitus/innova-2.jpg',
     url: 'https://www.kielotoimitilat.fi/property/lutakonaukio-7/',
     email: 'minna.hamalainen@kielotoimitilat.fi',
     phone: '+358 40 564 8042',
@@ -992,10 +1013,10 @@ VENUES.push(
   {
     slug: 'paviljonki',
     kind: 'venue',
-    category: 'business',
+    category: 'business-majoitus',
     themeColor: '#a78bfa',
     themeRgb: [167, 139, 250],
-    image: null,
+    image: '/images/featured/business-majoitus/solo-sokos-hotel-2.jpg',
     url: 'https://www.paviljonki.fi/',
     email: 'paviljonki@paviljonki.fi',
     phone: '+358 14 339 8100',
@@ -1048,14 +1069,82 @@ VENUES.push(
     },
   },
 
+  /* -------- Solo Sokos Hotel Paviljonki -------- */
+  {
+    slug: 'solo-sokos-hotel-paviljonki',
+    kind: 'venue',
+    category: 'business-majoitus',
+    themeColor: '#a78bfa',
+    themeRgb: [167, 139, 250],
+    image: '/images/featured/business-majoitus/solo-sokos-hotel.jpg',
+    url: 'https://www.sokoshotels.fi/hotellit/jyvaskyla/solo-sokos-hotel-paviljonki',
+    email: 'Paviljonki.Jyvaskyla@sokoshotels.fi',
+    phone: '+358 20 1234 645',
+    address: 'Lutakonaukio 10, 40100 Jyväskylä',
+    facts: [
+      { fi: { label: 'Tyyppi', value: 'Sokoksen lippulaiva-hotelli (Solo-konsepti) messu- ja festivaalikävijöille' }, en: { label: 'Type', value: 'Sokos flagship hotel (Solo concept) for fair and festival visitors' } },
+      { fi: { label: 'Huonetyypit', value: 'Solo King / Twin / Triple (26–28 m²), Supreme (35 m²), Ultimate (63–100 m²) — myös saunalliset ja terassihuoneet' }, en: { label: 'Room types', value: 'Solo King / Twin / Triple (26–28 m²), Supreme (35 m²), Ultimate (63–100 m²) — incl. rooms with sauna and terrace' } },
+      { fi: { label: 'Sauna ja kuntosali', value: 'Ylimmässä kerroksessa järvinäkymin — sauna ma–pe 17–22, la–su myös 8–10; kuntosali ma–pe 6:30–21:30, la–su 7:30–21:30' }, en: { label: 'Sauna & gym', value: 'Top floor with lake views — sauna Mon–Fri 17:00–22:00, Sat–Sun also 08:00–10:00; gym Mon–Fri 06:30–21:30, Sat–Sun 07:30–21:30' } },
+      { fi: { label: 'Aamiainen', value: '2. kerros — ma–pe 6:15–10, la–su 7:30–12' }, en: { label: 'Breakfast', value: '2nd floor — Mon–Fri 06:15–10:00, Sat–Sun 07:30–12:00' } },
+      { fi: { label: 'Ravintola', value: 'Trattoria Aukio (italialainen) talossa — puu-uunipizzat, pasta, risotto' }, en: { label: 'Restaurant', value: 'Trattoria Aukio (Italian) on-site — wood-oven pizza, pasta, risotto' } },
+      { fi: { label: 'Sertifikaatit', value: 'Green Key · Sustainable Travel Finland · "Finland’s Most Trusted Hotel Chain" 2023' }, en: { label: 'Certifications', value: 'Green Key · Sustainable Travel Finland · "Finland’s Most Trusted Hotel Chain" 2023' } },
+      { fi: { label: 'Etäisyydet', value: '5 min kävelymatkan keskustasta · matkakeskus vieressä · Paviljongin naapurissa' }, en: { label: 'Distances', value: '5 min walk to city centre · travel centre next door · adjacent to Paviljonki' } },
+      { fi: { label: 'Lemmikit', value: 'Lemmikkihuoneita saatavilla' }, en: { label: 'Pets', value: 'Pet-friendly rooms available' } },
+    ],
+    fi: {
+      hero: {
+        eyebrow: 'Hotelli · Majoitus',
+        title: 'Solo Sokos Hotel Paviljonki',
+        subtitle: 'Lutakonaukio 10 — Sokoksen lippulaiva-hotelli messu- ja festivaalikävijöille, vieressä Paviljonki ja vieraslaituri.',
+      },
+      about:
+        'Solo Sokos Hotel Paviljonki on Sokos Hotels -ketjun lippulaiva Jyväskylässä. Hotelli sijaitsee aivan Paviljongin vieressä Lutakonaukiolla, viiden minuutin kävelymatkan päässä keskustasta. Huoneluokat Solo Kingistä Ultimate-terassihuoneeseen, ylimmässä kerroksessa sauna ja kuntosali järvinäkymin, talossa italialainen Trattoria Aukio. Hotelli on Green Key- ja Sustainable Travel Finland -sertifioitu.',
+      highlights: [
+        'Osoite: Lutakonaukio 10, 40100 Jyväskylä',
+        'Sauna ja kuntosali ylimmässä kerroksessa, järvinäkymin',
+        'Aamiainen 2. kerroksessa — ma–pe 6:15–10, la–su 7:30–12',
+        'Trattoria Aukio (italialainen) talossa — pizzaa, pastaa, risottoa',
+        'Huonetyypit Solo King / Twin / Triple, Supreme + sauna, Ultimate Terrace',
+        'Ilmainen Wi-Fi ja Chromecast joka huoneessa · sähköauton lataus · kesäpyörät',
+        'Green Key · Sustainable Travel Finland · Finland’s Most Trusted Hotel Chain 2023',
+        'Lemmikkihuoneita saatavilla',
+        'Varaukset: sokoshotels.fi · +358 20 1234 645 · Paviljonki.Jyvaskyla@sokoshotels.fi',
+      ],
+      pitch:
+        'Solo Sokos Hotel Paviljonki on Lutakon ainoa täyden palvelun hotelli ja luonnollinen kumppani messukäynteihin, kongresseihin ja festivaaliviikonloppuihin. Lutakko.info voi yhdistää huonevaraukset Paviljongin ja festivaalien näkyvyyspaketteihin.',
+    },
+    en: {
+      hero: {
+        eyebrow: 'Hotel · Accommodation',
+        title: 'Solo Sokos Hotel Paviljonki',
+        subtitle: 'Lutakonaukio 10 — Sokos flagship hotel for fair and festival visitors, next door to Paviljonki and the guest marina.',
+      },
+      about:
+        'Solo Sokos Hotel Paviljonki is the Sokos Hotels flagship in Jyväskylä. Located right next to Paviljonki on Lutakonaukio, a five-minute walk to the city centre. Room categories from Solo King to the Ultimate Terrace; top floor sauna and gym with lake views; in-house Italian restaurant Trattoria Aukio. Green Key and Sustainable Travel Finland certified.',
+      highlights: [
+        'Address: Lutakonaukio 10, 40100 Jyväskylä',
+        'Sauna and gym on the top floor with lake views',
+        'Breakfast on 2nd floor — Mon–Fri 06:15–10:00, Sat–Sun 07:30–12:00',
+        'Trattoria Aukio (Italian) on-site — pizza, pasta, risotto',
+        'Room types: Solo King / Twin / Triple, Supreme + sauna, Ultimate Terrace',
+        'Free Wi-Fi and Chromecast in every room · EV charging · summer bicycles',
+        'Green Key · Sustainable Travel Finland · Finland’s Most Trusted Hotel Chain 2023',
+        'Pet-friendly rooms available',
+        'Bookings: sokoshotels.fi · +358 20 1234 645 · Paviljonki.Jyvaskyla@sokoshotels.fi',
+      ],
+      pitch:
+        'Solo Sokos Hotel Paviljonki is the only full-service hotel in Lutakko — a natural partner for fair visits, congresses and festival weekends. Lutakko.info can bundle room bookings with Paviljonki and festival visibility packages.',
+    },
+  },
+
   /* -------- Kielo Innova 4 -------- */
   {
     slug: 'innova-4',
     kind: 'venue',
-    category: 'business',
+    category: 'business-majoitus',
     themeColor: '#a78bfa',
     themeRgb: [167, 139, 250],
-    image: null,
+    image: '/images/featured/business-majoitus/innova-1.jpg',
     url: 'https://www.kielotoimitilat.fi/property/lutakonaukio-1/',
     email: 'minna.hamalainen@kielotoimitilat.fi',
     phone: '+358 40 564 8042',

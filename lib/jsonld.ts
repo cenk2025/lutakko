@@ -107,7 +107,10 @@ export function localBusinessLd(
     | 'CafeOrCoffeeShop'
     | 'HealthAndBeautyBusiness'
     | 'NightClub'
-    | 'TouristAttraction' = 'LocalBusiness',
+    | 'TouristAttraction'
+    | 'Hotel'
+    | 'LodgingBusiness'
+    | 'ConventionCenter' = 'LocalBusiness',
 ) {
   const t = venue[lang];
   const id = `${SITE_URL}/venues/${venue.slug}/#${type.toLowerCase()}`;
@@ -175,11 +178,14 @@ const VENUE_TYPE_MAP: Record<string, Parameters<typeof localBusinessLd>[2]> = {
   gaia:               'Restaurant',
   'musta-magia':      'Restaurant',
   morton:             'Restaurant',
+  waves:              'Restaurant',
   'sataman-kahvila':  'CafeOrCoffeeShop',
   'trattoria-aukio':  'Restaurant',
   hiisi:              'BarOrPub',
   saunalautta:        'HealthAndBeautyBusiness',
   'tanssisali-lutakko': 'NightClub',
+  paviljonki:         'ConventionCenter',
+  'solo-sokos-hotel-paviljonki': 'Hotel',
 };
 
 /** Pick the most specific schema.org type and emit the right JSON-LD for a

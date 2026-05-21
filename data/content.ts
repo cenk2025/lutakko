@@ -173,8 +173,12 @@ export const FEATURE_VENUE_SLUGS: Record<string, string> = {
   'Reserved Gym (Innova 4)':        'reserved-gym',
   'Finlandia Marathon':             'finlandia-marathon',
 
-  // Business
+  // Food & Sauna — Italian
+  'Trattoria Aukio':                'trattoria-aukio',
+
+  // Business & Majoitus
   'Jyväskylän Paviljonki':          'paviljonki',
+  'Solo Sokos Hotel Paviljonki':    'solo-sokos-hotel-paviljonki',
   'Innova 1 (Piippukatu 11)':       'innova-1',
   'Innova 2 (Lutakonaukio 7)':      'innova-2',
   'Innova 4 (Lutakonaukio 1)':      'innova-4',
@@ -184,7 +188,7 @@ export const NAV_LINKS: Array<{ key: string; fi: string; en: string }> = [
   { key: 'festivals-culture', fi: 'Tapahtumat',          en: 'Events' },
   { key: 'food-sauna',        fi: 'Ruoka & Sauna',       en: 'Dine & Sauna' },
   { key: 'marina-recreation', fi: 'Kulttuuri & liikunta', en: 'Culture & sports' },
-  { key: 'business',          fi: 'Business',            en: 'Business' },
+  { key: 'business-majoitus', fi: 'Business & Majoitus', en: 'Business & Accommodation' },
 ];
 
 /* -------------------------------------------------------------------------- */
@@ -241,14 +245,15 @@ export const NAV_MENU: NavMenuGroup[] = [
     ],
   },
   {
-    key: 'business',
-    fi: 'Business',
-    en: 'Business',
+    key: 'business-majoitus',
+    fi: 'Business & Majoitus',
+    en: 'Business & Accommodation',
     items: [
-      { slug: 'paviljonki', fi: 'Jyväskylän Paviljonki',     en: 'Jyväskylän Paviljonki' },
-      { slug: 'innova-1',   fi: 'Innova 1 (Piippukatu 11)',  en: 'Innova 1 (Piippukatu 11)' },
-      { slug: 'innova-2',   fi: 'Innova 2 (Lutakonaukio 7)', en: 'Innova 2 (Lutakonaukio 7)' },
-      { slug: 'innova-4',   fi: 'Innova 4 (Lutakonaukio 1)', en: 'Innova 4 (Lutakonaukio 1)' },
+      { slug: 'paviljonki',                fi: 'Jyväskylän Paviljonki',          en: 'Jyväskylän Paviljonki' },
+      { slug: 'solo-sokos-hotel-paviljonki', fi: 'Solo Sokos Hotel Paviljonki',  en: 'Solo Sokos Hotel Paviljonki' },
+      { slug: 'innova-1',                  fi: 'Innova 1 (Piippukatu 11)',       en: 'Innova 1 (Piippukatu 11)' },
+      { slug: 'innova-2',                  fi: 'Innova 2 (Lutakonaukio 7)',      en: 'Innova 2 (Lutakonaukio 7)' },
+      { slug: 'innova-4',                  fi: 'Innova 4 (Lutakonaukio 1)',      en: 'Innova 4 (Lutakonaukio 1)' },
     ],
   },
 ];
@@ -785,66 +790,67 @@ export const CATEGORIES: Category[] = [
   },
 
   /* ------------------------------------------------------------------ */
-  /* 4. Business — Kielo office buildings                                */
+  /* 4. Business & Majoitus — event venue, hotel, office buildings       */
   /* ------------------------------------------------------------------ */
   {
-    id: 'business',
-    navLabel: { fi: 'Business', en: 'Business' },
+    id: 'business-majoitus',
+    navLabel: { fi: 'Business & Majoitus', en: 'Business & Accommodation' },
     themeColor: '#a78bfa',
     themeRgb: [167, 139, 250],
     themeRgbSecondary: [34, 211, 238],
     gradient: 'linear-gradient(135deg, #a78bfa 0%, #22d3ee 60%, #a3e635 100%)',
     assets: {
       hero: {
-        src: '/images/featured/business/hero.jpg',
-        alt: { fi: 'Innova-toimistorakennukset Lutakossa', en: 'Innova office buildings in Lutakko' },
+        src: '/images/featured/business-majoitus/solo-sokos-hotel.jpg',
+        alt: { fi: 'Solo Sokos Hotel Paviljonki Lutakonaukiolla', en: 'Solo Sokos Hotel Paviljonki on Lutakonaukio' },
       },
       gallery: [
         {
-          src: '/images/featured/business/gallery-1.jpg',
+          src: '/images/featured/business-majoitus/solo-sokos-hotel-2.jpg',
+          alt: { fi: 'Solo Sokos Hotel Paviljonki — toinen kuvakulma', en: 'Solo Sokos Hotel Paviljonki — alternate angle' },
+        },
+        {
+          src: '/images/featured/business-majoitus/innova-1.jpg',
           alt: { fi: 'Innova 1 — Piippukatu 11', en: 'Innova 1 — Piippukatu 11' },
         },
         {
-          src: '/images/featured/business/gallery-2.jpg',
+          src: '/images/featured/business-majoitus/innova-2.jpg',
           alt: { fi: 'Innova 2 — Lutakonaukio 7', en: 'Innova 2 — Lutakonaukio 7' },
-        },
-        {
-          src: '/images/featured/business/gallery-3.jpg',
-          alt: { fi: 'Innova 4 — Lutakonaukio 1', en: 'Innova 4 — Lutakonaukio 1' },
         },
       ],
     },
     fi: {
-      title: 'Lutakon yrityskortteli',
-      subtitle: 'Jyväskylän Paviljonki + Innova 1, 2 ja 4 — tapahtumatalo ja kestävät toimitilat saman korttelin sisällä',
+      title: 'Lutakon yritys- ja majoituskortteli',
+      subtitle: 'Jyväskylän Paviljonki + Solo Sokos Hotel + Innova 1, 2 ja 4 — tapahtumatalo, hotelli ja toimitilat saman korttelin sisällä',
       description:
-        'Lutakko on Jyväskylän nopeimmin kasvava liike-elämän kortteli. Jyväskylän Paviljonki — "Suomen monipuolisin tapahtumatalo" — toimii alueen sydämenä, ja sen ympärillä kolme sertifioitua Innova-toimistorakennusta tarjoaa joustavia tiloja startupeille ja kasvuyhtiöille. Sauna, ravintola, kokoustilat ja sähköauton lataus kaikissa.',
-      tagline: 'Messut, kokoukset ja kasvuyhtiöt — vihreällä energialla',
+        'Lutakko on Jyväskylän nopeimmin kasvava liike-elämän kortteli. Jyväskylän Paviljonki — "Suomen monipuolisin tapahtumatalo" — toimii alueen sydämenä, sen vieressä Solo Sokos Hotel Paviljonki majoittaa kävijät, ja ympärillä kolme sertifioitua Innova-toimistorakennusta tarjoaa joustavia tiloja kasvuyhtiöille.',
+      tagline: 'Messut, hotelli ja kasvuyhtiöt — vihreällä energialla',
       section1: {
         title: 'Jyväskylän Paviljonki',
         subtitle:
           '"Suomen monipuolisin tapahtumatalo" Lutakonaukio 12:ssa — messut, kongressit, konsertit, gaalat ja Secto Rally Finlandin Servicepark.',
       },
       section2: {
-        title: 'Innova 1, 2 & 4 — Kielo Toimitilat',
+        title: 'Solo Sokos Hotel Paviljonki',
         subtitle:
-          'Kolme sertifioitua toimistorakennusta Paviljongin ympärillä — BREEAM Very Good, LEED Platinum ja LEED Gold; sauna, ravintola, kokoustilat ja sähköauton lataus kaikissa.',
+          'Lutakonaukio 10 — Sokoksen lippulaiva-hotelli messukävijöille ja festivaaliyleisölle. Trattoria Aukio talossa, sauna ja kuntosali järvinäkymin.',
       },
       section3: {
-        title: 'Yritysverkosto Paviljongin ympärillä',
+        title: 'Innova 1, 2 & 4 — Kielo Toimitilat',
         subtitle:
-          'Reserved Gym (Innova 4:ssä), Ravintola Fiilu (Innova 1:ssä) ja kymmeniä yrityksiä kävelymatkan päässä — kaikki tapahtumatalon ja festivaalikorttelin tuntumassa.',
+          'Kolme sertifioitua toimistorakennusta Paviljongin ja hotellin ympärillä — BREEAM Very Good, LEED Platinum ja LEED Gold; vapaita 51–166 m² toimistoja.',
       },
       details: {
-        title: 'Tapahtumat ja toimitilat Lutakossa',
-        desc: 'Paviljonki ja Innova-toimistot muodostavat yhdessä Lutakon yritysverkoston — yhteistyö Lutakko.infon kanssa avaa kanavan uusiin vuokralaisiin, messukävijöihin ja kongressiyleisöön.',
+        title: 'Tapahtumat, majoitus ja toimitilat Lutakossa',
+        desc: 'Paviljonki, Solo Sokos Hotel ja Innova-toimistot muodostavat yhdessä Lutakon yritys- ja majoitusverkoston — yhteistyö Lutakko.infon kanssa avaa kanavan uusiin vuokralaisiin, messukävijöihin ja kongressiyleisöön.',
         bulletPoints: [
           'Jyväskylän Paviljonki · Lutakonaukio 12 · "Suomen monipuolisin tapahtumatalo" · paviljonki.fi · +358 14 339 8100',
+          'Solo Sokos Hotel Paviljonki · Lutakonaukio 10 · Sokoksen lippulaiva-hotelli, Green Key & Sustainable Travel Finland · sokoshotels.fi',
+          'Trattoria Aukio · italialainen ravintola Solo Sokoksen yhteydessä · puu-uunissa paistetut pizzat, pasta, risotto · raflaamo.fi',
           'Innova 1 · Piippukatu 11 · BREEAM Very Good · kielotoimitilat.fi/property/piippukatu-11',
           'Innova 2 · Lutakonaukio 7 · LEED Platinum · vapaina 112/163/166 m² · kielotoimitilat.fi/property/lutakonaukio-7',
           'Innova 4 · Lutakonaukio 1 · LEED Gold · vapaina 51/69 m² · kielotoimitilat.fi/property/lutakonaukio-1',
           'Toimitilojen vuokrauskanava: Minna Hämäläinen +358 40 564 8042 · minna.hamalainen@kielotoimitilat.fi',
-          'Kaikki rakennukset: 100 % vihreä energia, sähköauton lataus, sauna, kokoustilat',
           'Paviljongin toistuvat tapahtumat 2026: Cheerleading SM 13.–14.6., BUS-messut 16.–17.6., Secto Rally Finland Servicepark 30.7.–2.8., Jyväskylä Sinfonia',
         ],
       },
@@ -853,6 +859,16 @@ export const CATEGORIES: Category[] = [
           icon: 'stage',
           title: 'Jyväskylän Paviljonki',
           description: '"Suomen monipuolisin tapahtumatalo" Lutakonaukio 12:ssa — messut, kongressit, konsertit ja Secto Rally Finlandin Servicepark. Operaattori Jyväskylän Messut Oy + Paviljonki Productions. paviljonki.fi',
+        },
+        {
+          icon: 'viilu',
+          title: 'Solo Sokos Hotel Paviljonki',
+          description: 'Lutakonaukio 10 — Sokoksen lippulaiva-hotelli messu- ja festivaalikävijöille. Trattoria Aukio talossa, sauna ja kuntosali ylimmässä kerroksessa järvinäkymin. Green Key + Sustainable Travel Finland. sokoshotels.fi',
+        },
+        {
+          icon: 'food',
+          title: 'Trattoria Aukio',
+          description: 'Italialainen keittiö Solo Sokoksen yhteydessä — pasta, risotto, bruschetta ja puu-uunissa paistetut pizzat. "La Tavola Italiana." Pöytävaraukset Raflaamo.fi:stä.',
         },
         {
           icon: 'viilu',
@@ -869,50 +885,41 @@ export const CATEGORIES: Category[] = [
           title: 'Innova 4 (Lutakonaukio 1)',
           description: 'LEED Gold; 51 m² ja 69 m² toimistot vapaina. Samassa rakennuksessa Reserved Gym ja ruokakauppa; sauna järvinäkymin.',
         },
-        {
-          icon: 'food',
-          title: 'Ravintola Fiilu (Innova 1)',
-          description: 'Päivittäinen lounaslista Innova 1:n alakerrassa — kävelymatkan päässä kaikista kolmesta Innova-rakennuksesta ja Paviljongista.',
-        },
-        {
-          icon: 'sports',
-          title: 'Reserved Gym (Innova 4)',
-          description: 'Yksityinen tuntivaraus-kuntosali samassa rakennuksessa kuin Innova 4 — panoraamanäkymä Lutakonaukiolle. reservedgym.fi',
-        },
       ],
-      cta: { label: 'Pyydä vuokratarjous', href: '#business' },
+      cta: { label: 'Pyydä vuokratarjous', href: '#business-majoitus' },
     },
     en: {
-      title: 'Lutakko business district',
-      subtitle: 'Jyväskylän Paviljonki + Innova 1, 2 and 4 — Finland’s most versatile event house and the surrounding sustainable office buildings',
+      title: 'Lutakko business & accommodation block',
+      subtitle: 'Jyväskylän Paviljonki + Solo Sokos Hotel + Innova 1, 2 and 4 — event house, hotel and offices inside the same block',
       description:
-        'Lutakko is Jyväskylä’s fastest-growing business block. Jyväskylän Paviljonki — "Finland’s most versatile event house" — sits at the heart of the district, surrounded by three certified Innova office buildings offering flexible space for startups and growth companies. Sauna, restaurant, meeting rooms and EV charging across the lot.',
-      tagline: 'Trade fairs, meetings and growth companies — on green energy',
+        'Lutakko is Jyväskylä’s fastest-growing business block. Jyväskylän Paviljonki — "Finland’s most versatile event house" — sits at the heart of the district. Solo Sokos Hotel Paviljonki next door hosts fair and festival visitors, while three certified Innova office buildings around them offer flexible space for growth companies.',
+      tagline: 'Trade fairs, hotel and growth companies — on green energy',
       section1: {
         title: 'Jyväskylän Paviljonki',
         subtitle:
           '"Finland’s most versatile event house" at Lutakonaukio 12 — trade fairs, congresses, concerts, galas and the Secto Rally Finland Service Park.',
       },
       section2: {
-        title: 'Innova 1, 2 & 4 — Kielo Toimitilat',
+        title: 'Solo Sokos Hotel Paviljonki',
         subtitle:
-          'Three certified office buildings around Paviljonki — BREEAM Very Good, LEED Platinum and LEED Gold; sauna, restaurant, meeting rooms and EV charging in every building.',
+          'Lutakonaukio 10 — Sokos flagship hotel for fair and festival visitors. Trattoria Aukio inside, sauna and gym on the top floor with lake views.',
       },
       section3: {
-        title: 'Business network around Paviljonki',
+        title: 'Innova 1, 2 & 4 — Kielo Toimitilat',
         subtitle:
-          'Reserved Gym (in Innova 4), Fiilu restaurant (in Innova 1) and dozens of companies within walking distance — all next to the event house and the festival district.',
+          'Three certified office buildings around Paviljonki and the hotel — BREEAM Very Good, LEED Platinum and LEED Gold; available 51–166 m² offices.',
       },
       details: {
-        title: 'Events and offices in Lutakko',
-        desc: 'Paviljonki and the Innova buildings form Lutakko’s business network — partnering with Lutakko.info opens a channel to new tenants, fair visitors and congress audiences alike.',
+        title: 'Events, accommodation and offices in Lutakko',
+        desc: 'Paviljonki, Solo Sokos Hotel and the Innova buildings form Lutakko’s business + accommodation network — partnering with Lutakko.info opens a channel to new tenants, fair visitors and congress audiences alike.',
         bulletPoints: [
           'Jyväskylän Paviljonki · Lutakonaukio 12 · "Finland’s most versatile event house" · paviljonki.fi · +358 14 339 8100',
+          'Solo Sokos Hotel Paviljonki · Lutakonaukio 10 · Sokos flagship hotel, Green Key + Sustainable Travel Finland · sokoshotels.fi',
+          'Trattoria Aukio · Italian restaurant inside Solo Sokos · wood-oven pizza, pasta, risotto · raflaamo.fi',
           'Innova 1 · Piippukatu 11 · BREEAM Very Good · kielotoimitilat.fi/property/piippukatu-11',
           'Innova 2 · Lutakonaukio 7 · LEED Platinum · available 112/163/166 m² · kielotoimitilat.fi/property/lutakonaukio-7',
           'Innova 4 · Lutakonaukio 1 · LEED Gold · available 51/69 m² · kielotoimitilat.fi/property/lutakonaukio-1',
           'Office leasing channel: Minna Hämäläinen +358 40 564 8042 · minna.hamalainen@kielotoimitilat.fi',
-          'Across all buildings: 100% green energy, EV charging, sauna, meeting rooms',
           'Paviljonki recurring events 2026: Cheerleading SM 13–14 Jun, BUS trade fair 16–17 Jun, Secto Rally Finland Service Park 30 Jul – 2 Aug, Jyväskylä Sinfonia',
         ],
       },
@@ -921,6 +928,16 @@ export const CATEGORIES: Category[] = [
           icon: 'stage',
           title: 'Jyväskylän Paviljonki',
           description: '"Finland’s most versatile event house" at Lutakonaukio 12 — trade fairs, congresses, concerts and the Secto Rally Finland Service Park. Operated by Jyväskylän Messut Oy + Paviljonki Productions. paviljonki.fi',
+        },
+        {
+          icon: 'viilu',
+          title: 'Solo Sokos Hotel Paviljonki',
+          description: 'Lutakonaukio 10 — Sokos flagship hotel for fair and festival visitors. Trattoria Aukio inside, sauna and gym on the top floor with lake views. Green Key + Sustainable Travel Finland. sokoshotels.fi',
+        },
+        {
+          icon: 'food',
+          title: 'Trattoria Aukio',
+          description: 'Italian kitchen inside Solo Sokos — pasta, risotto, bruschetta and wood-oven pizza. "La Tavola Italiana." Reservations via Raflaamo.fi.',
         },
         {
           icon: 'viilu',
@@ -937,18 +954,8 @@ export const CATEGORIES: Category[] = [
           title: 'Innova 4 (Lutakonaukio 1)',
           description: 'LEED Gold; 51 m² and 69 m² offices available. The building also houses Reserved Gym and a grocery store; lake-view sauna.',
         },
-        {
-          icon: 'food',
-          title: 'Fiilu restaurant (Innova 1)',
-          description: 'Daily lunch downstairs in Innova 1 — walking distance from all three Innova buildings and Paviljonki.',
-        },
-        {
-          icon: 'sports',
-          title: 'Reserved Gym (Innova 4)',
-          description: 'Hourly-booked private gym in the same building as Innova 4 — panoramic view over Lutakonaukio square. reservedgym.fi',
-        },
       ],
-      cta: { label: 'Request a leasing offer', href: '#business' },
+      cta: { label: 'Request a leasing offer', href: '#business-majoitus' },
     },
   },
 ];
