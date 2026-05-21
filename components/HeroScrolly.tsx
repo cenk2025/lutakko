@@ -176,6 +176,15 @@ export default function HeroScrolly({ onAllLoaded }: HeroScrollyProps = {}) {
                 <span className="text-white">04</span>
               </div>
             </div>
+
+            {/* Photo credit — fixed bottom-right of the canvas stage */}
+            <span
+              aria-hidden
+              className="pointer-events-none absolute bottom-3 right-4 select-none text-[0.6rem] font-light tracking-[0.08em] text-white/75 sm:bottom-4 sm:right-6 sm:text-[0.7rem]"
+              style={{ textShadow: '0 1px 2px rgba(0,0,0,0.7), 0 0 2px rgba(0,0,0,0.5)' }}
+            >
+              Kuva: Cenk Yakinlar
+            </span>
           </div>
         </div>
       </HarborCanvasScroll>

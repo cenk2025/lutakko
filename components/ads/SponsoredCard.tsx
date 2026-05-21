@@ -65,6 +65,7 @@ export default function SponsoredCard({ category, themeRgb = [34, 211, 238] }: P
           alt={ad.title}
           fallbackRgb={themeRgb}
           className="relative mt-5 aspect-[16/9] w-full overflow-hidden rounded-2xl border border-white/10"
+          hideCredit
         />
       )}
 

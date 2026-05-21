@@ -81,6 +81,7 @@ export default function HeroBannerAd() {
               alt={ad.title}
               fallbackRgb={[34, 211, 238]}
               className="aspect-[4/3] w-full rounded-2xl border border-white/10"
+              hideCredit
             />
           ) : (
             <div className="grid aspect-[4/3] w-full place-items-center rounded-2xl border border-dashed border-white/15 bg-white/[0.02] text-[0.65rem] uppercase tracking-[0.4em] text-white/40">
