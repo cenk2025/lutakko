@@ -24,7 +24,7 @@ export function organizationLd() {
     name: 'Voon IQ',
     legalName: 'Voon IQ',
     url: 'https://voon.fi',
-    email: 'info@voon.fi',
+    email: 'info@lutakko.info',
     logo: `${SITE_URL}/favicon.svg`,
     description:
       'Voon IQ is a Finnish destination-marketing studio behind Lutakko.info, the official visitor and partner platform for Lutakon Satama in Jyväskylä.',

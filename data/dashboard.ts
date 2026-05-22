@@ -274,7 +274,7 @@ export const DASHBOARD_COPY = {
       noBookingsToday: 'Ei varauksia tälle päivälle.',
       noBookingsMonth: 'Ei varauksia tässä kuussa.',
       reminderHint:
-        'Sähköpostimuistutukset käyttöön: lisää info@voon.fi:n kautta toimintaan otetaan käyttöön — ottakaa yhteyttä.',
+        'Sähköpostimuistutukset käyttöön: backend yhdistetään parhaillaan — kysymykset news@lutakko.info.',
     },
     ads: {
       title: 'Mainosten hallinta',
@@ -430,7 +430,7 @@ export const DASHBOARD_COPY = {
       noBookingsToday: 'No bookings on this day.',
       noBookingsMonth: 'No bookings in this month.',
       reminderHint:
-        'Email reminders activation: contact info@voon.fi — backend integration pending.',
+        'Email reminders activation: backend integration pending — questions to news@lutakko.info.',
     },
     ads: {
       title: 'Ad management',

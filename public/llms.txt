@@ -1,13 +1,13 @@
 # Lutakko.info
 
-> Lutakko.info is the official visitor and partner site for **Lutakon Satama** — the harbour district at the heart of Jyväskylä, Finland. The site is operated by **Voon IQ** (voon.fi · info@voon.fi). It covers festivals, restaurants, saunas, the guest marina, and family-friendly activities along the Päijänne lakeshore. Bilingual (Finnish + English).
+> Lutakko.info is the official visitor and partner site for **Lutakon Satama** — the harbour district at the heart of Jyväskylä, Finland. The site is operated by **Voon IQ** (voon.fi · info@lutakko.info). It covers festivals, restaurants, saunas, the guest marina, and family-friendly activities along the Päijänne lakeshore. Bilingual (Finnish + English).
 
 ## Quick facts
 
 - **Place:** Lutakon Satama district, Lutakko, 40100 Jyväskylä, Finland
 - **Lake:** Päijänne (the harbour is its northernmost passenger harbour)
 - **Marina:** 46 guest berths with shore power, water, fuel and sauna access (2017 Guest Harbour of the Year honourable mention)
-- **Operator of this site:** Voon IQ — info@voon.fi · https://voon.fi
+- **Operator of this site:** Voon IQ — info@lutakko.info · https://voon.fi
 
 ## Major events at Lutakon Satama (2026)
 
@@ -39,7 +39,7 @@
 
 ## Booking & partnerships
 
-Visitors can sign up at [lutakko.info/dashboard/](https://lutakko.info/dashboard/) to manage activity and sauna reservations. Businesses can become listing / sponsorship partners via the "Become a partner" form on each venue page — enquiries go to **info@voon.fi**.
+Visitors can sign up at [lutakko.info/dashboard/](https://lutakko.info/dashboard/) to manage activity and sauna reservations. Businesses can become listing / sponsorship partners via the "Become a partner" form on each venue page — enquiries go to **business@lutakko.info**.
 
 ## Site map
 
@@ -49,4 +49,7 @@ Visitors can sign up at [lutakko.info/dashboard/](https://lutakko.info/dashboard
 
 ## Contact
 
-- Site operator: Voon IQ — info@voon.fi — https://voon.fi
+- General enquiries: info@lutakko.info
+- Sponsorship & advertising: business@lutakko.info
+- Events & newsletter: news@lutakko.info
+- Site operator: Voon IQ — https://voon.fi

@@ -1059,7 +1059,7 @@ export const FOOTER_LINKS = {
       button: 'Tilaa',
     },
     rights: 'Kaikki oikeudet pidätetään.',
-    location: 'Voon IQ · info@voon.fi',
+    location: 'Voon IQ · info@lutakko.info',
   },
   en: {
     explore: 'Explore',
@@ -1073,6 +1073,6 @@ export const FOOTER_LINKS = {
       button: 'Subscribe',
     },
     rights: 'All rights reserved.',
-    location: 'Voon IQ · info@voon.fi',
+    location: 'Voon IQ · info@lutakko.info',
   },
 } as const;

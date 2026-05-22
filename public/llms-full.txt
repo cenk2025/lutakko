@@ -1,6 +1,6 @@
 # Lutakko.info — Full content for AI / LLM ingestion
 
-> Lutakko.info is the official visitor and partner site for **Lutakon Satama**, the harbour district at the heart of Jyväskylä, Finland. The site is bilingual (Finnish + English) and operated by **Voon IQ** (voon.fi · info@voon.fi).
+> Lutakko.info is the official visitor and partner site for **Lutakon Satama**, the harbour district at the heart of Jyväskylä, Finland. The site is bilingual (Finnish + English) and operated by **Voon IQ** (voon.fi · info@lutakko.info).
 >
 > This file gathers every important fact across the site in a single, AI-friendly Markdown document — suitable for direct ingestion by Claude, ChatGPT, Perplexity, Gemini, and similar systems.
 
@@ -178,7 +178,7 @@
 
 - **Operator of Lutakko.info:** Voon IQ
 - **Website:** https://voon.fi
-- **Email:** info@voon.fi
+- **Email:** info@lutakko.info
 - **Founder:** Cenk Yakinlar (Jyväskylä, Finland)
 - **Concept:** Voon IQ is a destination-marketing studio. Lutakko.info is the first production deployment of the platform; it can be re-skinned for additional Finnish harbour cities.
 
@@ -209,7 +209,9 @@
 
 ## 7. Contact
 
-- **Sales / partnerships / general enquiries:** info@voon.fi
+- **General enquiries:** info@lutakko.info
+- **Sponsorship, advertising, revenue:** business@lutakko.info
+- **Events & newsletter:** news@lutakko.info
 - **Site operator:** Voon IQ — https://voon.fi
 - **District:** Lutakko, 40100 Jyväskylä, Finland
 

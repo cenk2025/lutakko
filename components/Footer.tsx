@@ -209,9 +209,9 @@ export default function Footer() {
             <span className="text-white/40"> · </span>
             <a
               className="text-white/75 underline-offset-4 hover:underline"
-              href="mailto:info@voon.fi"
+              href="mailto:info@lutakko.info"
             >
-              info@voon.fi
+              info@lutakko.info
             </a>
             {lang === 'fi'
               ? ' — sydämellä Jyväskylässä.'
